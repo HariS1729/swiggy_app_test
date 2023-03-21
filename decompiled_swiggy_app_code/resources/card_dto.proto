@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+option java_package = "com.swiggy.gandalf.widgets.v2";
+option java_multiple_files = true;
+option java_outer_classname = "CardProto";
+
+
+import "google/protobuf/any.proto";
+
+message Card{
+    google.protobuf.Any card = 1;
+    Relevance relevance = 2;
+}
+
+message Relevance {
+    RelevanceType type = 1;
+    string section_id = 2;
+
+    enum RelevanceType {
+        RELEVANCE_TYPE_INVALID = 0;
+        RELEVANCE_TYPE_ON_MENU_RETURN = 1;
+        RELEVANCE_TYPE_ON_ITEM_ADD = 2;
+    }
+}

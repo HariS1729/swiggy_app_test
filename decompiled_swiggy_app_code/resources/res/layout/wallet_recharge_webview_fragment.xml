@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/wallet_recharge_webview_fragment_0" android:background="@color/white100" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="@dimen/action_bar_size" layout="@layout/toolbar"/>
+    <WebView android:id="@+id/fragment_tpwallet_wv" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/fragment_tpwallet_wv_progress_bar"/>
+    <ProgressBar android:layout_gravity="top" android:id="@+id/fragment_tpwallet_wv_progress_bar" android:tag="binding_1" android:layout_width="match_parent" android:layout_height="6dp" android:max="100" android:indeterminate="true" android:layout_below="@+id/toolbar" android:backgroundTint="@color/nasty_orange" style="?android:attr/progressBarStyleHorizontal"/>
+</RelativeLayout>

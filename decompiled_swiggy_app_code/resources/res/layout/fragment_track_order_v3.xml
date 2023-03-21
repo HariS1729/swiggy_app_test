@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/container" android:tag="layout/fragment_track_order_v3_0" android:background="@color/blackGrape0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.google.android.gms.maps.MapView android:id="@+id/map" android:tag="binding_1" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" android:importantForAccessibility="noHideDescendants"/>
+    <include android:layout_gravity="bottom" android:id="@+id/rain_lottie_view" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/rain_animation_layout"/>
+    <FrameLayout android:tag="binding_2" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:tag="binding_3" android:layout_width="match_parent" android:layout_height="match_parent">
+            <include android:id="@+id/track_toolbar_view" layout="@layout/track_toolbar"/>
+            <include android:id="@+id/track_progress_bar_view" layout="@layout/track_progress_bar"/>
+            <FrameLayout android:tag="binding_4" android:layout_width="match_parent" android:layout_height="match_parent">
+                <include android:id="@+id/hud" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/item_track_order_anomalies_view"/>
+                <View android:tag="binding_5" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:importantForAccessibility="no"/>
+                <include android:id="@+id/third_party_delivery_view" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/third_party_delivery_layout"/>
+                <View android:id="@+id/mapOverlay" android:background="@color/map_overlay_color" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:importantForAccessibility="no"/>
+                <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@+id/bottomSheetContainer" android:tag="binding_6" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <include android:id="@+id/track_edm_delivery_rating_view" layout="@layout/track_edm_delivery_rating"/>
+                    <include android:layout_gravity="center_horizontal" android:id="@+id/de_temp_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@+id/shimmer" app:layout_anchor="@+id/bottom_sheet" app:layout_anchorGravity="1" layout="@layout/de_temp_view"/>
+                    <View android:id="@+id/bottom_sheet_shadow_view" android:background="@drawable/bottom_sheet_shadow" android:layout_width="match_parent" android:layout_height="@dimen/dimen_16dp" app:layout_anchor="@+id/bottom_sheet"/>
+                    <RelativeLayout android:id="@+id/bottom_sheet" android:tag="binding_7" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+                        <include android:id="@+id/shimmer_layout" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/track_shimmer_layout"/>
+                        <in.swiggy.android.commonsui.view.SwiggyCommonRecyclerView android:id="@+id/recycler_view" android:tag="binding_8" android:background="@drawable/track_bottom_sheet_bg_rounded" android:clipToPadding="false" android:descendantFocusability="beforeDescendants" android:layout_width="match_parent" android:layout_height="wrap_content" android:importantForAccessibility="yes"/>
+                    </RelativeLayout>
+                </androidx.coordinatorlayout.widget.CoordinatorLayout>
+                <include android:id="@+id/see_more_button_view" layout="@layout/see_more_floating_button_layout"/>
+            </FrameLayout>
+        </LinearLayout>
+        <in.swiggy.android.commonsFeature.views.CommonToolTipView android:id="@+id/toolTipView" android:tag="binding_9" android:visibility="visible" android:layout_width="match_parent" android:layout_height="@dimen/dimen_110dp" android:translationZ="@dimen/dimen_100dp" app:appearance="@style/HelpCenterToolTipStyle"/>
+    </FrameLayout>
+    <include android:layout_gravity="bottom" android:id="@+id/track_pip_autopay_view" android:layout_width="match_parent" android:layout_height="@dimen/dimen_20dp" android:layout_marginBottom="@dimen/dimen_40dp" layout="@layout/track_pip_autopay_view"/>
+    <include android:layout_gravity="bottom" android:id="@+id/track_pip_view" android:layout_width="match_parent" android:layout_height="@dimen/dimen_40dp" layout="@layout/track_pip_view"/>
+    <View android:id="@+id/pip_overlay" android:background="@color/blackGrape0" android:layout_width="match_parent" android:layout_height="match_parent" android:alpha="0"/>
+    <RelativeLayout android:tag="binding_10" android:background="@color/black30" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ProgressBar android:layout_width="@dimen/dimen_50dp" android:layout_height="@dimen/dimen_50dp" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <View android:id="@+id/autopay_overlay" android:tag="binding_11" android:background="@color/white" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:alpha="0.4"/>
+    <include layout="@layout/item_track_speed_delivery_splash_screen"/>
+    <include android:layout_gravity="bottom" android:id="@+id/de_tipping_pay_now" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/dimen_56dp" layout="@layout/item_track_de_tipping_pay_now"/>
+</FrameLayout>

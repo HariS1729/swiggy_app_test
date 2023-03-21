@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+option java_package = "com.swiggy.gandalf.widgets.v2";
+option java_multiple_files = true;
+option java_outer_classname = "AnalyticsProto";
+
+// This contains analytics information for a widget.
+message Analytics {
+    string screen_name = 1;
+    string context = 2;
+    string object_value = 3;
+    string impression_object_name = 4;
+    string click_object_name = 5;
+    int32 object_position = 6;
+}

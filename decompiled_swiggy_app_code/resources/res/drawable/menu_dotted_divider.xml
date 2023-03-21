@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:shape="line">
+    <stroke android:width="@dimen/default_dotted_divider_view_dot_size" android:color="@color/default_dotted_divider_view_dot_color" android:dashWidth="@dimen/default_dotted_divider_view_dot_size" android:dashGap="@dimen/default_dotted_divider_view_gap_between_dots"/>
+</shape>

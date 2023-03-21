@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/divider_container" android:tag="layout/item_filter_group_divider_0" android:layout_width="wrap_content" android:layout_height="match_parent" android:importantForAccessibility="noHideDescendants" android:layout_marginEnd="@dimen/spacing_x_small">
+    <View android:layout_gravity="center_vertical" android:id="@+id/divider" android:background="?attr/dividerColor" android:layout_width="@dimen/dimen_1dp" android:layout_height="@dimen/dimen_20dp"/>
+</FrameLayout>

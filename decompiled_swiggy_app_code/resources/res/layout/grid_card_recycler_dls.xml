@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/container" android:tag="layout/grid_card_recycler_dls_0" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/items_root" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/recycler" android:tag="binding_1" android:layout_width="match_parent" android:layout_height="wrap_content" android:nestedScrollingEnabled="false" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+        <View android:id="@+id/end_gradient" android:tag="binding_2" android:background="@drawable/gradient_ticker" android:layout_width="@dimen/dimen_64dp" android:layout_height="@dimen/dimen_0dp" app:layout_constraintBottom_toBottomOf="@+id/recycler" app:layout_constraintEnd_toEndOf="0" app:layout_constraintTop_toTopOf="@+id/recycler"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <in.swiggy.android.feature.home.grid.nativemn.GridScrollBarView android:layout_gravity="center_horizontal" android:id="@+id/gridScrollBar" android:tag="binding_3" android:layout_width="@dimen/dimen_54dp" android:layout_height="@dimen/dimen_4dp"/>
+    <in.swiggy.android.commonsui.view.dotIndicator.DotIndicator android:layout_gravity="center" android:id="@+id/gridScrollDots" android:tag="binding_4" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <include layout="@layout/grid_footer_item"/>
+</LinearLayout>

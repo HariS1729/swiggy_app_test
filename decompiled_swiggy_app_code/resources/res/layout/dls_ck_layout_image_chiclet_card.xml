@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <in.swiggy.android.dls.imagecard.ImageCard android:id="@+id/chiclet_image_card" android:paddingTop="@dimen/spacing_xxx_small" android:layout_width="@dimen/dls_ck_chiclet_card_component_width" android:layout_height="@dimen/dls_ck_chiclet_card_component_height" app:imageCardElevation="0dp"/>
+    <in.swiggy.android.dls.onelabel.OneBanner android:id="@+id/oneBanner" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="@+id/chiclet_image_card" app:layout_constraintStart_toStartOf="@+id/chiclet_image_card" app:layout_constraintTop_toTopOf="0"/>
+</merge>

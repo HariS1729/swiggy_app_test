@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:tag="layout/offer_header_layout_0" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <include android:layout_gravity="center" android:id="@+id/offer_tag_layout" android:visibility="gone" android:layout_width="@dimen/dimen_72dp" android:layout_height="@dimen/dimen_16dp" layout="@layout/offer_tag_layout"/>
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:id="@+id/offer_container" android:background="@drawable/transparent_shadow_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_neg_4dp">
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@+id/offer_header_layout" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <in.swiggy.android.view.SwiggyTextView android:layout_gravity="center" android:id="@+id/textView_offer" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" android:includeFontPadding="false" android:textAlignment="center" android:letterSpacing="-0.02"/>
+            <in.swiggy.android.view.SwiggyTextView android:layout_gravity="center" android:id="@+id/textView_sub_offer" android:tag="binding_3" android:paddingBottom="@dimen/dimen_1dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_neg_1dp" android:maxLines="1" android:singleLine="true" android:includeFontPadding="false" android:textAlignment="center" android:letterSpacing="0.06"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

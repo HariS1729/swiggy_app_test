@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/bottom_cart_fab_crouton" android:tag="layout/menu_v4_cart_fab_crouton_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:layout_gravity="bottom" android:id="@+id/menu_nudge_offer" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/menu_offer_nudge_view"/>
+    <in.swiggy.android.view.SwiggyCardView android:layout_gravity="bottom" android:id="@+id/fab_container_layout" android:tag="binding_1" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/spacing_large" android:translationY="@dimen/dimen_48dp" android:layout_marginStart="@dimen/spacing_x_small" android:layout_marginEnd="@dimen/spacing_x_small" android:backgroundTint="@color/transparent" app:cardCornerRadius="@dimen/dimen_16dp" app:objectName="test">
+        <in.swiggy.android.view.CartFabV4 android:id="@+id/cart_fab_container" android:tag="binding_2" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </in.swiggy.android.view.SwiggyCardView>
+</FrameLayout>

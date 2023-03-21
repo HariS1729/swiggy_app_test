@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/dimen_6dp">
+    <LinearLayout android:orientation="vertical" android:id="@+id/batch_order_text_layout" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_4dp">
+        <androidx.cardview.widget.CardView android:layout_width="wrap_content" android:layout_height="wrap_content" app:cardBackgroundColor="@color/blackGrape90" app:cardCornerRadius="@dimen/dimen_3dp">
+            <in.swiggy.android.commonsui.view.CommonTextView android:ellipsize="end" android:gravity="center" android:layout_gravity="top" android:id="@+id/batch_order_text" android:padding="@dimen/dimen_4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/dimen_2dp" android:maxWidth="@dimen/dimen_110dp" android:maxLines="2" app:background="@color/blackGrape90" style="@style/TextSemiBold11spWhite100caps"/>
+        </androidx.cardview.widget.CardView>
+        <View android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:background="@drawable/triangle_blackgrape90" android:layout_width="8dp" android:layout_height="8dp" android:layout_marginTop="-0.8dp" android:rotation="360"/>
+    </LinearLayout>
+    <ImageView android:layout_gravity="center_horizontal" android:id="@+id/custom_marker_image" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-4dp" android:src="@drawable/batched_order_icon"/>
+</LinearLayout>

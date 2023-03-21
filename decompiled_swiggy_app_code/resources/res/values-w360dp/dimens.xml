@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="track_disabled_container_margin_bottom">@dimen/dimen_48dp</dimen>
+    <dimen name="track_disabled_header_subheader_gap">@dimen/dimen_32dp</dimen>
+</resources>

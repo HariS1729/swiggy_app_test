@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Base.Theme.SplashScreen">
+    </style>
+    <style name="Base.Theme.SplashScreen.Light">
+    </style>
+    <style name="Base.v27.Theme.SplashScreen">
+        <item name="?0x1010586">1</item>
+    </style>
+    <style name="Base.v27.Theme.SplashScreen.Light">
+        <item name="?0x1010586">1</item>
+    </style>
+    <style name="NavDrawerAppTheme">
+        <item name="android:windowBackground">@color/white100</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@color/white100</item>
+        <item name="android:navigationBarColor">@color/white100</item>
+        <item name="?0x10104e0">true</item>
+        <item name="?0x101056c">true</item>
+        <item name="?0x101056d">@color/blackGrape0</item>
+        <item name="colorAccent">@color/accent_color</item>
+        <item name="colorControlActivated">@color/nasty_orange</item>
+        <item name="colorControlHighlight">@color/transparent</item>
+        <item name="colorControlNormal">@color/fifteen_percent_black</item>
+        <item name="colorPrimary">@color/primary_color</item>
+        <item name="colorPrimaryDark">@color/primary_color_dark</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+        <item name="md_color_button_text">@color/orange100</item>
+    </style>
+</resources>

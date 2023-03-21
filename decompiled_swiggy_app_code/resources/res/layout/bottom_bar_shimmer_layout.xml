@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.facebook.shimmer.ShimmerFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/bottom_bar_shimmer_layout" android:tag="layout/bottom_bar_shimmer_layout_0" android:layout_width="match_parent" android:layout_height="@dimen/dimen_56dp" android:importantForAccessibility="noHideDescendants" app:base_alpha="0.4" app:shimmer_auto_start="true" app:shimmer_dropoff="0.8" app:shimmer_duration="2000" app:tilt="15">
+    <LinearLayout android:id="@+id/shimmer_items_container" android:layout_width="match_parent" android:layout_height="match_parent" android:baselineAligned="false" android:weightSum="3" android:layout_marginStart="@dimen/dimen_32dp" android:layout_marginEnd="@dimen/dimen_32dp">
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@+id/shimmer_item_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+            <View android:id="@+id/view1" android:background="@color/shimmer_item_color" android:layout_width="@dimen/dimen_20dp" android:layout_height="@dimen/dimen_20dp" android:layout_marginStart="@dimen/dimen_14dp"/>
+            <View android:id="@+id/view2" android:background="@color/shimmer_item_color" android:layout_width="@dimen/dimen_48dp" android:layout_height="@dimen/dimen_9dp" android:layout_marginTop="@dimen/dimen_2dp"/>
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@+id/shimmer_item_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+            <View android:id="@+id/view3" android:background="@color/shimmer_item_color" android:layout_width="@dimen/dimen_20dp" android:layout_height="@dimen/dimen_20dp" android:layout_marginStart="@dimen/dimen_14dp"/>
+            <View android:id="@+id/view4" android:background="@color/shimmer_item_color" android:layout_width="@dimen/dimen_48dp" android:layout_height="@dimen/dimen_9dp" android:layout_marginTop="@dimen/dimen_2dp"/>
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@+id/shimmer_item_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+            <View android:id="@+id/view5" android:background="@color/shimmer_item_color" android:layout_width="@dimen/dimen_20dp" android:layout_height="@dimen/dimen_20dp" android:layout_marginStart="@dimen/dimen_14dp"/>
+            <View android:id="@+id/view6" android:background="@color/shimmer_item_color" android:layout_width="@dimen/dimen_48dp" android:layout_height="@dimen/dimen_9dp" android:layout_marginTop="@dimen/dimen_2dp"/>
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@+id/shimmer_item_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+            <View android:id="@+id/view7" android:background="@color/shimmer_item_color" android:layout_width="@dimen/dimen_20dp" android:layout_height="@dimen/dimen_20dp" android:layout_marginStart="@dimen/dimen_14dp"/>
+            <View android:id="@+id/view8" android:background="@color/shimmer_item_color" android:layout_width="@dimen/dimen_48dp" android:layout_height="@dimen/dimen_9dp" android:layout_marginTop="@dimen/dimen_2dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</com.facebook.shimmer.ShimmerFrameLayout>

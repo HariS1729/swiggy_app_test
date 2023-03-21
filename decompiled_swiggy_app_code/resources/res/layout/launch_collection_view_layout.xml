@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/rootLayout" android:tag="layout/launch_collection_view_layout_0" android:paddingBottom="@dimen/dimen_16dp" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/dimen_16dp" android:paddingEnd="@dimen/dimen_16dp">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/linearLayout" android:background="@drawable/white100_rectangle_with_blackgrape10_border" android:paddingBottom="@dimen/dimen_0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.viewpager.widget.ViewPager android:id="@+id/view_pager" android:layout_width="match_parent" android:layout_height="@dimen/dimen_86dp" app:layout_constraintTop_toTopOf="0"/>
+        <View android:id="@+id/divider" android:background="@color/blackGrape100_10" android:layout_width="@dimen/dimen_0dp" android:layout_height="@dimen/dimen_1dp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/view_pager"/>
+        <FrameLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/page_indicator_layout" android:paddingBottom="@dimen/dimen_4dp" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="@dimen/dimen_32dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintTop_toBottomOf="@+id/divider">
+            <in.swiggy.android.commonsui.viewpager.InstaDotPageIndicator android:layout_gravity="center" android:id="@+id/page_indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" app:dot_activeColor="@color/black100" app:dot_activeSize="8dp" app:dot_inactiveColor="@color/black30" app:dot_inactiveSize="6dp" app:dot_margin="6dp" app:dot_mediumSize="6dp" app:dot_smallSize="6dp"/>
+        </FrameLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

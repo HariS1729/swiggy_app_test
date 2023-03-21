@@ -1,0 +1,28 @@
+syntax = "proto3";
+
+option java_package = "com.swiggy.gandalf.home.protobuf";
+option java_multiple_files = true;
+
+import "restaurant_home_dto.proto";
+
+message PreOrderCardDto {
+    string sub_type = 1;
+    string title = 2;
+    string subtitle = 3;
+    repeated PreorderSlots preorder_slots = 4;
+    repeated VerticalGroupPreorderDataCards cards = 5;
+
+    message VerticalGroupPreorderDataCards {
+        RestaurantHomeDto data = 3;
+    }
+
+    message PreorderSlots {
+        int64 date = 1;
+        repeated Slot slots = 2;
+
+        message Slot {
+            int64 start_time = 1;
+            int64 end_time = 2;
+        }
+    }
+}   

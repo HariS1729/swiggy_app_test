@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.facebook.shimmer.ShimmerFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/shimmer_layout_srdbd_root" android:tag="layout/shimmer_save_recipient_details_btm_dg_fragment_0" android:layout_width="match_parent" android:layout_height="match_parent" android:importantForAccessibility="noHideDescendants">
+    <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:id="@+id/linear_root" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/dimen_14dp" android:layout_marginBottom="@dimen/dimen_14dp">
+        <View android:id="@+id/shimmer_srdbd_item_1" android:background="@drawable/shimmer_facet_bg" android:layout_width="match_parent" android:layout_height="@dimen/dimen_26dp"/>
+        <View android:id="@+id/shimmer_srdbd_item_2" android:tag="binding_1" android:background="@drawable/shimmer_facet_bg" android:layout_width="match_parent" android:layout_height="@dimen/dimen_18dp" android:layout_marginTop="@dimen/dimen_4dp"/>
+        <androidx.appcompat.widget.LinearLayoutCompat android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@+id/shimmer_srdbd_item_3" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_23dp">
+            <View android:id="@+id/shimmer_srdbd_item_31" android:background="@drawable/shimmer_facet_bg" android:layout_width="@dimen/dimen_30dp" android:layout_height="@dimen/dimen_30dp"/>
+            <View android:id="@+id/shimmer_srdbd_item_32" android:background="@drawable/shimmer_facet_bg" android:layout_width="match_parent" android:layout_height="@dimen/dimen_52dp" android:layout_marginStart="@dimen/dimen_16dp"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <View android:id="@+id/shimmer_srdbd_item_4" android:background="@drawable/shimmer_facet_bg" android:layout_width="match_parent" android:layout_height="@dimen/dimen_1dp" android:layout_marginTop="@dimen/dimen_15dp"/>
+        <View android:id="@+id/shimmer_srdbd_item_5" android:background="@drawable/shimmer_facet_bg" android:layout_width="match_parent" android:layout_height="@dimen/dimen_56dp" android:layout_marginTop="@dimen/dimen_16dp"/>
+        <View android:id="@+id/shimmer_srdbd_item_6" android:background="@drawable/shimmer_facet_bg" android:layout_width="match_parent" android:layout_height="@dimen/dimen_56dp" android:layout_marginTop="@dimen/dimen_16dp"/>
+        <View android:id="@+id/shimmer_srdbd_item_7" android:background="@drawable/shimmer_facet_bg" android:layout_width="match_parent" android:layout_height="@dimen/dimen_56dp" android:layout_marginTop="@dimen/dimen_16dp"/>
+        <View android:id="@+id/shimmer_srdbd_item_8" android:tag="binding_2" android:background="@drawable/shimmer_facet_bg" android:layout_width="match_parent" android:layout_height="@dimen/dimen_56dp" android:layout_marginTop="@dimen/dimen_16dp"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</com.facebook.shimmer.ShimmerFrameLayout>

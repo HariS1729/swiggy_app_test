@@ -1,0 +1,92 @@
+syntax = "proto3";
+
+option java_package = "com.swiggy.presentation.stores.v1";
+option java_multiple_files = true;
+option java_outer_classname = "StoreProto";
+
+import "analytics_dto.proto";
+import "cta.proto";
+
+// This represents attributes of Store widget.
+message Store {
+    StoreInfo info = 1;
+    Analytics analytics = 2;
+    Cta cta = 3;
+}
+
+// This represents attributes of Stores Data.
+message StoreInfo {
+    string id = 1;
+    int64 store_id = 2;
+    string name = 3;
+    string address = 4;
+    string phone_numbers = 5;
+    string locality = 6;
+    string lat_long = 7;
+    string description = 8;
+    string image_id = 9;
+    bool is_partner = 10;
+    bool active = 11;
+    bool is_verified = 12;
+    StoreDocument store_document = 13;
+    StoreOrderability orderability = 14;
+    DiscountInfo discount_info = 15;
+}
+
+// This represents attributes of a Store Document.
+message StoreDocument {
+    string fssai_license_number = 1;
+    string drug_license_number = 2;
+    string gstin = 3;
+}
+
+// This represents attributes of Store Orderability.
+message StoreOrderability {
+    string store_id = 1;
+    bool is_orderable = 2;
+    StoreServiceabilityInfo serviceability_info = 3;
+}
+
+// This represents attributes of StoreServiceabilityInfo.
+message StoreServiceabilityInfo {
+    string serviceability = 1;
+    NonServiceableReason non_serviceable_reason = 2;
+    string last_mile_distance_string = 3;
+    string sla_string = 4;
+
+    // This represents Non Serviceable Reason enum.
+    enum NonServiceableReason {
+        NON_SERVICEABLE_REASON_INVALID = 0;
+        NON_SERVICEABLE_REASON_LAST_MILE = 1;
+        NON_SERVICEABLE_REASON_MAX_SLA = 2;
+        NON_SERVICEABLE_REASON_ITEMS_EXCEED = 3;
+        NON_SERVICEABLE_REASON_RAIN = 4;
+        NON_SERVICEABLE_REASON_TEMP_LAST_MILE = 5;
+        NON_SERVICEABLE_REASON_ZONE_NOT_OPEN = 6;
+        NON_SERVICEABLE_REASON_RESTAURANT_NOT_OPEN = 7;
+        NON_SERVICEABLE_REASON_BANNER_FACTOR = 8;
+        NON_SERVICEABLE_REASON_NON_BATCHABLE_ACTIVE_ORDER = 9;
+        NON_SERVICEABLE_REASON_BLACK_ZONE = 10;
+        NON_SERVICEABLE_REASON_SERVICE_DOWN = 11;
+        NON_SERVICEABLE_REASON_CAPACITY_MAX_OUT = 12;
+        NON_SERVICEABLE_REASON_REASON_NOT_FOUND = 13;
+        NON_SERVICEABLE_REASON_MULTI_CITY = 14;
+        NON_SERVICEABLE_REASON_ZONE_NOT_FOUND = 15;
+        NON_SERVICEABLE_REASON_PICKUP_LOCATION_NOT_ENABLED = 16;
+        NON_SERVICEABLE_REASON_DROP_LOCATION_NOT_ENABLED = 17;
+        NON_SERVICEABLE_REASON_POD_CAPACITY_REACHED = 18;
+    }
+}
+
+// This represents the attributes of discountInfo.
+message DiscountInfo {
+    string header = 1;
+    repeated Discount discounts = 2;
+}
+
+// This represents the discount details.
+message Discount {
+    string description = 1;
+    string short_description = 2;
+    string discount_type = 3;
+}

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="bill_item_count">
+        <item quantity="one">%d Item</item>
+        <item quantity="other">%d Items</item>
+    </plurals>
+    <plurals name="cart_crouton_item">
+        <item quantity="one"> Item</item>
+        <item quantity="other"> Items</item>
+    </plurals>
+    <plurals name="custom_order_item_count">
+        <item quantity="one">You requested %d item</item>
+        <item quantity="other">You requested %d items</item>
+    </plurals>
+    <plurals name="eta_mins_plural">
+        <item quantity="one"> min</item>
+        <item quantity="other"> mins</item>
+    </plurals>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="one">Fast forward %d second</item>
+        <item quantity="other">Fast forward %d seconds</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="one">Rewind %d second</item>
+        <item quantity="other">Rewind %d seconds</item>
+    </plurals>
+    <plurals name="itemCountPlural">
+        <item quantity="one">Item</item>
+        <item quantity="other">Items</item>
+    </plurals>
+    <plurals name="item_quantity">
+        <item quantity="one">%d Item</item>
+        <item quantity="other">%d Items</item>
+    </plurals>
+    <plurals name="more_matches_plural">
+        <item quantity="one">more match</item>
+        <item quantity="other">more matches</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d new notification</item>
+        <item quantity="other">%d new notifications</item>
+    </plurals>
+    <plurals name="n_item_x_amount">
+        <item quantity="one">%s item | ₹%s</item>
+        <item quantity="other">%s items | ₹%s</item>
+    </plurals>
+    <plurals name="num_items">
+        <item quantity="one">%d item</item>
+        <item quantity="other">%d items</item>
+    </plurals>
+    <plurals name="option_items">
+        <item quantity="one">+ %d MORE OPTION</item>
+        <item quantity="other">+ %d MORE OPTIONS</item>
+    </plurals>
+    <plurals name="outlets_available">
+        <item quantity="one">%1$s outlet near you</item>
+        <item quantity="other">%1$s outlets near you</item>
+    </plurals>
+    <plurals name="outlets_available_v4">
+        <item quantity="one">%1$s other outlet of </item>
+        <item quantity="other">%1$s other outlets of </item>
+    </plurals>
+    <plurals name="payment_eta_only">
+        <item quantity="one">ETA: %d Min</item>
+        <item quantity="other">ETA: %d Mins</item>
+    </plurals>
+    <plurals name="payment_item">
+        <item quantity="one">%d item, To pay: %s</item>
+        <item quantity="other">%d items, To pay: %s</item>
+    </plurals>
+    <plurals name="payment_item_eta_plural">
+        <item quantity="one">%d Item | ETA: %s</item>
+        <item quantity="other">%d Items | ETA: %s</item>
+    </plurals>
+    <plurals name="payment_item_only">
+        <item quantity="one">%d Item</item>
+        <item quantity="other">%d Items</item>
+    </plurals>
+</resources>

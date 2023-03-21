@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <in.swiggy.android.dls.textview.DlsTextView android:gravity="center_horizontal" android:id="@+id/quantity_text_1" android:padding="@dimen/spacing_x_small" android:layout_width="match_parent" android:layout_height="wrap_content" app:dlsTextColor="2" app:dlsTextStyle="16"/>
+    <in.swiggy.android.dls.textview.DlsTextView android:gravity="center_horizontal" android:id="@+id/quantity_text_2" android:padding="@dimen/spacing_x_small" android:layout_width="match_parent" android:layout_height="wrap_content" app:dlsTextColor="2" app:dlsTextStyle="16"/>
+</merge>

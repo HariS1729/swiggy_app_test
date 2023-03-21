@@ -1,0 +1,54 @@
+syntax = "proto3";
+
+option java_package = "com.swiggy.gandalf.home.protobuf";
+option java_multiple_files = true;
+
+import "cta_dto.proto";
+
+message PopCardDto {
+    string title = 1;
+    string subtitle = 2;
+    repeated Card cards = 3;
+    CTADto cta = 4;
+    string id = 5;
+    Config config = 6;
+
+    message Config {
+        bool show_rating = 1;
+        bool show_edm = 2;
+    }
+
+    message Card {
+        string id = 1;
+        string name = 2;
+        string description = 3;
+        string cloudinary_id = 4;
+        bool show_out_of_stock = 5;
+        int32 veg = 6;
+        RestaurantDetails details = 7;
+        string maxQuantity_message = 8;
+        int64 schedule_id = 9;
+        float price = 10;
+        Availability availability = 11;
+        int32 maxQuantityAllowed = 12;
+        int32 stockCount = 13;
+        float base_price = 14;
+        string sku_id = 15;
+        string display_rating = 16;
+        string edm = 17;
+
+        message Availability {
+            bool opened = 1;
+            string next_open_time = 2;
+            string next_close_time = 3;
+            string next_open_message = 4;
+            bool in_slot = 5;
+        }
+
+        message RestaurantDetails {
+            string name = 1;
+            string id = 2;
+            string serviceability = 3;
+        }
+    }
+}

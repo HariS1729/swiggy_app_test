@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<in.swiggy.android.dls.textview.DlsTextView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:theme="@style/Theme.Swiggy.Storefront.Light" android:ellipsize="end" android:id="@+id/text_box_container" android:tag="layout/grid_text_box_item_0" android:layout_width="match_parent" android:layout_height="wrap_content"/>

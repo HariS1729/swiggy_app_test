@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="horizontal" android:tag="layout/item_swiggy_pop_intro_points_0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dimen_8dp">
+    <ImageView android:id="@+id/point_image" android:layout_width="@dimen/dimen_17dp" android:layout_height="@dimen/dimen_17dp"/>
+    <in.swiggy.android.view.SwiggyTextView android:ellipsize="end" android:layout_gravity="center" android:id="@+id/point_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_12dp" android:layout_marginTop="@dimen/dimen_1dp" android:maxLines="1" android:lineSpacingExtra="10sp" android:layout_marginStart="@dimen/dimen_12dp" style="@style/TextRegular16spBlackGrape80"/>
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/v2_collections_activity_new_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/listing_container" android:tag="binding_1" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <in.swiggy.android.view.ShimmerFrameLayout android:tag="binding_2" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" app:tilt="0">
+                <in.swiggy.android.view.SwiggyRecyclerView android:id="@+id/listing_recycler_view" android:tag="binding_3" android:focusable="false" android:layout_width="match_parent" android:layout_height="match_parent" android:importantForAccessibility="no" app:objectName="@string/gtm_restaurants_list_name" style="@style/RecyclerViewStyleRestaurantListing"/>
+            </in.swiggy.android.view.ShimmerFrameLayout>
+            <FrameLayout android:tag="binding_4" android:paddingTop="@dimen/collections_toolbar_height" android:paddingBottom="@dimen/bottom_bar_height" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+                <include android:layout_gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/v2_item_illustration_details"/>
+            </FrameLayout>
+        </FrameLayout>
+        <include android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/v2_collections_tab_restaurant"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:tag="binding_5" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:tag="binding_6" android:background="@color/white100" android:layout_width="match_parent" android:layout_height="@dimen/default_status_bar_height"/>
+        <in.swiggy.android.view.SwiggyToolbar android:id="@+id/toolbar" android:background="@color/white100" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" app:showToolbarDivider="true" app:subtitleTextAppearance="@style/TextRegular12spBlackGrape60" app:titleTextAppearance="@style/TextBold13spBlackGrape100Caps"/>
+        <androidx.constraintlayout.widget.ConstraintLayout android:orientation="horizontal" android:tag="binding_7" android:layout_width="match_parent" android:layout_height="wrap_content" android:importantForAccessibility="noHideDescendants" android:paddingStart="@dimen/dimen_16dp" android:paddingEnd="@dimen/dimen_16dp">
+            <in.swiggy.android.view.SwiggyTextView android:id="@+id/countText" android:tag="binding_8" android:paddingTop="@dimen/dimen_8dp" android:paddingBottom="@dimen/dimen_8dp" android:layout_width="0dp" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toStartOf="@+id/sort_and_filter_button" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" app:loaderHeightFraction="0.8" app:loaderWidthFraction="0.3" app:visibilityWhenLoading="0" style="@style/TextMedium11spBlackGrape80Caps"/>
+            <LinearLayout android:layout_gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/sort_and_filter_button" android:tag="binding_9" android:paddingTop="@dimen/dimen_8dp" android:paddingBottom="@dimen/dimen_8dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="@dimen/dimen_16dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintTop_toTopOf="0">
+                <in.swiggy.android.commonsui.view.IconTextView android:textSize="@dimen/dimen_16dp" android:textColor="@color/blackGrape80" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:layout_width="@dimen/dimen_16dp" android:layout_height="@dimen/dimen_16dp" app:fontIcon="20"/>
+                <in.swiggy.android.view.SwiggyTextView android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/sort_or_filter" android:layout_marginStart="@dimen/dimen_8dp" style="@style/TextStyleRestaurantListingSort"/>
+                <View android:layout_gravity="center_vertical" android:tag="binding_10" android:background="@drawable/green_dot" android:layout_width="@dimen/dimen_5dp" android:layout_height="@dimen/dimen_5dp" android:layout_marginStart="@dimen/dimen_4dp"/>
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <View android:background="@color/blackGrape0" android:layout_width="match_parent" android:layout_height="@dimen/dimen_1dp"/>
+    </LinearLayout>
+    <View android:tag="binding_11" android:background="@color/pale_grey" android:layout_width="match_parent" android:layout_height="@dimen/collection_header_view_new_height"/>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/loading_layout" android:tag="binding_12" android:background="@color/white100" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.pnikosis.materialishprogress.ProgressWheel android:id="@+id/search_progress_wheel" android:padding="@dimen/dimen_0dp" android:layout_width="@dimen/dimen_100dp" android:layout_height="@dimen/dimen_100dp" app:matProg_barColor="@color/superv2_no_limits_text_color" app:matProg_barWidth="@dimen/dimen_3dp" app:matProg_circleRadius="@dimen/dimen_40dp" app:matProg_progressIndeterminate="true"/>
+        <TextView android:gravity="center" android:id="@+id/loader_title" android:tag="binding_13" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_16dp" android:layout_marginTop="@dimen/dimen_10dp" android:layout_marginRight="@dimen/dimen_16dp" android:lineSpacingExtra="@dimen/dimen_4sp" android:fontFamily="@font/proxima_nova_regular" android:layout_marginStart="@dimen/dimen_16dp" android:layout_marginEnd="@dimen/dimen_16dp" style="@style/TextMedium16spCharcoalGrey"/>
+    </LinearLayout>
+</FrameLayout>

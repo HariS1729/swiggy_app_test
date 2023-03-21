@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:textSize="13sp" android:tag="layout/view_classification_header_0" android:paddingLeft="@dimen/dimen_16dp" android:paddingTop="@dimen/dimen_16dp" android:paddingRight="@dimen/dimen_16dp" android:paddingBottom="@dimen/dimen_8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/proxima_nova_semibold"/>

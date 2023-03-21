@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.facebook.shimmer.ShimmerFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/search_pl_shimmer_0" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/dimen_16dp" android:importantForAccessibility="noHideDescendants" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0">
+    <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:tag="binding_1" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.appcompat.widget.LinearLayoutCompat android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_2dp" android:layout_marginBottom="@dimen/dimen_13dp" android:layout_marginStart="@dimen/dimen_17dp">
+            <View android:background="@color/blackGrape100_10" android:layout_width="@dimen/dimen_72dp" android:layout_height="@dimen/dimen_24dp"/>
+            <View android:background="@color/blackGrape100_10" android:layout_width="@dimen/dimen_72dp" android:layout_height="@dimen/dimen_24dp" android:layout_marginStart="@dimen/dimen_17dp"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <View android:background="@color/blackGrape100_10" android:layout_width="match_parent" android:layout_height="@dimen/dimen_56dp"/>
+        <include layout="@layout/search_pl_shimmer_inner"/>
+        <View android:background="@color/blackGrape100_10" android:layout_width="match_parent" android:layout_height="@dimen/dimen_12dp"/>
+        <include layout="@layout/search_pl_shimmer_inner"/>
+        <View android:background="@color/blackGrape100_10" android:layout_width="match_parent" android:layout_height="@dimen/dimen_12dp"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</com.facebook.shimmer.ShimmerFrameLayout>

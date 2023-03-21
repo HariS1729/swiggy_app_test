@@ -1,0 +1,25 @@
+<script type="text/javascript">
+    function generateRandom() {
+      return Math.floor((1 + Math.random()) * 0x10000)
+        .toString(16)
+        .substring(1);
+    }
+
+    var requestId = null;
+
+    const realFetch = window.fetch;
+
+    window.fetch = function(){
+        var method = arguments[1].method;
+        if(method==="POST"){
+            requestId = generateRandom();
+            var url = arguments[0];
+            var signed_url = url + "FETCH_INTERCEPT" + requestId
+            var body = arguments[1].body;
+            arguments[0] = signed_url
+            interception.customFetch(requestId, body);
+        }
+        return realFetch.apply(this, arguments);
+    }
+
+</script>

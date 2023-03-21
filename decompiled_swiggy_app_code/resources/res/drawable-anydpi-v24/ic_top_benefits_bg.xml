@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:height="14dp" android:width="60dp" android:viewportWidth="60" android:viewportHeight="14">
+    <path android:fillColor="@drawable/$ic_top_benefits_bg__0" android:pathData="M0 3.5c0-1.405 0-2.107 0.337-2.611C0.483 0.67 0.67 0.483 0.89 0.337 1.393 0 2.095 0 3.5 0h53c1.404 0 2.107 0 2.611 0.337 0.219 0.146 0.406 0.333 0.552 0.552C60 1.393 60 2.095 60 3.5c0 4.213 0 6.32-1.011 7.833-0.438 0.656-1 1.218-1.656 1.656C55.82 14 53.713 14 49.5 14h-39c-4.213 0-6.32 0-7.833-1.011-0.656-0.438-1.218-1-1.656-1.656C0 9.82 0 7.713 0 3.5z"/>
+</vector>

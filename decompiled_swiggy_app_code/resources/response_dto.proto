@@ -1,0 +1,49 @@
+syntax = "proto3";
+
+option java_package = "com.swiggy.gandalf.home.protobuf";
+option java_multiple_files = true;
+
+import "base_card_dto.proto";
+import "int32.proto";
+import "communication_dto.proto";
+import "ribbon_dto.proto";
+import "card_dto.proto";
+
+message ResponseDto {
+    string tid = 1;
+    string sid = 2;
+    string device_id = 3;
+    bool bcp_mode = 4;
+    reserved 5 to 20;
+    string request_id = 23;
+
+    oneof BaseResponse {
+        SuccessReponseDto success = 21;
+        FailureResponseDto failure = 22;
+    }
+}
+
+message SuccessReponseDto {
+    string status_message = 1;
+    string next_offset = 2;
+    repeated BaseCardDto cards = 3;
+    BaseResponseCommunicationDto communication = 4;
+    bool first_offset_request = 5;
+    repeated RibbonDto ribbons = 6;
+    Int32 cacheExpiryTime = 7;
+    int32 next_fetch = 8;
+    map<string,PageConfigs> configs = 9;
+
+
+    // This will contain the config data for the page.
+    message PageConfigs{
+        repeated Card config_info = 1;
+    }
+}
+
+message FailureResponseDto {
+    int32 error_code = 1;
+    string error_message = 2;
+    BaseResponseCommunicationDto communication = 3;
+}
+

@@ -1,0 +1,410 @@
+[
+  {
+    "description": "grapes",
+    "emoji": "🍇"
+  },
+  {
+    "description": "melon",
+    "emoji": "🍈"
+  },
+  {
+    "description": "watermelon",
+    "emoji": "🍉"
+  },
+  {
+    "description": "orange",
+    "emoji": "🍊"
+  },
+  {
+    "description": "lemon",
+    "emoji": "🍋"
+  },
+  {
+    "description": "banana",
+    "emoji": "🍌"
+  },
+  {
+    "description": "pineapple",
+    "emoji": "🍍"
+  },
+  {
+    "description": "mango",
+    "emoji": "🥭"
+  },
+  {
+    "description": "apple",
+    "emoji": "🍎"
+  },
+  {
+    "description": "green apple",
+    "emoji": "🍏"
+  },
+  {
+    "description": "pear",
+    "emoji": "🍐"
+  },
+  {
+    "description": "peach",
+    "emoji": "🍑"
+  },
+  {
+    "description": "cherry",
+    "emoji": "🍒"
+  },
+  {
+    "description": "strawberry",
+    "emoji": "🍓"
+  },
+  {
+    "description": "kiwi",
+    "emoji": "🥝"
+  },
+  {
+    "description": "tomato",
+    "emoji": "🍅"
+  },
+  {
+    "description": "coconut",
+    "emoji": "🥥"
+  },
+  {
+    "description": "avocado",
+    "emoji": "🥑"
+  },
+  {
+    "description": "eggplant",
+    "emoji": "🍆"
+  },
+  {
+    "description": "potato",
+    "emoji": "🥔"
+  },
+  {
+    "description": "carrot",
+    "emoji": "🥕"
+  },
+  {
+    "description": "corn",
+    "emoji": "🌽"
+  },
+  {
+    "description": "pepper",
+    "emoji": "🌶️"
+  },
+  {
+    "description": "cucumber",
+    "emoji": "🥒"
+  },
+  {
+    "description": "lettuce",
+    "emoji": "🥬"
+  },
+  {
+    "description": "broccoli",
+    "emoji": "🥦"
+  },
+  {
+    "description": "garlic",
+    "emoji": "🧄"
+  },
+  {
+    "description": "onion",
+    "emoji": "🧅"
+  },
+  {
+    "description": "mushroom",
+    "emoji": "🍄"
+  },
+  {
+    "description": "peanut",
+    "emoji": "🥜"
+  },
+  {
+    "description": "chestnut",
+    "emoji": "🌰"
+  },
+  {
+    "description": "bread",
+    "emoji": "🍞"
+  },
+  {
+    "description": "croissant",
+    "emoji": "🥐"
+  },
+  {
+    "description": "bread",
+    "emoji": "🥖"
+  },
+  {
+    "description": "pretzel",
+    "emoji": "🥨"
+  },
+  {
+    "description": "bagel",
+    "emoji": "🥯"
+  },
+  {
+    "description": "pancakes",
+    "emoji": "🥞"
+  },
+  {
+    "description": "waffle",
+    "emoji": "🧇"
+  },
+  {
+    "description": "cheese",
+    "emoji": "🧀"
+  },
+  {
+    "description": "meat",
+    "emoji": "🍖"
+  },
+  {
+    "description": "chicken leg",
+    "emoji": "🍗"
+  },
+  {
+    "description": "meat",
+    "emoji": "🥩"
+  },
+  {
+    "description": "bacon",
+    "emoji": "🥓"
+  },
+  {
+    "description": "burger",
+    "emoji": "🍔"
+  },
+  {
+    "description": "french fries",
+    "emoji": "🍟"
+  },
+  {
+    "description": "pizza",
+    "emoji": "🍕"
+  },
+  {
+    "description": "hot dog",
+    "emoji": "🌭"
+  },
+  {
+    "description": "sandwich",
+    "emoji": "🥪"
+  },
+  {
+    "description": "taco",
+    "emoji": "🌮"
+  },
+  {
+    "description": "burrito",
+    "emoji": "🌯"
+  },
+  {
+    "description": "stuffed",
+    "emoji": "🥙"
+  },
+  {
+    "description": "falafel",
+    "emoji": "🧆"
+  },
+  {
+    "description": "egg",
+    "emoji": "🥚"
+  },
+  {
+    "description": "cooking",
+    "emoji": "🍳"
+  },
+  {
+    "description": "pan fried",
+    "emoji": "🥘"
+  },
+  {
+    "description": "bowl",
+    "emoji": "🍲"
+  },
+  {
+    "description": "bowl",
+    "emoji": "🥣"
+  },
+  {
+    "description": "salad",
+    "emoji": "🥗"
+  },
+  {
+    "description": "popcorn",
+    "emoji": "🍿"
+  },
+  {
+    "description": "butter",
+    "emoji": "🧈"
+  },
+  {
+    "description": "salt",
+    "emoji": "🧂"
+  },
+  {
+    "description": "canned food",
+    "emoji": "🥫"
+  },
+  {
+    "description": "thali",
+    "emoji": "🍱"
+  },
+  {
+    "description": "rice",
+    "emoji": "🍚"
+  },
+  {
+    "description": "curry rice",
+    "emoji": "🍛"
+  },
+  {
+    "description": "noodles",
+    "emoji": "🍜"
+  },
+  {
+    "description": "spaghetti",
+    "emoji": "🍝"
+  },
+  {
+    "description": "sweet potato",
+    "emoji": "🍠"
+  },
+  {
+    "description": "sushi",
+    "emoji": "🍣"
+  },
+  {
+    "description": "shrimp",
+    "emoji": "🍤"
+  },
+  {
+    "description": "cake",
+    "emoji": "🥮"
+  },
+  {
+    "description": "dumpling",
+    "emoji": "🥟"
+  },
+  {
+    "description": "fortune cookie",
+    "emoji": "🥠"
+  },
+  {
+    "description": "box",
+    "emoji": "🥡"
+  },
+  {
+    "description": "crab",
+    "emoji": "🦀"
+  },
+  {
+    "description": "lobster",
+    "emoji": "🦞"
+  },
+  {
+    "description": "shrimp",
+    "emoji": "🦐"
+  },
+  {
+    "description": "squid",
+    "emoji": "🦑"
+  },
+  {
+    "description": "oyster",
+    "emoji": "🦪"
+  },
+  {
+    "description": "ice cream",
+    "emoji": "🍦"
+  },
+  {
+    "description": "sundae",
+    "emoji": "🍧"
+  },
+  {
+    "description": "ice cream",
+    "emoji": "🍨"
+  },
+  {
+    "description": "doughnut",
+    "emoji": "🍩"
+  },
+  {
+    "description": "cookie",
+    "emoji": "🍪"
+  },
+  {
+    "description": "cake",
+    "emoji": "🎂"
+  },
+  {
+    "description": "cake",
+    "emoji": "🍰"
+  },
+  {
+    "description": "cupcake",
+    "emoji": "🧁"
+  },
+  {
+    "description": "pie",
+    "emoji": "🥧"
+  },
+  {
+    "description": "chocolate",
+    "emoji": "🍫"
+  },
+  {
+    "description": "candy",
+    "emoji": "🍬"
+  },
+  {
+    "description": "lollipop",
+    "emoji": "🍭"
+  },
+  {
+    "description": "custard",
+    "emoji": "🍮"
+  },
+  {
+    "description": "honey",
+    "emoji": "🍯"
+  },
+  {
+    "description": "milk",
+    "emoji": "🥛"
+  },
+  {
+    "description": "coffee",
+    "emoji": "☕"
+  },
+  {
+    "description": "sake",
+    "emoji": "🍶"
+  },
+  {
+    "description": "bottle",
+    "emoji": "🍾"
+  },
+  {
+    "description": "grape juice",
+    "emoji": "🍷"
+  },
+  {
+    "description": "mocktail",
+    "emoji": "🍹"
+  },
+  {
+    "description": "juice",
+    "emoji": "🥤"
+  },
+  {
+    "description": "beverage",
+    "emoji": "🧃"
+  },
+  {
+    "description": "ice",
+    "emoji": "🧊"
+  }
+]

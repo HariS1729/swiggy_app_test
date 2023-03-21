@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/mainBackground" android:tag="layout/small_nudge_card_0" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_16dp" android:layout_marginRight="@dimen/dimen_16dp" android:layout_marginBottom="@dimen/dimen_24dp">
+    <RelativeLayout android:tag="binding_1" android:padding="@dimen/dimen_16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <in.swiggy.android.view.SwiggyImageView android:id="@+id/iv_entity_image" android:tag="binding_2" android:layout_width="@dimen/dimen_56dp" android:layout_height="@dimen/dimen_56dp" android:layout_centerVertical="true" android:importantForAccessibility="no" app:visibilityWhenLoading="0"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/text_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_toEndOf="@+id/iv_entity_image">
+            <in.swiggy.android.view.SwiggyTextView android:tag="binding_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="3sp" android:layout_marginStart="@dimen/dimen_16dp" android:layout_marginEnd="@dimen/dimen_12dp" android:letterSpacing="-0.01" style="@style/TextRegular14spWhite100"/>
+            <in.swiggy.android.view.SwiggyTextView android:tag="binding_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_4dp" android:lineSpacingExtra="3sp" android:layout_marginStart="@dimen/dimen_16dp" android:layout_marginEnd="@dimen/dimen_12dp" android:letterSpacing="-0.01" style="@style/TextExtraBold14spWhite"/>
+        </LinearLayout>
+        <in.swiggy.android.commonsui.view.IconTextView android:textSize="@dimen/font_size_12sp" android:textColor="@color/white" android:id="@+id/arrow" android:tag="binding_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentEnd="true" app:fontIcon="10"/>
+    </RelativeLayout>
+</LinearLayout>

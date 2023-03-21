@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/tab_root" android:tag="layout/v2_collections_tab_restaurant_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <in.swiggy.android.view.ShimmerFrameLayout android:id="@+id/tab_container" android:tag="binding_1" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" app:tilt="0">
+        <in.swiggy.android.view.SwiggyRecyclerView android:id="@+id/listing_recycler_view" android:tag="binding_2" android:paddingTop="@dimen/dimen_5dp" android:paddingBottom="@dimen/dimen_10dp" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/RecyclerViewStyleRestaurantListing"/>
+    </in.swiggy.android.view.ShimmerFrameLayout>
+    <FrameLayout android:id="@+id/error_container" android:tag="binding_3" android:paddingTop="@dimen/collections_toolbar_height" android:paddingBottom="@dimen/bottom_bar_height" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include android:layout_gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/v2_item_illustration_details"/>
+    </FrameLayout>
+</FrameLayout>

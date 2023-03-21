@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <in.swiggy.android.view.SwiggyImageView android:gravity="center" android:layout_gravity="center" android:id="@+id/preorder_clock" android:layout_width="@dimen/dimen_236dp" android:layout_height="@dimen/dimen_236dp" android:src="@drawable/ic_preorder_clock"/>
+    <in.swiggy.android.view.SwiggyImageView android:gravity="center" android:layout_gravity="center" android:id="@+id/loader" android:visibility="gone" android:layout_width="@dimen/dimen_236dp" android:layout_height="@dimen/dimen_236dp"/>
+    <in.swiggy.android.view.SwiggyImageView android:gravity="center" android:layout_gravity="center" android:id="@+id/tick_animation" android:visibility="gone" android:layout_width="@dimen/dimen_220dp" android:layout_height="@dimen/dimen_220dp" android:scaleType="fitXY"/>
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@+id/text_container" android:padding="@dimen/dimen_16dp" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="200dp" android:alpha="0">
+        <in.swiggy.android.view.SwiggyTextView android:gravity="center" android:id="@+id/line1" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/order_placed_animation_text_line1"/>
+        <in.swiggy.android.view.SwiggyTextView android:gravity="center_horizontal" android:id="@+id/line2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_8dp" android:text="@string/order_placed_animation_text_line2"/>
+        <in.swiggy.android.view.SwiggyTextView android:gravity="center_horizontal" android:id="@+id/line3" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_8dp" style="@style/TextExtraBold25spBlackGrape100"/>
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@+id/text_container_processing" android:padding="@dimen/dimen_16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="200dp">
+        <in.swiggy.android.view.SwiggyTextView android:gravity="center" android:id="@+id/text1" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/order_processing_title" style="@style/TextBold20spCandyBlue100"/>
+        <in.swiggy.android.view.SwiggyTextView android:gravity="center_horizontal" android:id="@+id/text2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_8dp" android:text="@string/order_processing_message" style="@style/TextRegular12spCandyBlue"/>
+    </LinearLayout>
+</FrameLayout>

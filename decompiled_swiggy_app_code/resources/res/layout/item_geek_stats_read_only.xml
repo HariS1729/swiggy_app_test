@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:tag="layout/item_geek_stats_read_only_0" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <in.swiggy.android.view.SwiggyTextView android:tag="binding_1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_12dp" android:text="Key" android:maxLines="2" android:layout_marginStart="@dimen/dimen_12dp" style="@style/TextSemiBold15spBlackGrape90"/>
+    <in.swiggy.android.view.SwiggyTextView android:tag="binding_2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_8dp" android:text="Value" android:layout_marginStart="@dimen/dimen_12dp" style="@style/TextRegular14spBlackGrape100"/>
+    <View android:background="@color/black50" android:layout_width="match_parent" android:layout_height="@dimen/separator_height" android:layout_marginTop="@dimen/dimen_12dp"/>
+</LinearLayout>

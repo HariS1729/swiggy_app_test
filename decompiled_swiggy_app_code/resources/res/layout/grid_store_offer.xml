@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/offer_container" android:tag="layout/grid_store_offer_0" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/offer1_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <in.swiggy.android.commonsui.view.IconTextView android:layout_gravity="center" android:id="@+id/icon_view" android:tag="binding_1" android:layout_width="@dimen/dimen_16dp" android:layout_height="@dimen/dimen_16dp" android:includeFontPadding="false" android:layout_marginEnd="@dimen/dimen_8dp"/>
+        <in.swiggy.android.view.SwiggyTextView android:textSize="@dimen/dimen_15dp" android:textColor="@color/blackGrade100Alpha50" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/offer_1" android:tag="binding_2" android:layout_width="match_parent" android:layout_height="match_parent" android:maxLines="1" android:includeFontPadding="false" android:fontFamily="@font/proxima_nova_medium"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/offer2_container" android:tag="binding_3" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp">
+        <in.swiggy.android.commonsui.view.IconTextView android:layout_gravity="center" android:id="@+id/icon_view2" android:tag="binding_4" android:layout_width="@dimen/dimen_16dp" android:layout_height="@dimen/dimen_16dp" android:includeFontPadding="false" android:layout_marginEnd="@dimen/dimen_8dp"/>
+        <in.swiggy.android.view.SwiggyTextView android:textSize="@dimen/dimen_15dp" android:textColor="@color/blackGrade100Alpha50" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/offer_2" android:tag="binding_5" android:layout_width="match_parent" android:layout_height="match_parent" android:maxLines="1" android:includeFontPadding="false" android:fontFamily="@font/proxima_nova_medium"/>
+    </LinearLayout>
+</LinearLayout>

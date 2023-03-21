@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+option java_package = "com.swiggy.gandalf.widgets.v2";
+option java_multiple_files = true;
+option java_outer_classname = "FlipTextCommunicationProto";
+
+import "cta.proto";
+
+// This represents a flip text communication widget.
+message FlipTextCommunication {
+    string creative_id = 1;
+    repeated CompositeMessage message = 2;
+}
+
+// This represents a composite message with text and cta where cta is optional.
+message CompositeMessage {
+    string text = 1;
+    Cta cta = 2;
+}

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:tag="layout/staff_recording_table_header_0" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <in.swiggy.android.view.SwiggyTextView android:textSize="@dimen/font_size_12sp" android:textColor="@color/charcoalGrey02" android:ellipsize="end" android:tag="binding_1" android:paddingTop="@dimen/dimen_16dp" android:paddingBottom="@dimen/dimen_8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" android:fontFamily="@font/proxima_nova_bold" android:paddingStart="@dimen/dimen_8dp" android:paddingEnd="@dimen/dimen_8dp"/>
+    <View android:layout_width="match_parent" android:layout_height="@dimen/dimen_0dp"/>
+</LinearLayout>

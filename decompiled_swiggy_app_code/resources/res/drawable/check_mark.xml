@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:height="24dp" android:width="24dp" android:viewportWidth="24" android:viewportHeight="24">
+    <group android:name="check">
+        <path android:name="tick" android:pathData="M6,11 l0,0 l0,0" android:strokeColor="#5d8ed5" android:strokeWidth="1"/>
+    </group>
+</vector>

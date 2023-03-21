@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/item_geek_stats_edit_0" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:tag="binding_1" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <in.swiggy.android.view.SwiggyTextView android:tag="binding_2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_12dp" android:text="Key" android:maxLines="2" android:layout_marginStart="@dimen/dimen_12dp" style="@style/TextSemiBold15spBlackGrape90"/>
+        <in.swiggy.android.view.SwiggyTextView android:tag="binding_3" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_8dp" android:text="Value" android:maxLines="4" android:layout_marginStart="@dimen/dimen_12dp" style="@style/TextRegular14spBlackGrape100"/>
+        <View android:background="@color/black50" android:layout_width="match_parent" android:layout_height="@dimen/separator_height" android:layout_marginTop="@dimen/dimen_12dp"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:tag="binding_4" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <in.swiggy.android.view.SwiggyEditText android:tag="binding_5" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_8dp" android:layout_marginTop="@dimen/dimen_8dp" android:layout_marginBottom="@dimen/dimen_8dp" android:hint="@string/enter_value" android:layout_weight="1" android:layout_marginStart="@dimen/dimen_8dp" style="@style/EditTextMedium15spBlackGrape90"/>
+        <in.swiggy.android.commonsui.view.IconTextView android:textSize="@dimen/font_size_12sp" android:tag="binding_6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/dimen_8dp" app:fontIcon="7"/>
+    </LinearLayout>
+</FrameLayout>

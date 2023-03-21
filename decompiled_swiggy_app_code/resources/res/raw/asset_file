@@ -1,0 +1,123 @@
+{
+  "version": "7330fd93bf9c1fb397ae5ec2b1aa8139d5d38d27",
+  "links": {
+    "js": [
+      {
+        "contentLink": "https://res.cloudinary.com/swiggy/raw/upload/static-assets/production_ci_pwa/js/es2015-app.1b901990eea488b0.js",
+        "hash": "904fda2b68eaaa9d599295c90f6ae73e"
+      },
+      {
+        "contentLink": "https://res.cloudinary.com/swiggy/raw/upload/static-assets/production_ci_pwa/js/es2015-manifest.1b901990eea488b0.js",
+        "hash": "ea18703117f3bede2ec7843181ff414b"
+      },
+      {
+        "contentLink": "https://res.cloudinary.com/swiggy/raw/upload/static-assets/production_ci_pwa/js/es2015-payment-add-new-card.1b901990eea488b0.js",
+        "hash": "231466beaad32257c5260ca5db6c9630"
+      },
+      {
+        "contentLink": "https://res.cloudinary.com/swiggy/raw/upload/static-assets/production_ci_pwa/js/es2015-payment-add-new-upi.1b901990eea488b0.js",
+        "hash": "99ee56520d55f04f07f05438f8f4b127"
+      },
+      {
+        "contentLink": "https://res.cloudinary.com/swiggy/raw/upload/static-assets/production_ci_pwa/js/es2015-payment-enter-cvv.1b901990eea488b0.js",
+        "hash": "a7eafc241d02317242066c2c6c0d54ad"
+      },
+      {
+        "contentLink": "https://res.cloudinary.com/swiggy/raw/upload/static-assets/production_ci_pwa/js/es2015-payment-failed.1b901990eea488b0.js",
+        "hash": "47ce6d1af45feffcc868127920de72fd"
+      },
+      {
+        "contentLink": "https://res.cloudinary.com/swiggy/raw/upload/static-assets/production_ci_pwa/js/es2015-payment-timer.1b901990eea488b0.js",
+        "hash": "a40c0bf9a8084c7e3ca2c892d8188340"
+      },
+      {
+        "contentLink": "https://res.cloudinary.com/swiggy/raw/upload/static-assets/production_ci_pwa/js/es2015-payment.1b901990eea488b0.js",
+        "hash": "a1dac6e81485ddc7ae5ceb9ca13bdf91"
+      },
+      {
+        "contentLink": "https://res.cloudinary.com/swiggy/raw/upload/static-assets/production_ci_pwa/js/es2015-swiggyPay.1b901990eea488b0.js",
+        "hash": "e8fdda2fc51667ada98dcbf4309285fe"
+      },
+      {
+        "contentLink": "https://res.cloudinary.com/swiggy/raw/upload/static-assets/production_ci_pwa/js/es2015-swiggySuper.1b901990eea488b0.js",
+        "hash": "89d17a9bf0b28f03cf1b0ed1359b13bf"
+      },
+      {
+        "contentLink": "https://res.cloudinary.com/swiggy/raw/upload/static-assets/production_ci_pwa/js/es2015-vendor.1b901990eea488b0.js",
+        "hash": "209f10b525fdced5be315b0105275bdc"
+      },
+      {
+        "contentLink": "https://s3-ap-southeast-1.amazonaws.com/static.swiggy/dash-front/js/app.es6.7841cb4b3d1be215.js",
+        "hash": "5e8efb5e14c0b2521cb9b8c65cbc55f9"
+      },
+      {
+        "contentLink": "https://s3-ap-southeast-1.amazonaws.com/static.swiggy/dash-front/js/manifest.es6.7841cb4b3d1be215.js",
+        "hash": "996a9e482736dc4de4a43b11fddcfb0f"
+      },
+      {
+        "contentLink": "https://s3-ap-southeast-1.amazonaws.com/static.swiggy/dash-front/js/misc.es6.7841cb4b3d1be215.js",
+        "hash": "70e3372177da142d4c3b72f7c7fe81bc"
+      },
+      {
+        "contentLink": "https://s3-ap-southeast-1.amazonaws.com/static.swiggy/dash-front/js/vendors.es6.7841cb4b3d1be215.js",
+        "hash": "2218bc32b79ee71c9a3df7f01eb06131"
+      },
+      {
+        "contentLink": "https://s3-ap-southeast-1.amazonaws.com/static.swiggy/production_pwa_helpcenter/js/app.961b45606ecbcd5e526.js",
+        "hash": "86df2847cfd58227d87459b901cd4f63"
+      },
+      {
+        "contentLink": "https://s3-ap-southeast-1.amazonaws.com/static.swiggy/production_pwa_helpcenter/js/helpChatEngine.76f769d9f31b0c52e62.js",
+        "hash": "7c9f0c39118c63f2aa1447a16c672f04"
+      },
+      {
+        "contentLink": "https://s3-ap-southeast-1.amazonaws.com/static.swiggy/production_pwa_helpcenter/js/helpChatLib.90e1a531fb785f3852a.js",
+        "hash": "b6a12c57ef7e86b9f80b86269696504b"
+      },
+      {
+        "contentLink": "https://s3-ap-southeast-1.amazonaws.com/static.swiggy/production_pwa_helpcenter/js/helpConversations.1a1ad9cb518598eb937.js",
+        "hash": "7b96ca33e0600cafe1278782d0cd576d"
+      },
+      {
+        "contentLink": "https://s3-ap-southeast-1.amazonaws.com/static.swiggy/production_pwa_helpcenter/js/helpFreshChat.60fe22722c040884fca.js",
+        "hash": "b48479488ef4babd9defdcf1f51ec179"
+      },
+      {
+        "contentLink": "https://s3-ap-southeast-1.amazonaws.com/static.swiggy/production_pwa_helpcenter/js/helpSelfServe.d094f4346e9e38b8215.js",
+        "hash": "1239f1591d86166344e75908f068403f"
+      },
+      {
+        "contentLink": "https://s3-ap-southeast-1.amazonaws.com/static.swiggy/production_pwa_helpcenter/js/helpcenter.697299288ed9ae05400.js",
+        "hash": "5a39e75132255282e6ba4a84345e1cf9"
+      },
+      {
+        "contentLink": "https://s3-ap-southeast-1.amazonaws.com/static.swiggy/production_pwa_helpcenter/js/manifest.c52fe865fce09b6467a.js",
+        "hash": "0b686341111ac9e47688dcda111f88da"
+      },
+      {
+        "contentLink": "https://s3-ap-southeast-1.amazonaws.com/static.swiggy/production_pwa_helpcenter/js/vendor.b032e4bf89df30f701f.js",
+        "hash": "240f297159e18c9651f4ca86bd975dde"
+      },
+      {
+        "contentLink": "https://s3-ap-southeast-1.amazonaws.com/static.swiggy/production_pwa_helpcenter/libs/raven.js",
+        "hash": "70e9e674300c6e3620688a8222142436"
+      }
+    ],
+    "images": [
+      {
+        "contentLink": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_276/super_logo.png",
+        "hash": "5c50f2bb6e4439cde2fb8961d595a809"
+      },
+      {
+        "contentLink": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_960,c_scale/supl__1.png",
+        "hash": "2e5f179d3e54549e709317f3a90b66ba"
+      },
+      {
+        "contentLink": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_960,c_scale/supl__2.png",
+        "hash": "4ee5f39b9292cfdf69213ef42e24006f"
+      }
+    ],
+    "fonts": []
+  },
+  "mappedLinks": {}
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/item_image_plain_0" android:layout_width="wrap_content" android:layout_height="wrap_content" app:cardBackgroundColor="@color/white" app:cardElevation="@dimen/dimen_0dp">
+    <ImageView android:tag="binding_1" android:padding="@dimen/dimen_1dp" android:layout_width="@dimen/dimen_152dp" android:layout_height="@dimen/dimen_180dp" android:scaleType="fitCenter"/>
+</androidx.cardview.widget.CardView>

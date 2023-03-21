@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<in.swiggy.android.commonsui.view.plainshimmer.PlainShimmerLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/view_track_card_loading_0" android:background="@color/white100" android:paddingTop="16dp" android:paddingBottom="24dp" android:layout_width="match_parent" android:layout_height="wrap_content" app:shimmer_auto_start="true" app:shimmer_base_alpha="0.4" app:shimmer_direction="0" app:shimmer_dropoff="0.5" app:shimmer_duration="1500" app:shimmer_tilt="0">
+    <View android:background="@color/blackGrape10" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginLeft="20dp"/>
+    <View android:background="@color/blackGrape10" android:layout_width="match_parent" android:layout_height="15dp" android:layout_marginLeft="60dp" android:layout_marginRight="118dp"/>
+    <View android:background="@color/blackGrape10" android:layout_width="match_parent" android:layout_height="12dp" android:layout_marginLeft="60dp" android:layout_marginTop="21dp" android:layout_marginRight="118dp"/>
+</in.swiggy.android.commonsui.view.plainshimmer.PlainShimmerLayout>

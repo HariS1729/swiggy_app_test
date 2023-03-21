@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<in.swiggy.android.view.SwiggyRecyclerView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/carousel_recycler_view" android:tag="layout/v2_layout_carousel_0" android:layout_width="match_parent" android:layout_height="wrap_content" android:importantForAccessibility="noHideDescendants" app:objectName="@string/gtm_carousels_list_name" app:snapHelperGravity="0" style="@style/RecyclerViewStyleCarouselListing"/>

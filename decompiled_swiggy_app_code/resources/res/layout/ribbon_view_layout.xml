@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <View android:id="@+id/dummy_view" android:background="@color/ribbon_shimmer_color" android:visibility="gone" android:layout_width="@dimen/ribbon_shimmer_width" android:layout_height="match_parent"/>
+    <in.swiggy.android.commonsui.view.IconTextView android:textSize="@dimen/font_size_22sp" android:id="@+id/icon_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitXY" android:maxLength="1"/>
+    <in.swiggy.android.view.SwiggyTextView android:ellipsize="end" android:gravity="center" android:id="@+id/textView" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" style="@style/TextMedium10spWhite100Caps"/>
+</merge>

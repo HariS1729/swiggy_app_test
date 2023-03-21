@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.facebook.shimmer.ShimmerFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/shimmer_layout_root" android:tag="layout/dummy_restaurant_layout_0" android:layout_width="match_parent" android:layout_height="wrap_content" android:importantForAccessibility="noHideDescendants">
+    <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:id="@+id/liner_layout_root" android:tag="binding_1" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginStart="@dimen/dimen_16dp">
+        <androidx.appcompat.widget.LinearLayoutCompat android:orientation="horizontal" android:id="@+id/linear_layout_shimmer" android:tag="binding_2" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="@dimen/dimen_14dp">
+            <include android:layout_width="@dimen/dimen_56dp" android:layout_height="@dimen/dimen_27dp" android:layout_marginTop="@dimen/dimen_5dp" android:layout_marginBottom="@dimen/dimen_5dp" android:layout_marginEnd="@dimen/dimen_10dp" layout="@layout/shimmer_facet_item"/>
+            <include layout="@layout/shimmer_facet_item"/>
+            <include layout="@layout/shimmer_facet_item"/>
+            <include layout="@layout/shimmer_facet_item"/>
+            <include layout="@layout/shimmer_facet_item"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <View android:id="@+id/bottom_shadow" android:tag="binding_3" android:background="@drawable/top_to_bottom_shadow" android:layout_width="match_parent" android:layout_height="@dimen/dimen_10dp"/>
+        <include android:id="@+id/dummy_shimmer_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_32dp" layout="@layout/shimmer_restaurant_item"/>
+        <include android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_32dp" layout="@layout/shimmer_restaurant_item"/>
+        <include android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_32dp" layout="@layout/shimmer_restaurant_item"/>
+        <include android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_32dp" layout="@layout/shimmer_restaurant_item"/>
+        <include android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_32dp" layout="@layout/shimmer_restaurant_item"/>
+        <include android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_32dp" layout="@layout/shimmer_restaurant_item"/>
+        <include android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_32dp" layout="@layout/shimmer_restaurant_item"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</com.facebook.shimmer.ShimmerFrameLayout>

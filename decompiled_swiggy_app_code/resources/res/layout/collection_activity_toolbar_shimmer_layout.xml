@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/root_frame_layout" android:tag="layout/collection_activity_toolbar_shimmer_layout_0" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.facebook.shimmer.ShimmerFrameLayout android:id="@+id/shimmer_layout_root" android:layout_width="match_parent" android:layout_height="wrap_content" android:importantForAccessibility="noHideDescendants">
+        <androidx.appcompat.widget.LinearLayoutCompat android:orientation="horizontal" android:id="@+id/linear_root" android:tag="binding_1" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="@dimen/dimen_14dp">
+            <include android:layout_width="@dimen/dimen_56dp" android:layout_height="@dimen/dimen_27dp" android:layout_marginTop="@dimen/dimen_5dp" android:layout_marginBottom="@dimen/dimen_5dp" android:layout_marginEnd="@dimen/dimen_10dp" layout="@layout/shimmer_facet_item"/>
+            <include layout="@layout/shimmer_facet_item"/>
+            <include layout="@layout/shimmer_facet_item"/>
+            <include layout="@layout/shimmer_facet_item"/>
+            <include layout="@layout/shimmer_facet_item"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </com.facebook.shimmer.ShimmerFrameLayout>
+</FrameLayout>

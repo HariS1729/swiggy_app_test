@@ -1,0 +1,37 @@
+syntax = "proto3";
+
+option java_package = "com.swiggy.gandalf.home.protobuf";
+option java_multiple_files = true;
+
+import "cta_dto.proto";
+import "title_subtitle_image.proto";
+import "offer_info.proto";
+
+message DashCardGroupDto {
+    string sub_type = 1;
+    repeated DashCardItemData cards = 2;
+    string id = 3;
+    string backgroundColor = 4;
+    string widget_id = 5;
+
+    message DashCardItemData {
+        string card_type = 1;
+        string sub_type = 2;
+        CTADto action = 3;
+        TitleSubtitleImage data = 4;
+        OfferInfo offerInfo = 6;
+        repeated Icon icons = 7;
+        repeated OfferMessage messages = 8;
+        string id = 9;
+    }
+
+    message OfferMessage {
+        string type = 1;
+        string text = 2;
+        string iconCreativeId = 3;
+    }
+
+    message Icon {
+        string creative_id = 1;
+    }
+}

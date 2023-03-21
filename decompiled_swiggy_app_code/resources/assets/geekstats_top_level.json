@@ -1,0 +1,123 @@
+{
+  "top_items": [
+    {
+      "header": "Geek Stats",
+      "items": [
+        {
+          "key": "end_point",
+          "title": "End Point"
+        },
+        {
+          "key": "user_info",
+          "title": "User info"
+        },
+        {
+          "key": "device_info",
+          "title": "Device Info"
+        },
+        {
+          "key": "build_info",
+          "title": "Build Info"
+        },
+        {
+          "key": "xp_experiments",
+          "title": "XP Experiments"
+        },
+        {
+          "key": "feature_flags",
+          "title": "Feature Flags"
+        },
+        {
+          "key": "web_end_points",
+          "title": "Web End Points"
+        },
+        {
+          "key": "errors",
+          "title": "API Errors"
+        },
+        {
+          "key": "analytic_object_name",
+          "title": "Add Analytics Obj Names"
+        },
+        {
+          "key": "captured_analytics_events",
+          "title": "View Analytics Events"
+        },
+        {
+          "key": "location_captured_logs",
+          "title": "View location captured logs"
+        },
+        {
+          "key": "edit_location_inaccuracy",
+          "title": "Edit location inaccuracy"
+        },
+        {
+          "key": "location_half_card_logs",
+          "title": "Location HC logs"
+        },
+        {
+          "key": "home_page_api_cache_status",
+          "title" : "Home Page Cache Status"
+        },
+        {
+          "key": "fcm_payload",
+          "title": "FCM Payload"
+        },
+        {
+          "key": "shared_pref",
+          "title": "Keys and Values"
+        },
+        {
+          "key": "endpoint_rewrite",
+          "title": "Endpoint Rewrite"
+        },
+        {
+          "key": "grid_wrong_configuration",
+          "title": "M*N Wrong Configuration"
+        },
+        {
+          "key": "onboarding_video_payload",
+          "title": "Onboarding video payload"
+        },{
+          "key": "web_headers",
+          "title": "Web Headers"
+        },
+        {
+          "key": "liquor_kyc",
+          "title": "Liquor KYC"
+        },{
+          "key": "user_session",
+          "title": "User Session"
+        },
+        {
+          "key": "image_load_failure",
+          "title": "Image Load Failure"
+        },
+        {
+          "key": "juspay_failure",
+          "title": "Juspay Failure"
+        },
+        {
+          "key": "segment_section",
+          "title": "Segment Section"
+        },
+        {
+          "key": "home_screen_first_response_section",
+          "title": "Home Screen First Response Section"
+        },
+        {
+          "key": "data_partition",
+          "title": "Data Partition"
+        },
+        {
+          "key": "cache_partition",
+          "title": "Cache Partition"
+        },
+        {
+          "key": "track_screen_geek_stat_fields",
+          "title": "Track Screen Configs"
+        }
+      ]
+    }
+  ]
+}

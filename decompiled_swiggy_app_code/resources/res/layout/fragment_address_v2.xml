@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/fragment_address_v2_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <in.swiggy.android.view.SwiggyToolbar android:id="@+id/address_controller__toolbar" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" app:showToolbarDivider="true"/>
+        <androidx.compose.ui.platform.ComposeView android:id="@+id/composeAddress" android:tag="binding_1" android:background="@color/blackGrape0" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <in.swiggy.android.view.ShimmerFrameLayout android:tag="binding_2" android:layout_width="match_parent" android:layout_height="wrap_content" app:tilt="0">
+            <in.swiggy.android.view.SwiggyRecyclerView android:tag="binding_3" android:background="@color/blackGrape0" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1" app:listenContentLoadingUpdates="true"/>
+        </in.swiggy.android.view.ShimmerFrameLayout>
+        <FrameLayout android:tag="binding_4" android:background="@color/white100" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <include android:layout_gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/v2_item_illustration_details"/>
+        </FrameLayout>
+    </LinearLayout>
+    <FrameLayout android:layout_gravity="bottom" android:tag="binding_5" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <include android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/add_new_address_button_layout"/>
+    </FrameLayout>
+    <FrameLayout android:tag="binding_6" android:background="@color/white50" android:focusable="true" android:focusableInTouchMode="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ProgressBar android:layout_gravity="center" android:id="@+id/shareAddressPb" android:layout_width="@dimen/dimen_60dp" android:layout_height="@dimen/dimen_60dp" android:indeterminateDrawable="@drawable/home_pagination_loader" android:importantForAccessibility="no" android:layoutDirection="ltr" android:indeterminateTint="@color/orange100" android:indeterminateTintMode="src_atop" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0"/>
+    </FrameLayout>
+</FrameLayout>

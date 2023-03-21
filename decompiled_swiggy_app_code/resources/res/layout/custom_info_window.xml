@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/dimen_6dp">
+    <ImageView android:layout_gravity="center_horizontal" android:id="@+id/custom_marker_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/home_pin"/>
+    <FrameLayout android:id="@+id/custom_marker_root_text_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <FrameLayout android:layout_gravity="center_horizontal" android:id="@+id/custom_marker_text_layout" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_4dp" android:minHeight="@dimen/dimen_40dp">
+            <androidx.cardview.widget.CardView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/dimen_2dp" app:cardBackgroundColor="@color/white90" app:cardCornerRadius="@dimen/dimen_3dp" app:cardElevation="@dimen/dimen_1dp">
+                <in.swiggy.android.commonsui.view.CommonTextView android:ellipsize="end" android:gravity="center" android:layout_gravity="top" android:id="@+id/custom_marker_text" android:padding="@dimen/dimen_4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/dimen_2dp" android:maxWidth="@dimen/dimen_110dp" android:maxLines="2" style="@style/TextSemiBold11spBlackGrape70caps"/>
+            </androidx.cardview.widget.CardView>
+        </FrameLayout>
+        <FrameLayout android:layout_gravity="center_horizontal" android:id="@+id/custom_marker_eta_text_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_4dp" android:minHeight="@dimen/dimen_40dp">
+            <androidx.cardview.widget.CardView android:layout_width="wrap_content" android:layout_height="wrap_content" app:cardBackgroundColor="@color/blackGrape90" app:cardCornerRadius="@dimen/dimen_3dp">
+                <in.swiggy.android.commonsui.view.CommonTextView android:ellipsize="end" android:gravity="center" android:layout_gravity="top" android:id="@+id/custom_marker_eta_text" android:padding="@dimen/dimen_4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/dimen_2dp" android:maxWidth="@dimen/dimen_110dp" android:maxLines="2" style="@style/TextSemiBold11spWhite100caps"/>
+            </androidx.cardview.widget.CardView>
+        </FrameLayout>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <LinearLayout android:theme="@style/Theme.Swiggy.Storefront.Light" android:layout_gravity="bottom" android:orientation="vertical" android:tag="layout/track_order_no_contact_overlay_0" android:background="@color/non_contact_overlay_purple_60" android:paddingLeft="@dimen/dimen_74dp" android:paddingTop="@dimen/dimen_10dp" android:paddingBottom="@dimen/dimen_26dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <in.swiggy.android.dls.textview.DlsTextView android:id="@+id/fast_delivery_text" android:tag="binding_1" android:padding="@dimen/dimen_1dp" android:layout_width="wrap_content" android:layout_height="wrap_content" app:dlsTextColor="4" app:dlsTextStyle="15"/>
+        <in.swiggy.android.dls.textview.DlsTextView android:theme="@style/Theme.Swiggy.Storefront.Dark" android:tag="binding_2" android:padding="@dimen/dimen_1dp" android:layout_width="wrap_content" android:layout_height="wrap_content" app:dlsTextColor="7" app:dlsTextStyle="9"/>
+    </LinearLayout>
+    <androidx.cardview.widget.CardView android:layout_gravity="bottom" android:id="@+id/overlay_card" android:tag="layout/track_order_no_contact_overlay_3" android:layout_width="@dimen/dimen_60dp" android:layout_height="@dimen/dimen_60dp" android:layout_marginLeft="@dimen/dimen_6dp" android:layout_marginBottom="@dimen/dimen_22dp" app:cardCornerRadius="@dimen/dimen_30dp">
+        <ImageView android:id="@+id/overlay_icon" android:tag="binding_4" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" android:contentDescription="@string/overlay_icon"/>
+    </androidx.cardview.widget.CardView>
+</merge>

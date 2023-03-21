@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:tag="layout/v2_layout_merchandise_collection_0" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:tag="binding_1" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/ContainerMerchandiseCollectionStyle">
+        <in.swiggy.android.view.SwiggyTextView android:tag="binding_2" android:layout_width="match_parent" android:layout_height="wrap_content" android:includeFontPadding="false" style="@style/TextStyleMerchandiseCollectionName"/>
+        <androidx.percentlayout.widget.PercentFrameLayout android:tag="binding_3" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <in.swiggy.android.view.SwiggyTextView android:layout_gravity="center_horizontal" android:tag="binding_4" android:layout_width="match_parent" android:layout_height="wrap_content" android:includeFontPadding="false" android:lineSpacingExtra="4dp" android:letterSpacing="0.1" app:layout_widthPercent="75%" style="@style/TextStyleMerchandiseCollectionDescription"/>
+        </androidx.percentlayout.widget.PercentFrameLayout>
+        <in.swiggy.android.view.SwiggyRecyclerView android:tag="binding_5" android:layout_width="match_parent" android:layout_height="wrap_content" app:objectName="@string/gtm_merchandise_collection" app:snapHelperGravity="0" style="@style/RecyclerViewStyleMerchandiseRestaurantList"/>
+    </LinearLayout>
+    <View android:tag="binding_6" android:visibility="visible" android:layout_width="match_parent" android:layout_height="@dimen/dimen_40dp"/>
+</LinearLayout>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="left|center_vertical|center_horizontal|center|start" android:orientation="vertical" android:tag="layout/item_location_search_v2_results_header_0" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <in.swiggy.android.dls.textview.DlsTextView android:ellipsize="end" android:id="@+id/tv_header_title" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_24dp" android:layout_marginBottom="@dimen/dimen_5dp" android:maxLines="1" android:layout_marginStart="@dimen/dimen_26dp" app:dlsTextColor="8" app:dlsTextStyle="12"/>
+</LinearLayout>

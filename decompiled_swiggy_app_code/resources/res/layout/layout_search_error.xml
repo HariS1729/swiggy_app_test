@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:tag="layout/layout_search_error_0" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/dimen_16dp">
+    <include layout="@layout/v3_error_layout"/>
+    <TextView android:tag="binding_1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_16dp" android:layout_marginTop="@dimen/dimen_20dp" android:layout_marginRight="@dimen/dimen_16dp" android:fontFamily="@font/proxima_nova_bold" style="@style/TextBold13spBlackGrape100"/>
+</FrameLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/buffer_root" android:tag="layout/es_awareness_shadow_buffer_0" android:layout_width="match_parent" android:layout_height="wrap_content" android:elevation="13dp" android:outlineProvider="none">
+    <androidx.constraintlayout.widget.ConstraintLayout android:orientation="horizontal" android:id="@+id/shadow_buffer" android:tag="binding_1" android:layout_width="match_parent" android:layout_height="@dimen/dimen_28dp">
+        <View android:id="@+id/left_most_buffer" android:background="@color/white100" android:layout_width="@dimen/dimen_14dp" android:layout_height="@dimen/dimen_28dp" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+        <View android:layout_gravity="end" android:id="@+id/right_most_buffer" android:background="@color/white100" android:layout_width="@dimen/dimen_14dp" android:layout_height="@dimen/dimen_28dp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintTop_toTopOf="0"/>
+        <View android:id="@+id/center_buffer" android:background="@color/transparent" android:layout_width="0dp" android:layout_height="@dimen/dimen_10dp" app:layout_constraintEnd_toStartOf="@+id/right_most_buffer" app:layout_constraintStart_toEndOf="@+id/left_most_buffer" app:layout_constraintTop_toTopOf="0"/>
+        <View android:id="@+id/bottom_buffer" android:background="@color/white100" android:layout_width="0dp" android:layout_height="@dimen/dimen_6dp" app:layout_constraintEnd_toStartOf="@+id/right_most_buffer" app:layout_constraintStart_toEndOf="@+id/left_most_buffer" app:layout_constraintTop_toBottomOf="@+id/center_buffer"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <View android:id="@+id/empty_padding" android:tag="binding_2" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="@dimen/dimen_15dp"/>
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<in.swiggy.android.view.ShimmerFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/meals_edvo_item_shimmer_0" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:paddingBottom="@dimen/dimen_40dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/dimen_16dp" android:paddingEnd="@dimen/dimen_16dp">
+        <in.swiggy.android.view.SwiggyImageView android:id="@+id/mainLogo" android:layout_width="@dimen/dimen_90dp" android:layout_height="@dimen/dimen_90dp" app:visibilityWhenLoading="0"/>
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:paddingBottom="@dimen/dimen_40dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <in.swiggy.android.view.SwiggyTextView android:gravity="start" android:layout_gravity="start" android:layout_width="@dimen/dimen_300dp" android:layout_height="@dimen/dimen_14dp" android:layout_marginTop="@dimen/dimen_20dp" android:paddingStart="@dimen/dimen_16dp" app:visibilityWhenLoading="0"/>
+            <in.swiggy.android.view.SwiggyTextView android:gravity="start" android:layout_gravity="start" android:layout_width="@dimen/dimen_300dp" android:layout_height="@dimen/dimen_14dp" android:layout_marginTop="@dimen/dimen_20dp" android:paddingStart="@dimen/dimen_16dp" app:visibilityWhenLoading="0"/>
+            <in.swiggy.android.view.SwiggyTextView android:gravity="start" android:layout_gravity="start" android:id="@+id/meal_title" android:layout_width="@dimen/dimen_280dp" android:layout_height="@dimen/dimen_14dp" android:layout_marginTop="@dimen/dimen_8dp" android:lineSpacingExtra="3sp" android:paddingStart="@dimen/dimen_16dp" app:visibilityWhenLoading="0"/>
+        </LinearLayout>
+    </LinearLayout>
+</in.swiggy.android.view.ShimmerFrameLayout>

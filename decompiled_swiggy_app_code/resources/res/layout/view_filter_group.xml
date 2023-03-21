@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <in.swiggy.android.commonsui.view.SwiggyCommonRecyclerView android:id="@+id/facets_bar" android:tag="layout/view_filter_group_0" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:overScrollMode="never" android:importantForAccessibility="yes" android:paddingStart="@dimen/spacing_medium" android:paddingEnd="@dimen/spacing_x_small" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+    <View android:layout_gravity="end" android:id="@+id/gradient" android:tag="layout/view_filter_group_1" android:layout_width="44dp" android:layout_height="0dp" android:translationZ="@dimen/dimen_1dp" app:layout_constraintBottom_toBottomOf="@+id/facets_bar" app:layout_constraintEnd_toEndOf="0" app:layout_constraintTop_toTopOf="@+id/facets_bar"/>
+</merge>

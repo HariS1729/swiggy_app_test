@@ -1,0 +1,156 @@
+{
+  "statusCode": 1,
+  "statusMessage": "Config changed",
+  "data": {
+    "global_config": {
+      "background_batch_size": 60,
+      "block_non_real_time_events": 1,
+      "max_persist_events_limit": 2000,
+      "minimum_battery_level_to_dispatch_events": 10,
+      "non_real_batch_size": 15,
+      "non_real_max_in_memory": 400,
+      "non_real_time_window_size_in_ms": 30000,
+      "real_time_batch_size": 13,
+      "real_time_max_in_memory": 200,
+      "real_time_window_size_in_ms": 7000,
+      "retry_times": 2,
+      "timeout_in_ms": 10000
+    },
+    "real_time_event_list": [
+      {
+        "event_type": "impression",
+        "object_name": "impression-high-priority-card"
+      },
+      {
+        "event_type": "click",
+        "object_name": "click-high-priority-card"
+      },
+      {
+        "event_type": "impression",
+        "object_name": "impression-favorite-restaurant-item-ad"
+      },
+      {
+        "event_type": "click",
+        "object_name": "click-favorite-restaurant-item-ad"
+      },
+      {
+        "event_type": "impression",
+        "object_name": "impression-collection-restaurant-item-ad"
+      },
+      {
+        "event_type": "click",
+        "object_name": "click-collection-restaurant-item-ad"
+      },
+      {
+        "event_type": "impression",
+        "object_name": "impression-banner-carousel-item-ad"
+      },
+      {
+        "event_type": "click",
+        "object_name": "click-banner-carousel-item-ad"
+      },
+      {
+        "event_type": "impression",
+        "object_name": "impression-brand-carousel-item-ad"
+      },
+      {
+        "event_type": "click",
+        "object_name": "click-brand-carousel-item-ad"
+      },
+      {
+        "event_type": "impression",
+        "object_name": "impression-best-brands-item-ad"
+      },
+      {
+        "event_type": "click",
+        "object_name": "click-best-brands-item-ad"
+      },
+      {
+        "event_type": "impression",
+        "object_name": "impression-carousel-item-ad"
+      },
+      {
+        "event_type": "click",
+        "object_name": "click-carousel-item-ad"
+      },
+      {
+        "event_type": "click",
+        "object_name": "click-high-priority-item-add"
+      },
+      {
+        "event_type": "click",
+        "object_name": "click-high-priority-view-menu"
+      },
+      {
+        "event_type": "impression",
+        "object_name": "impression-high-priority-item-card"
+      },
+      {
+        "event_type": "impression",
+        "object_name": "impression-delivering-now-ad"
+      },
+      {
+        "event_type": "click",
+        "object_name": "click-delivering-now-ad"
+      },
+      {
+        "event_type": "impression",
+        "object_name": "impression-restaurant-ad"
+      },
+      {
+        "event_type": "click",
+        "object_name": "click-restaurant-ad"
+      },
+      {
+        "event_type": "impression",
+        "object_name": "impression-restaurant-sld-ad"
+      },
+      {
+        "event_type": "click",
+        "object_name": "click-restaurant-sld-ad"
+      },
+      {
+        "event_type": "impression",
+        "object_name": "impression-dish-search-full-menu-ad"
+      },
+      {
+        "event_type": "click",
+        "object_name": "click-dish-search-full-menu-ad"
+      },
+      {
+        "event_type": "impression",
+        "object_name": "impression_RIG-ad"
+      },
+      {
+        "event_type": "impression",
+        "object_name": "impression-track-media-card"
+      },
+      {
+        "event_type": "click",
+        "object_name": "click-similar-restaurant-item-ad"
+      },
+      {
+        "event_type": "impression",
+        "object_name": "impression-similar-restaurant-item-ad"
+      },
+      {
+        "event_type": "click",
+        "object_name": "click-byo-restaurant-item-ad"
+      },
+      {
+        "event_type": "impression",
+        "object_name": "impression-byo-restaurant-item-ad"
+      },
+      {
+        "event_type": "click",
+        "object_name": "click-multimedia-card-item-ad"
+      },
+      {
+        "event_type": "impression",
+        "object_name": "impression-multimedia-card-item-ad"
+      }
+    ],
+    "drop_event_list": [],
+    "config_version": 8000
+  }
+}

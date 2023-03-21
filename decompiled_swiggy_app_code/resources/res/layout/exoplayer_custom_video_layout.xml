@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/exoplayer_custom_video_layout_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.google.android.exoplayer2.ui.StyledPlayerView android:id="@+id/player_view" android:layout_width="match_parent" android:layout_height="match_parent" android:animateLayoutChanges="true" app:surface_type="2" app:use_controller="false"/>
+    <FrameLayout android:id="@+id/overlayLayout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@+id/image_view" android:clickable="false" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop"/>
+        <FrameLayout android:id="@+id/controlsLayout" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                <FrameLayout android:id="@+id/emptyOverlayLayout" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+                <LinearLayout android:gravity="center_vertical" android:layout_gravity="bottom" android:orientation="horizontal" android:id="@+id/bottom_control_layout" android:visibility="visible" android:layout_width="match_parent" android:layout_height="@dimen/dimen_32dp">
+                    <FrameLayout android:layout_width="wrap_content" android:layout_height="match_parent">
+                        <FrameLayout android:id="@+id/mute_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:paddingStart="@dimen/dimen_12dp" android:paddingEnd="@dimen/dimen_12dp">
+                            <ImageView android:layout_gravity="center" android:layout_width="@dimen/dimen_12dp" android:layout_height="@dimen/dimen_12dp" android:src="@drawable/video_sound_icon"/>
+                        </FrameLayout>
+                        <FrameLayout android:id="@+id/unmute_view" android:layout_width="wrap_content" android:layout_height="match_parent" android:paddingStart="@dimen/dimen_12dp" android:paddingEnd="@dimen/dimen_12dp">
+                            <ImageView android:layout_gravity="center" android:layout_width="@dimen/dimen_12dp" android:layout_height="@dimen/dimen_12dp" android:src="@drawable/video_sound_mute_icon"/>
+                        </FrameLayout>
+                    </FrameLayout>
+                    <TextView android:id="@+id/position_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/proxima_nova_medium" style="@style/TextMedium13spWhite100"/>
+                    <com.google.android.exoplayer2.ui.DefaultTimeBar android:id="@+id/timebar_progress" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:layout_marginStart="@dimen/dimen_4dp" app:bar_height="@dimen/dimen_2dp" app:buffered_color="@color/white" app:played_color="@color/candy_blue90" app:scrubber_color="@color/white70" app:scrubber_drawable="@drawable/video_seekbar_thumbnail"/>
+                    <TextView android:id="@+id/duration_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/proxima_nova_medium" android:layout_marginStart="@dimen/dimen_4dp" android:layout_marginEnd="@dimen/dimen_12dp" style="@style/TextMedium13spWhite100"/>
+                    <FrameLayout android:id="@+id/fullscreen_button" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="match_parent" android:paddingStart="@dimen/dimen_12dp" android:paddingEnd="@dimen/dimen_12dp">
+                        <ImageView android:layout_gravity="center" android:layout_width="@dimen/dimen_12dp" android:layout_height="@dimen/dimen_12dp" android:src="@drawable/video_fullscreen_icon"/>
+                    </FrameLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <FrameLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:padding="@dimen/dimen_16dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center" android:id="@+id/pause_video_view" android:visibility="invisible" android:layout_width="@dimen/dimen_48dp" android:layout_height="@dimen/dimen_48dp" android:src="@drawable/video_pause_icon"/>
+                <ImageView android:layout_gravity="center" android:id="@+id/play_video_view" android:layout_width="@dimen/dimen_48dp" android:layout_height="@dimen/dimen_48dp" android:src="@drawable/video_play_icon"/>
+            </FrameLayout>
+        </FrameLayout>
+    </FrameLayout>
+</FrameLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/onr_entry_point_container" android:tag="layout/home_header_swiggy_one_entry_point_0" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/rlOneLogo" android:tag="binding_1" android:padding="@dimen/dimen_10dp" android:layout_width="@dimen/dimen_60dp" android:layout_height="@dimen/dimen_32dp">
+        <in.swiggy.android.view.SwiggyImageView android:id="@+id/oneLogoIv" android:tag="binding_2" android:layout_width="@dimen/dimen_40dp" android:layout_height="@dimen/dimen_14dp" android:contentDescription="@string/content_description_one_benefit"/>
+    </RelativeLayout>
+    <View android:id="@+id/vDummySandwich" android:tag="binding_3" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="@dimen/dimen_2dp" android:layout_centerHorizontal="true" android:layout_alignStart="@+id/tvSwiggyOneStatus" android:layout_alignEnd="@+id/tvSwiggyOneStatus"/>
+    <com.google.android.material.textview.MaterialTextView android:textAppearance="?attr/textAppearanceDiscountSubheader2" android:gravity="top|center_vertical|center_horizontal|center" android:id="@+id/tvSwiggyOneStatus" android:tag="binding_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:paddingStart="@dimen/dimen_2dp" android:paddingEnd="@dimen/dimen_2dp"/>
+</RelativeLayout>

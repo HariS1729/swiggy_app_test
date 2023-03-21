@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:tag="layout/item_merchandise_collection_0" android:layout_width="@dimen/merchandise_restaurant_image_size" android:layout_height="wrap_content" style="@style/ContainerMerchandiseCollectionItemStyle">
+    <in.swiggy.android.commonsui.view.CommonImageView android:tag="binding_1" android:layout_width="@dimen/merchandise_restaurant_image_size" android:layout_height="@dimen/merchandise_restaurant_image_size" android:scaleType="fitXY" app:shimColor="@color/default_image_overlay_color" app:shimMode="3" style="@style/ImageViewStyleMerchandiseRestaurant"/>
+    <in.swiggy.android.commonsui.view.CommonTextView android:tag="binding_2" android:layout_width="match_parent" android:layout_height="wrap_content" android:includeFontPadding="false" android:lineSpacingExtra="2dp" style="@style/TextStyleMerchandiseRestaurantName"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/ContainerMerchandiseRestaurantDescription">
+        <ImageView android:layout_gravity="center_horizontal" android:layout_width="24dp" android:layout_height="1.5dp" style="@style/ImageViewStyleMerchandiseRestaurantNameDivider"/>
+        <in.swiggy.android.commonsui.view.CommonTextView android:tag="binding_3" android:layout_width="match_parent" android:layout_height="wrap_content" android:includeFontPadding="false" android:lineSpacingExtra="3dp" style="@style/TextStyleMerchandiseRestaurantCuisine"/>
+    </LinearLayout>
+</LinearLayout>

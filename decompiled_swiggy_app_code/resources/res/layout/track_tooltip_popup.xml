@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:theme="@style/Theme.Swiggy.Storefront.Dark" android:tag="layout/track_tooltip_popup_0" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:background="@drawable/background_dark_secondary_rad_12" android:paddingLeft="@dimen/dimen_12dp" android:paddingTop="@dimen/dimen_12dp" android:paddingRight="@dimen/dimen_12dp" android:paddingBottom="@dimen/dimen_12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dimen_6dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0">
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/ic_chat" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <in.swiggy.android.dls.textview.DlsTextView android:ellipsize="end" android:id="@+id/tool_tip_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:layout_marginStart="@dimen/dimen_12dp" app:dlsTextColor="7" app:dlsTextStyle="13"/>
+    </LinearLayout>
+    <ImageView android:id="@+id/arrow_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_arrow_curved_down" android:layout_marginEnd="@dimen/dimen_24dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

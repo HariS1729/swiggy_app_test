@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/root_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <View android:layout_gravity="center_vertical" android:id="@+id/toggle_off_bg" android:background="@drawable/toggle_track_off" android:layout_width="@dimen/dimen_42dp" android:layout_height="@dimen/dimen_24dp"/>
+    <View android:layout_gravity="center_vertical" android:id="@+id/toggle_on_bg" android:background="@drawable/toggle_track_on" android:visibility="gone" android:layout_width="@dimen/dimen_42dp" android:layout_height="@dimen/dimen_24dp"/>
+    <FrameLayout android:layout_gravity="center_vertical" android:id="@+id/toggle_indicator" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <View android:layout_gravity="left|center_vertical|center_horizontal|center|start" android:id="@+id/toggle_indicator_off" android:background="@drawable/toggle_thumb_off" android:layout_width="@dimen/dimen_24dp" android:layout_height="@dimen/dimen_24dp"/>
+        <View android:layout_gravity="left|center_vertical|center_horizontal|center|start" android:id="@+id/toggle_indicator_on" android:background="@drawable/toggle_thumb_on" android:visibility="gone" android:layout_width="@dimen/dimen_24dp" android:layout_height="@dimen/dimen_24dp"/>
+    </FrameLayout>
+</FrameLayout>

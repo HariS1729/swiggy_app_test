@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/sticky_header_layout" android:tag="layout/menu_sticky_header_0" android:background="@color/white95" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:id="@+id/sticky_dummy_view" android:layout_width="match_parent" android:layout_height="@dimen/dimen_56dp"/>
+    <in.swiggy.android.view.SwiggyTextView android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/menu_category_sticky_header" android:layout_width="match_parent" android:layout_height="@dimen/dimen_32dp" android:maxLines="1" android:paddingStart="@dimen/dimen_16dp" android:paddingEnd="@dimen/dimen_16dp" style="@style/TextMedium14spBlackGrape90"/>
+    <View android:layout_gravity="bottom" android:id="@+id/bottom_divider" android:background="@drawable/header_bottom_shadow" android:layout_width="match_parent" android:layout_height="@dimen/dimen_4dp"/>
+</LinearLayout>

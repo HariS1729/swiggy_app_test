@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/bill_details" android:tag="layout/view_order_details_section_header_loading_0" android:background="@color/blackGrape0" android:paddingLeft="16dp" android:paddingTop="32dp" android:paddingBottom="14dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <in.swiggy.android.commonsui.view.plainshimmer.PlainShimmerLayout android:background="@color/blackGrape10" android:layout_width="150dp" android:layout_height="11dp" app:shimmer_auto_start="true" app:shimmer_base_alpha="0.4" app:shimmer_direction="0" app:shimmer_dropoff="0.5" app:shimmer_duration="1500" app:shimmer_tilt="0"/>
+</FrameLayout>

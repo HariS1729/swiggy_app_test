@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:tag="layout/v2_item_longdistance_collection_0" android:layout_width="@dimen/merchandise_restaurant_image_size" android:layout_height="wrap_content" style="@style/ContainerMerchandiseCollectionItemStyle">
+    <in.swiggy.android.view.SwiggyImageView android:tag="binding_1" android:layout_width="@dimen/merchandise_restaurant_image_size" android:layout_height="@dimen/merchandise_restaurant_image_size" android:importantForAccessibility="no" app:shimColor="@color/default_image_overlay_color" app:shimMode="3" style="@style/ImageViewStyleMerchandiseRestaurant"/>
+    <in.swiggy.android.view.SwiggyTextView android:textColor="@color/white100" android:tag="binding_2" android:layout_width="match_parent" android:layout_height="wrap_content" android:includeFontPadding="false" android:lineSpacingExtra="2dp" style="@style/TextStyleMerchandiseRestaurantName"/>
+</LinearLayout>

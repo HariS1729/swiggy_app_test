@@ -1,0 +1,146 @@
+syntax = "proto3";
+
+option java_package = "com.swiggy.gandalf.home.protobuf";
+option java_multiple_files = true;
+
+import "fee.proto";
+import "cta_dto.proto";
+
+message RestaurantHomeDto {
+    string id = 1;
+    string name = 2;
+    bool third_party_address = 3;
+    string third_party_vendor = 4;
+    string cloudinary_image_id = 5;
+    string cost_for_two = 6;
+    repeated string cuisines = 7;
+    string ad_tracking_id = 8;
+    string sla_string = 9;
+    bool unserviceable = 10;
+    AggregatedDiscountInfoDTO aggregated_discountInfo = 11;
+    string avg_rating = 12;
+    bool is_select = 13;
+    bool veg = 14;
+    bool favourite = 15;
+    bool is_promoted = 16;
+    RestaurantAvailabilityHomeResponseDTO restaurant_availability = 17;
+    repeated ChainComponentDTO chain = 18;
+    repeated RibbonHomeData ribbon = 19;
+    RestaurantFeeDetails restaurant_fee_details = 20;
+    RestaurantBadgesDto badges = 21;
+    CTADto cta = 22;
+    string area_name = 23;
+    string last_mile_travel_string = 24;
+    bool has_surge = 25;
+    AggregatedDiscountInfoDTO aggregated_discountInfo_v2 = 26;
+    AggregatedDiscountInfoV3 aggregated_discount_info_v3 = 27;
+    LoyaltyDiscoverPresentationInfo loyalty_discover_presentation_info = 28;
+}
+
+message AggregatedDiscountInfoDTO {
+    string header = 1;
+    repeated DiscountMeta short_description_list = 2;
+    repeated DiscountMeta description_list = 3;
+    string coupon_details_cta = 4;
+    bool visible = 5;
+    string sub_header = 6;
+    OfferHeaderType header_type = 7;
+    string super_free_del = 8;
+
+    message DiscountMeta {
+        string meta = 1;
+        string discount_type = 2;
+        string operationType = 3;
+    }
+}
+
+// This represents attributes of Aggregated Discount V3.
+message AggregatedDiscountInfoV3 {
+    string header = 1;
+    string sub_header = 2;
+    string discount_tag = 3;
+    HeaderTypeV2 header_type_v2 = 4;
+}
+
+// To contain loyalty presentation data in discovery flows.
+message LoyaltyDiscoverPresentationInfo {
+    // logo details
+    LogoCtx logo_ctx = 1;
+    // free delivery benefit message
+    string freedel_message = 2;
+    // exclusive offer benefit message
+    string exclusive_offer_message = 3;
+}
+
+// To contain logo details.
+message LogoCtx {
+    // text if any that will be appended before/after logo
+    string text = 1;
+    // logo url
+    string logo = 2;
+}
+
+message RestaurantAvailabilityHomeResponseDTO {
+    bool opened = 1;
+    string next_close_message = 2;
+    string next_open_message = 3;
+}
+
+message ChainComponentDTO {
+    AggregatedDiscountInfoDTO aggregated_discount_info = 1;
+    string avg_rating = 2;
+    string sla_string = 3;
+    bool select = 4;
+    string restaurant_id = 5;
+    bool is_promoted = 6;
+    string ad_tracking_id = 7;
+}
+
+message RibbonHomeData {
+    string type = 1;
+    RibbonMetaData ribbon_meta_data = 2;
+
+    message RibbonMetaData {
+        string text = 1;
+    }
+}
+
+message RestaurantFeeDetails {
+    int64 restaurant_id = 1;
+    repeated Fee fees = 2;
+    float total_fees = 3;
+    string message = 4;
+    string title = 5;
+    string amount = 6;
+    string icon = 7;
+}
+
+message RestaurantBadgesDto {
+    repeated RestaurantImageBadgeDto image_badges = 1;
+    repeated RestaurantTextBadgeDto text_badges = 2;
+    repeated RestaurantTextBadgeDto text_extended_badges = 3;
+}
+
+message RestaurantImageBadgeDto {
+    string image_id = 1;
+    string description = 2;
+}
+
+message RestaurantTextBadgeDto {
+    string icon_id = 1;
+    string description = 2;
+    string short_description = 3;
+    string font_color = 4;
+}
+
+enum OfferHeaderType {
+    OFFER_HEADER_TYPE_INVALID = 0;
+    OFFER_HEADER_TYPE_1 = 1;
+    OFFER_HEADER_TYPE_2 = 2;
+}
+
+// This represents header type which is used to determine tile background and text color at client side.
+enum HeaderTypeV2 {
+    HEADER_TYPE_V2_INVALID = 0;
+    HEADER_TYPE_V2_TOP_UP = 1;
+}

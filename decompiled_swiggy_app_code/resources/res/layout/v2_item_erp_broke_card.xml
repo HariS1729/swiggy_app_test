@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:tag="layout/v2_item_erp_broke_card_0" android:background="@color/erp_broke_card_bgcolor" android:paddingTop="@dimen/dimen_32dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dimen_32dp">
+    <in.swiggy.android.view.SwiggyImageView android:layout_gravity="center_horizontal" android:tag="binding_1" android:layout_width="90dp" android:layout_height="90dp" android:layout_marginBottom="@dimen/dimen_24dp" android:scaleType="centerCrop" android:importantForAccessibility="no"/>
+    <androidx.percentlayout.widget.PercentFrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dimen_42dp">
+        <in.swiggy.android.view.SwiggyTextView android:gravity="center" android:layout_gravity="center_horizontal" android:tag="binding_2" android:layout_height="wrap_content" app:layout_widthPercent="75%" style="@style/TextRegular13spBlackGrape100"/>
+    </androidx.percentlayout.widget.PercentFrameLayout>
+</LinearLayout>

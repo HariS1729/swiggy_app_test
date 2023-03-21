@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:height="32dp" android:width="32dp" android:viewportWidth="32" android:viewportHeight="32">
+    <path android:fillColor="@drawable/$user_avatar_default__0" android:pathData="M0 16a16 16 0 1 1 32 0 16 16 0 1 1-32 0"/>
+    <path android:fillColor="#ffffff" android:pathData="M16.502 13.32c2.083 0 3.771-1.643 3.771-3.67s-1.688-3.67-3.771-3.67c-2.082 0-3.771 1.643-3.771 3.67s1.688 3.67 3.77 3.67zm-7.845 7.022c1.403-2.84 4.388-4.803 7.843-4.803 3.457 0 6.441 1.962 7.843 4.803 0.615 1.247 0.922 1.87 0.367 2.764C24.154 24 23.238 24 21.407 24h-9.814c-1.831 0-2.747 0-3.303-0.894-0.555-0.895-0.248-1.518 0.367-2.764z" android:fillType="1"/>
+</vector>

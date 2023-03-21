@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+option java_package = "com.swiggy.gandalf.home.protobuf";
+option java_multiple_files = true;
+
+
+message RibbonDto {
+    string text = 1;
+    string textColor = 2;
+    string imageId = 3;
+    string topBackgroundColor = 4;
+    string bottomBackgroundColor = 5;
+    string type = 6;
+}

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:theme="@style/Theme.Swiggy.Storefront.Light" android:id="@+id/controller_root_fragment" android:tag="layout/fragment_search_0" android:focusable="true" android:focusableInTouchMode="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/search_results_container" android:tag="binding_1" android:clickable="false" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_gravity="center_vertical" android:id="@+id/search_header" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_12dp" android:layout_marginBottom="@dimen/dimen_12dp" android:layout_marginStart="@dimen/dimen_16dp" android:layout_marginEnd="@dimen/dimen_16dp">
+            <FrameLayout android:id="@+id/header_box" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/dimen_36dp" android:paddingEnd="@dimen/dimen_36dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0">
+                <in.swiggy.android.dls.textview.DlsTextView android:ellipsize="end" android:gravity="center" android:id="@+id/header_text" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" app:dlsTextColor="7" app:dlsTextStyle="9"/>
+            </FrameLayout>
+            <androidx.appcompat.widget.AppCompatImageView android:id="@+id/back_icon" android:tag="binding_3" android:layout_width="@dimen/dimen_38dp" android:layout_height="@dimen/dimen_15dp" android:src="@drawable/back_arrow" android:contentDescription="@string/go_back" android:paddingStart="@dimen/dimen_10dp" android:paddingEnd="@dimen/dimen_10dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <include android:id="@+id/search_query_layout" android:accessibilityTraversalAfter="@+id/back_icon" layout="@layout/item_search_query_ux4"/>
+        <View android:id="@+id/adjusted_padding_view" android:tag="binding_4" android:background="@color/white" android:layout_width="match_parent" android:layout_height="@dimen/dimen_0dp"/>
+        <View android:tag="binding_5" android:background="@color/slateAlpha15" android:layout_width="match_parent" android:layout_height="@dimen/dimen_1dp"/>
+        <include android:id="@+id/search_tab_bar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_xx_small" layout="@layout/search_tab_bar"/>
+        <FrameLayout android:id="@+id/frame_layout_search" android:tag="binding_6" android:background="?attr/colorBackgroundSecondary" android:layout_width="match_parent" android:layout_height="match_parent" android:translationZ="@dimen/dimen_neg_24dp">
+            <in.swiggy.android.view.SwiggySwipeRefreshLayout android:tag="binding_7" android:layout_width="match_parent" android:layout_height="match_parent">
+                <androidx.recyclerview.widget.RecyclerView android:id="@+id/search_results" android:tag="binding_8" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            </in.swiggy.android.view.SwiggySwipeRefreshLayout>
+            <com.google.android.material.card.MaterialCardView android:id="@+id/facets_spacing_layout_background" android:tag="binding_9" android:layout_width="match_parent" android:layout_height="wrap_content" app:cardBackgroundColor="?attr/colorBackgroundPrimary">
+                <LinearLayout android:orientation="vertical" android:id="@+id/facet_container" android:tag="binding_10" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <View android:id="@+id/facet_divider" android:tag="binding_11" android:background="?attr/dividerColor" android:layout_width="match_parent" android:layout_height="@dimen/dimen_1dp"/>
+                    <include android:id="@+id/controller_facets_bar" layout="@layout/search_facets_bar_v2"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+            <include android:id="@+id/search_flash_layout" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/item_search_result_flash"/>
+        </FrameLayout>
+    </LinearLayout>
+    <include android:layout_gravity="bottom" android:id="@+id/landing_cart_view" android:layout_width="match_parent" android:layout_height="@dimen/dimen_84dp" layout="@layout/landing_view_cart_layout_v2"/>
+    <include android:layout_gravity="bottom" android:id="@+id/instamart_cart_view_layout" android:layout_width="match_parent" android:layout_height="@dimen/dimen_84dp" layout="@layout/layout_instamart_view_cart"/>
+    <FrameLayout android:id="@+id/sld_touch_handler" android:tag="binding_12" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <View android:id="@+id/next_query_prediction_tint" android:background="@color/slateAlpha60" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <View android:id="@+id/category_tint" android:background="@color/slateAlpha60" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <FrameLayout android:id="@+id/next_query_prediction_view" android:tag="binding_13" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include android:id="@+id/next_query_prediction_view_layout" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/predicting_query_layout_v2"/>
+    </FrameLayout>
+    <include android:layout_gravity="bottom" android:id="@+id/crouton_view" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/layout_cart_error_message"/>
+    <include android:layout_gravity="bottom" android:id="@+id/toast_view" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/submit_feedback_toast"/>
+</FrameLayout>

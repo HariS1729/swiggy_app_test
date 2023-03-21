@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:height="26dp" android:width="200dp" android:viewportWidth="212" android:viewportHeight="28">
+    <path android:fillColor="@drawable/$ic_one_benefits__0" android:pathData="M0 14C0 6.27 6.27 0 14 0h184c7.73 0 14 6.27 14 14s-6.27 14-14 14H14C6.27 28 0 21.73 0 14z" android:strokeAlpha="0.7" android:fillAlpha="0.56"/>
+</vector>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/corner_radius_medium"/>
+            <stroke android:width="@dimen/imagecard_border_stroke_width" android:color="?attr/colorBorderSecondary"/>
+            <solid android:color="?attr/colorBackgroundPrimary"/>
+        </shape>
+    </item>
+</layer-list>

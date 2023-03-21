@@ -1,0 +1,16 @@
+[
+  {
+    "featureType": "landscape",
+    "stylers": [
+      {
+        "saturation": 30
+      },
+      {
+        "visibility": "on"
+      },
+      {
+        "weight": 1.5
+      }
+    ]
+  }
+]

@@ -1,0 +1,1 @@
+{"paymentMethods":[{"description":"Mastercard","payment_method":"MASTER","payment_method_type":"CARD","supported_reference_ids":[]},{"description":"Visa","payment_method":"VISA","payment_method_type":"CARD","supported_reference_ids":[]}]}

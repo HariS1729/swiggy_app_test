@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/order_details_container" android:tag="layout/fragment_order_detail_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+        <in.swiggy.android.view.SwiggyToolbar android:id="@+id/tool_bar" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" android:layout_alignParentTop="true" app:showToolbarDivider="false"/>
+        <View android:layout_gravity="bottom" android:id="@+id/divider_view" android:layout_width="match_parent" style="@style/DividerViewStyle"/>
+        <androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.google.android.material.appbar.AppBarLayout android:layout_width="match_parent" android:layout_height="wrap_content" app:elevation="@dimen/dimen_0dp">
+                <in.swiggy.android.view.ShimmerFrameLayout android:tag="binding_1" android:layout_width="match_parent" android:layout_height="match_parent" app:tilt="0" app:traverseOnContentNotLoading="true">
+                    <LinearLayout android:orientation="vertical" android:id="@+id/summaryLayout" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_scrollFlags="15">
+                        <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/margin_large" android:layout_width="match_parent" android:layout_height="wrap_content">
+                                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:tag="binding_2" android:paddingTop="@dimen/margin_24dp" android:focusable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:importantForAccessibility="yes">
+                                    <in.swiggy.android.commonsui.view.IconTextView android:textSize="@dimen/clipart_width" android:textColor="@color/blackGrape100" android:id="@+id/restaurantLocationITv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:importantForAccessibility="no" app:fontIcon="26"/>
+                                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_18dp" android:layout_marginRight="@dimen/margin_large">
+                                        <in.swiggy.android.view.SwiggyTextView android:tag="binding_3" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:importantForAccessibility="no" app:minWidthWhenLoading="@dimen/dimen_100dp" app:visibilityWhenLoading="0" style="@style/TextSemiBold15spOrange100"/>
+                                        <in.swiggy.android.view.SwiggyTextView android:ellipsize="end" android:tag="binding_4" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_2dp" android:maxLines="1" app:minWidthWhenLoading="@dimen/dimen_200dp" app:visibilityWhenLoading="0" style="@style/TextRegular12spBlackGrape60"/>
+                                    </LinearLayout>
+                                </LinearLayout>
+                                <LinearLayout android:orientation="vertical" android:tag="binding_5" android:layout_width="match_parent" android:layout_height="wrap_content">
+                                    <in.swiggy.android.dash.view.DottedVerticalDividerView android:tag="binding_6" android:layout_width="@dimen/dimen_2dp" android:layout_height="@dimen/from_to_divider_height" android:layout_marginLeft="7dp" android:layout_marginTop="@dimen/dimen_1dp" android:layout_marginBottom="@dimen/dimen_1dp" android:layerType="software" android:importantForAccessibility="no" app:gapBetweenDots="@dimen/dimen_2dp"/>
+                                    <RelativeLayout android:tag="binding_7" android:layout_width="wrap_content" android:layout_height="@dimen/from_to_divider_height" android:layout_marginLeft="4dp" android:layout_marginTop="@dimen/dimen_1dp" android:layout_marginBottom="@dimen/dimen_1dp" android:importantForAccessibility="noHideDescendants">
+                                        <in.swiggy.android.dash.view.DottedVerticalDividerView android:id="@+id/vertical_line" android:tag="binding_8" android:layout_width="@dimen/dimen_2dp" android:layout_height="@dimen/from_to_incomplete_divider_height" android:layout_centerHorizontal="true" android:layerType="software" app:gapBetweenDots="@dimen/dimen_2dp"/>
+                                        <in.swiggy.android.commonsui.view.IconTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/vertical_line" android:layout_centerHorizontal="true" app:fontIcon="49" style="@style/TextRegular9spMelonRed100"/>
+                                    </RelativeLayout>
+                                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:tag="binding_9" android:focusable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:importantForAccessibility="yes">
+                                        <in.swiggy.android.commonsui.view.IconTextView android:textSize="@dimen/clipart_width" android:textColor="@color/blackGrape100" android:id="@+id/yourLocationITv" android:tag="binding_10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:importantForAccessibility="no"/>
+                                        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_18dp" android:layout_marginRight="@dimen/margin_large">
+                                            <in.swiggy.android.view.SwiggyTextView android:tag="binding_11" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" app:minWidthWhenLoading="@dimen/dimen_100dp" app:visibilityWhenLoading="0" style="@style/TextSemiBold15spBlackGrape90"/>
+                                            <in.swiggy.android.view.SwiggyTextView android:ellipsize="end" android:tag="binding_12" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_2dp" android:maxLines="1" app:minWidthWhenLoading="@dimen/dimen_200dp" app:visibilityWhenLoading="0" style="@style/TextRegular12spBlackGrape60"/>
+                                        </LinearLayout>
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+                            <View android:background="@color/blackGrape10" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="@dimen/margin_54dp" android:layout_marginTop="@dimen/dimen_24dp" android:layout_marginRight="@dimen/margin_large"/>
+                            <RelativeLayout android:paddingLeft="@dimen/margin_large" android:focusable="true" android:layout_width="match_parent" android:layout_height="72dp" android:importantForAccessibility="yes">
+                                <in.swiggy.android.commonsui.view.IconTextView android:textSize="@dimen/clipart_width" android:id="@+id/statusIconTextView" android:tag="binding_13" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:importantForAccessibility="no"/>
+                                <in.swiggy.android.view.SwiggyTextView android:tag="binding_14" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_large" android:layout_toLeftOf="@+id/onTimeITV" android:layout_toRightOf="@+id/statusIconTextView" android:layout_centerVertical="true" android:lineSpacingExtra="@dimen/dimen_2dp" app:lineCountWhenLoading="1" app:visibilityWhenLoading="0" style="@style/TextRegular12spBlackGrape60"/>
+                                <in.swiggy.android.commonsui.view.IconTextView android:id="@+id/onTimeITV" android:tag="binding_15" android:layout_width="50dp" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_16dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:importantForAccessibility="no" app:fontIcon="48" style="@style/TextMediumPurple"/>
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </in.swiggy.android.view.ShimmerFrameLayout>
+            </com.google.android.material.appbar.AppBarLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+                <View android:background="@color/divider_color" android:layout_width="match_parent" android:layout_height="@dimen/divider_height"/>
+                <in.swiggy.android.view.SwiggyViewPager android:id="@+id/restaurant_category_view_pager" android:tag="binding_16" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_behavior="@string/appbar_scrolling_view_behavior" app:objectName="@string/gtm_order_details_list"/>
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:tag="binding_17" android:background="@color/white100" android:layout_width="match_parent" android:layout_height="@dimen/dimen_48dp">
+                <View android:background="@color/blackGrape20" android:visibility="visible" android:layout_width="match_parent" android:layout_height="@dimen/dimen_0_2dp"/>
+                <in.swiggy.android.view.SwiggyTextView android:layout_gravity="center" android:tag="binding_18" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_16dp" style="@style/TextBold14spOrange100Caps"/>
+            </LinearLayout>
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    </LinearLayout>
+    <FrameLayout android:tag="binding_19" android:background="@color/white100" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include android:layout_gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/v2_item_illustration_details"/>
+    </FrameLayout>
+</FrameLayout>

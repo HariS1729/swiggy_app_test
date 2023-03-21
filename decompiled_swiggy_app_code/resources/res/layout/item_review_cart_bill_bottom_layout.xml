@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:tag="layout/item_review_cart_bill_bottom_layout_0" android:background="@color/white100" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:background="@color/blackGrape0" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_14dp">
+        <in.swiggy.android.view.SwiggyImageView android:id="@+id/image" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/repeat_triangle_down" android:scaleType="fitXY"/>
+    </FrameLayout>
+</LinearLayout>

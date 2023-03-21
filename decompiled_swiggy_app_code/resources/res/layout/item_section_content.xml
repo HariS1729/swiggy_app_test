@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:tag="layout/item_section_content_0" android:paddingTop="@dimen/normal_margin_gap" android:paddingBottom="@dimen/normal_margin_gap" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/iv_section_icon" android:visibility="visible" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginRight="@dimen/normal_gap" android:scaleType="fitXY" android:layout_marginEnd="@dimen/normal_gap"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <in.swiggy.android.view.SwiggyTextView android:textSize="16sp" android:textColor="@color/seventy_percent_black" android:gravity="center_horizontal" android:id="@+id/tv_section_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_24dp" android:layout_marginBottom="@dimen/normal_margin_gap" style="@style/TextMedium15spBlackGrape100"/>
+        <in.swiggy.android.view.SwiggyTextView android:textSize="14sp" android:textColor="@color/seventy_percent_black" android:id="@+id/tv_section_text" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/extra_gap"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/layout_bullet_points" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>

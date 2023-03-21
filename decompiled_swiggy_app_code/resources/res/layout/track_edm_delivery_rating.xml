@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:theme="@style/Theme.Swiggy.Storefront.Light" android:tag="layout/track_edm_delivery_rating_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/delivered_de_layout" android:tag="binding_1" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <in.swiggy.android.commonsui.view.CommonImageView android:tag="binding_2" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="fitXY" android:importantForAccessibility="no"/>
+        <include android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/track_order_no_contact_overlay"/>
+    </FrameLayout>
+    <ImageView android:layout_gravity="center" android:id="@+id/delivered_status_bg_image" android:tag="binding_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_track_screen_delivered" android:scaleType="fitStart" android:importantForAccessibility="no"/>
+</FrameLayout>

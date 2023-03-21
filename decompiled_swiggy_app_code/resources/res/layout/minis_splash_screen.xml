@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:tag="layout/minis_splash_screen_0" android:background="@color/white100" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:layout_gravity="center" android:id="@+id/background_container" android:background="@color/white100" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="0">
+        <ImageView android:layout_gravity="center" android:id="@+id/minis_imageview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_minis_logo"/>
+    </FrameLayout>
+</FrameLayout>

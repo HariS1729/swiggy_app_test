@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/root_layout" android:padding="@dimen/dimen_4dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <View android:layout_gravity="center_vertical" android:id="@+id/toggle_off_bg" android:background="@drawable/toggle_gray_bg" android:layout_width="@dimen/toggle_width" android:layout_height="@dimen/toggle_height"/>
+    <View android:layout_gravity="center_vertical" android:id="@+id/toggle_on_bg" android:background="@drawable/toggle_green_bg" android:visibility="gone" android:layout_width="@dimen/toggle_width" android:layout_height="@dimen/toggle_height"/>
+    <FrameLayout android:id="@+id/toggle_indicator" android:background="?attr/colorBackgroundPrimary" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <View android:layout_gravity="left|center_vertical|center_horizontal|center|start" android:id="@+id/toggle_indicator_off" android:background="@drawable/dls_ic_veg_16dp" android:layout_width="@dimen/toggle_fg_size" android:layout_height="@dimen/toggle_fg_size"/>
+        <View android:layout_gravity="left|center_vertical|center_horizontal|center|start" android:id="@+id/toggle_indicator_on" android:background="@drawable/dls_ic_veg_16dp" android:visibility="gone" android:layout_width="@dimen/toggle_fg_size" android:layout_height="@dimen/toggle_fg_size"/>
+    </FrameLayout>
+</FrameLayout>

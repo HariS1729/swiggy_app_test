@@ -1,0 +1,485 @@
+syntax = "proto3";
+
+option java_package = "com.swiggy.presentation.food.v2";
+option java_multiple_files = true;
+option java_outer_classname = "RestaurantProto";
+
+import "analytics_dto.proto";
+import "cta.proto";
+import "ribbon_dto_v2.proto";
+import "fee.proto";
+import "store_dto.proto";
+import "grid_widget.proto";
+import "restaurant_home_dto.proto";
+
+// Used as the grid element for Similar Restaurants MxN.
+message SimilarRestaurantsInfoWithStyle {
+    repeated Restaurant restaurants = 1;
+    string theme = 2;
+}
+
+// This represents the Restaurant object which can be shown in a grid, with potential item level styling.
+message RestaurantInfoWithStyle {
+    repeated Restaurant restaurants = 1;
+    string theme = 2;
+}
+
+// This represents the Favourite Restaurant object which can be shown in a grid, with potential item level styling.
+message FavouriteRestaurantInfoWithStyle {
+    repeated Restaurant restaurants = 1;
+    string theme = 2;
+    WidgetType widget_type = 3;
+    Style style = 4;
+    string collection_id = 5;
+}
+
+// This represents the WidgetType of a Restaurant MxN widget.
+enum WidgetType {
+    WIDGET_TYPE_INVALID = 0;
+    WIDGET_TYPE_POPULAR_BRANDS = 1;
+    WIDGET_TYPE_FAVOURITES = 2;
+    WIDGET_TYPE_RYL = 3;
+    WIDGET_TYPE_ALL_GOURMET = 4;
+}
+
+// This represents the Styling of a Popular Brand Image.
+message Style {
+    Dimension width = 1;
+    Dimension height = 2;
+    LayoutAlignment layout_alignment = 3;
+}
+
+// This represents the Alignment for Popular Brand Image.
+enum LayoutAlignment {
+    LAYOUT_ALIGNMENT_INVALID = 0;
+    LAYOUT_ALIGNMENT_CENTER = 1;
+    LAYOUT_ALIGNMENT_LEFT = 2;
+}
+
+// This represents attributes of Restaurant widget.
+message Restaurant {
+    RestaurantInfo info = 1;
+    Analytics analytics = 2;
+    Cta cta = 3;
+}
+
+// This represents attributes of Restaurant Data.
+message RestaurantInfo {
+    string id = 1;
+    string name = 2;
+    string city = 3;
+    RestaurantSlugs slugs = 4;
+    string unique_id = 5;
+    string cloudinary_image_id = 6;
+    string address = 7;
+    string locality = 8;
+    string area_name = 9;
+    string cost_for_two = 10;
+    string cost_for_two_message = 11;
+    repeated string cuisines = 12;
+    float avg_rating = 13;
+    bool veg = 14;
+    bool favourite = 15;
+    FeeDetails fee_details = 16;
+    int64 parent_id = 17;
+    string avg_rating_string = 18;
+    string total_ratings_string = 19;
+    bool promoted = 20;
+    string ad_tracking_id = 21;
+    RestaurantSla sla = 22;
+    RestaurantAvailability availability = 23;
+    AggregatedDiscountInfo aggregated_discount_info = 24;
+    RestaurantBadges badges = 25;
+    bool select = 26;
+    bool sld = 27;
+    ToolTip tool_tip = 28;
+    repeated Ribbon ribbon = 29;
+    string slug_string = 30;
+    bool multi_outlet = 31;
+    bool third_party_address = 32;
+    string third_party_vendor = 33;
+    string new_user_default_string = 34;
+    repeated RatingDisposition rating_disposition_list = 35;
+    UserLastRatingDetails user_last_rating_details = 36;
+    bool is_preorderable = 37;
+    PreOrderSlot pre_order_slot = 38;
+    bool is_festive_preorder = 39;
+    bool is_cafe = 40;
+    RestaurantTakeawayInfo takeaway_info = 41;
+    string unorderable_message = 42;
+    string full_address = 43;
+    bool is_open = 44;
+    repeated RestaurantLabel labels = 45;
+    string logo = 46;
+    int32 total_ratings = 47;
+    AggregatedDiscountInfo aggregated_discount_info_v2 = 48;
+    bool has_surge = 49;
+    string type = 50;
+    string favorite = 51 [deprecated = true];
+    string similar_restaurant_available = 52;
+    string trade_campaign_headers = 53 [deprecated = true];
+    repeated NudgeBanner nudge_banners = 54;
+    bool is_slot_invalid = 55;
+    HeaderBanner header_banner = 56;
+    repeated GeneralPurposeInfo general_purpose_info_list = 57 [deprecated = true];
+    repeated ExpectationNotifier expectation_notifiers = 58;
+    repeated TradeCampaignHeader trade_campaign_headers_v2= 59;
+    repeated GeneralPurposeOuterInfo general_purpose_info_list_v2 = 60;
+    map<string,ItemNudge> item_nudges = 61;
+    string alt_text = 62;
+    Accessibility accessibility = 63;
+    AggregatedDiscountInfoV3 aggregated_discount_info_v3 = 64;
+    LoyaltyDiscoverPresentationInfo loyalty_discover_presentation_info = 65;
+}
+
+// This represents accessibility for a Restaurant.
+message Accessibility {
+    string alt_text = 1;
+    string alt_text_cta = 2;
+}
+
+// This represents Rating Disposition object for a Restaurant.
+message RatingDisposition {
+    int32 id = 1;
+    string name = 2;
+    string value = 3;
+}
+
+// This represents attributes of User Last Rating Details.
+message UserLastRatingDetails {
+    string title_string = 1;
+    string date = 2;
+    string rating = 3;
+}
+
+// This represents attributes of Pre Order Slot.
+message PreOrderSlot {
+    int64 date = 1;
+    TimeSlot time_slot = 2;
+}
+
+// This represents attributes of Time Slot.
+message TimeSlot {
+    int64 start_time = 1;
+    int64 end_time = 2;
+}
+
+// This represents attributes of Restaurant Takeaway info.
+message RestaurantTakeawayInfo {
+    string prep_time_string = 1;
+    string distance_string = 2;
+    string prep_time = 3;
+    string distance = 4;
+}
+
+// This represents Restaurant Labels.
+message RestaurantLabel {
+    string title = 1;
+    string message = 2;
+}
+
+// This represents attributes of Restaurant Slugs.
+message RestaurantSlugs {
+    string restaurant = 1;
+    string city = 2;
+}
+
+// This represents attributes of Fee Details.
+message FeeDetails {
+    int64 restaurant_id = 1;
+    repeated Fee fees = 2;
+    float total_fee = 3;
+    string title = 4;
+    string amount = 5;
+    string icon = 6;
+    string message = 7;
+    string strike_off_text = 8;
+}
+
+// This represents attributes of Restaurant Sla.
+message RestaurantSla {
+    string restaurant_id = 1;
+    int32 delivery_time = 2;
+    int32 min_delivery_time = 3;
+    int32 max_delivery_time = 4;
+    float last_mile_travel = 5;
+    bool thirty_min_or_free = 6;
+    string serviceability = 7;
+    float stress_factor = 8;
+    NonServiceableReason non_serviceable_reason = 9;
+    RainMode rain_mode = 10;
+    LongDistance long_distance = 11;
+    bool preferential_service = 12;
+    bool batchable = 13;
+    Surge surge = 14;
+    int32 zone_id = 15;
+    string sla_string = 16;
+    string last_mile_travel_string = 17;
+
+    // This represents Non Serviceable Reason enum.
+    enum NonServiceableReason {
+        NON_SERVICEABLE_REASON_INVALID = 0;
+        NON_SERVICEABLE_REASON_LAST_MILE = 1;
+        NON_SERVICEABLE_REASON_MAX_SLA = 2;
+        NON_SERVICEABLE_REASON_ITEMS_EXCEED = 3;
+        NON_SERVICEABLE_REASON_RAIN = 4;
+        NON_SERVICEABLE_REASON_TEMP_LAST_MILE = 5;
+        NON_SERVICEABLE_REASON_ZONE_NOT_OPEN = 6;
+        NON_SERVICEABLE_REASON_RESTAURANT_NOT_OPEN = 7;
+        NON_SERVICEABLE_REASON_BANNER_FACTOR = 8;
+        NON_SERVICEABLE_REASON_NON_BATCHABLE_ACTIVE_ORDER = 9;
+        NON_SERVICEABLE_REASON_BLACK_ZONE = 10;
+        NON_SERVICEABLE_REASON_SERVICE_DOWN = 11;
+        NON_SERVICEABLE_REASON_CAPACITY_MAX_OUT = 12;
+    }
+
+    // This represents Rain Mode enum.
+    enum RainMode {
+        RAIN_MODE_INVALID = 0;
+        RAIN_MODE_NONE = 1;
+        RAIN_MODE_HEAVY = 2;
+        RAIN_MODE_LIGHT = 3;
+        RAIN_MODE_DEFAULT = 4;
+        RAIN_MODE_EXTREME = 5;
+    }
+
+    // This represents Long Distance enum.
+    enum LongDistance {
+        LONG_DISTANCE_INVALID = 0;
+        LONG_DISTANCE_NOT_LONG_DISTANCE = 1;
+        LONG_DISTANCE_IT_IS_LONG_DISTANCE = 2;
+    }
+}
+
+// This represents attributes of Surge object.
+message Surge {
+    bool applicable = 1;
+    Components components = 2;
+
+}
+
+// This represents attributes of Components.
+message Components {
+    float de = 1;
+}
+
+// This represents attributes of Availability object.
+message RestaurantAvailability {
+    string next_close_message = 1;
+    string next_open_time_message = 2;
+    string next_open_message = 3;
+    string next_close_time = 4;
+    string next_open_time = 5;
+    string closed_reason = 6;
+
+    // This represents Closed Reason enum.
+    enum ClosedReason {
+        CLOSED_REASON_INVALID = 0;
+        CLOSED_REASON_ITEM_CLOSED = 1;
+        CLOSED_REASON_ITEM_HOLIDAY = 2;
+        CLOSED_REASON_MENU_HOLIDAY = 3;
+        CLOSED_REASON_RESTAURANT_CLOSED = 4;
+        CLOSED_REASON_RESTAURANT_HOLIDAY = 5;
+        CLOSED_REASON_RESTAURANT_DISABLED = 6;
+        CLOSED_REASON_AREA_CLOSED = 7;
+        CLOSED_REASON_AREA_HOLIDAY = 8;
+        CLOSED_REASON_AREA_DISABLED = 9;
+        CLOSED_REASON_CITY_DISABLED = 10;
+        CLOSED_REASON_CITY_CLOSED = 11;
+        CLOSED_REASON_CITY_HOLIDAY = 12;
+        CLOSED_REASON_SWIGGY_CLOSED = 13;
+    }
+
+    string close_message = 7;
+    bool visibility = 8;
+    bool opened = 9;
+}
+
+// This represents attributes of Aggregated Discount info.
+message AggregatedDiscountInfo {
+    string header = 1;
+    repeated DiscountMeta short_description_list = 2;
+    repeated DiscountMeta description_list = 3;
+    string coupon_details_cta = 4;
+    bool visible = 5;
+    string sub_header = 6;
+    HeaderType header_type = 7;
+    string super_free_del = 8;
+}
+
+// This represents Badges possible for a restaurant.
+message RestaurantBadges {
+    repeated RestaurantImageBadge image_badges = 1;
+    repeated RestaurantTextBadge text_badges = 2;
+    repeated RestaurantTextBadge text_extended_badges = 3;
+}
+
+// This represents Restaurant Image Badge.
+message RestaurantImageBadge {
+    string image_id = 1;
+    string description = 2;
+}
+
+// This represents Restaurant Text badge.
+message RestaurantTextBadge {
+    string icon_id = 1;
+    string description = 2;
+    string short_description = 3;
+    string font_color = 4;
+}
+
+// This represents meta attributes of Discount.
+message DiscountMeta {
+    string meta = 1;
+    string discount_type = 2;
+    string operation_type = 3;
+}
+
+// This represents attributes of tooltip.
+message ToolTip {
+    string type = 1;
+    string icon = 2;
+    string info_txt = 3;
+    int32 ttl = 4;
+    int32 display_count = 5;
+}
+
+// This represents attributes of budge banner.
+message NudgeBanner {
+    int32 min_value = 1;
+    int32 max_value = 2;
+    int32 priority = 3;
+    string coupon_code = 4;
+    DiscountInfo discount_info = 5;
+    string locked_message = 6;
+    string unlocked_message = 7;
+    int32 min_item_count = 8;
+    int32 max_item_count = 9;
+    string type = 10;
+    NudgeTagInfo nudge_tag_info = 11;
+}
+
+// Info about a tag info associated with a specific nudge banner object.
+message NudgeTagInfo {
+    string title = 1;
+    string text_color = 2;
+    string background_color = 3;
+}
+
+// This represents attributes of header banner.
+message HeaderBanner {
+    string image_id = 1;
+    string url = 2;
+    int32 aspect_ratio = 3 [deprecated = true];
+    float aspect_ratio_float = 4;
+}
+
+// This represents a general purpose outer info.
+message GeneralPurposeOuterInfo {
+    string text = 1;
+    string image_id = 2;
+    string font_color = 3;
+    GeneralPurposeInfo cta = 4;
+}
+
+// This represents a general purpose info.
+message GeneralPurposeInfo {
+    string text = 1;
+    string font_color = 2;
+    string link_type = 3;
+    GeneralPurposeInnerInfo info = 4;
+    Cta link_cta = 5;
+}
+
+// This represents inner info of general purpose info.
+message GeneralPurposeInnerInfo {
+    string type = 1;
+    string title = 2;
+    string subtitle = 3;
+    Recordings recordings = 4;
+}
+
+// This represents a recording.
+message Recordings {
+    repeated Sequence sequences = 1;
+    repeated Record records = 2;
+}
+
+// This represents a single sequence.
+message Sequence {
+    string name = 1;
+    float ratio = 2;
+}
+
+// This represents a collection of various record infos.
+message Record {
+    RecordInfo name = 1 [deprecated = true];
+    RecordInfo designation = 2 [deprecated = true];
+    RecordInfo reading = 3 [deprecated = true];
+    map <string,RecordInfo> record_info_map = 4;
+}
+
+// This represents a single record info.
+message RecordInfo {
+    string value = 1;
+    string font_color = 2;
+}
+
+// This represents a single expectation notifier info.
+message ExpectationNotifier {
+    string text = 1;
+    ExpectationNotifierIcon icon = 2;
+    ExpectationNotifierPopup popup = 3;
+    string type = 4;
+}
+
+// This represents a single expectation notifier icon.
+message ExpectationNotifierIcon {
+    string image_id = 1;
+    bool animation = 2;
+    int32 animation_count = 3;
+}
+
+// This represents a single expectation notifier popup.
+message ExpectationNotifierPopup {
+    string popup_type = 1;
+    string id = 2;
+    string image_url = 3;
+    int32 max_count = 4;
+    float aspect_ratio = 5;
+    float width_ratio = 6;
+    int32 horizontal_margin = 7;
+    int32 vertical_margin = 8;
+    Cta cta = 9;
+    string bg_color = 10;
+}
+
+// This represents a trade campaign header.
+message TradeCampaignHeader {
+    string header = 1;
+    string description = 2;
+    string min_cart_amount = 3;
+    string discount_type = 4;
+}
+
+// This represents an item level nudge message.
+message ItemNudge {
+    int32 min_value = 1;
+    int32 max_value = 2;
+    int32 priority = 3;
+    string coupon_code = 4;
+    string locked_message = 5;
+    string unlocked_message = 6;
+    int32 min_item_count = 7;
+    int32 max_item_count = 8;
+    string type = 9;
+    Cta cta = 10;
+}
+
+// This represents header type which is used to determine tile background and text color at client side.
+enum HeaderType {
+    HEADER_TYPE_INVALID = 0;
+    HEADER_TYPE_1 = 1;
+    HEADER_TYPE_2 = 2;
+}
+

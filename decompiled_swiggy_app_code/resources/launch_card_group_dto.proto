@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+option java_package = "com.swiggy.gandalf.home.protobuf";
+option java_multiple_files = true;
+
+import "cta_dto.proto";
+import "title_subtitle_image.proto";
+
+message LaunchCardGroupDto {
+    string sub_type = 1;
+    repeated LaunchCardItemData cards = 2;
+    string id = 3;
+    string widget_id = 4;
+
+    message LaunchCardItemData {
+        string card_type = 1;
+        string sub_type = 2;
+        CTADto action = 3;
+        TitleSubtitleImage data = 4;
+        string id = 5;
+    }
+}

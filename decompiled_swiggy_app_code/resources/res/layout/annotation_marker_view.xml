@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/dimen_6dp">
+    <ImageView android:layout_gravity="center_horizontal" android:id="@+id/annotation_marker_imageview" android:layout_width="@dimen/dimen_36dp" android:layout_height="@dimen/dimen_36dp" android:src="@drawable/home_pin"/>
+    <FrameLayout android:layout_gravity="center_horizontal" android:id="@+id/annotation_marker_info_view" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_4dp" android:minHeight="@dimen/dimen_40dp">
+        <androidx.cardview.widget.CardView android:id="@+id/annotation_text_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/dimen_2dp" app:cardBackgroundColor="@color/white90" app:cardCornerRadius="@dimen/dimen_3dp" app:cardElevation="@dimen/dimen_1dp">
+            <in.swiggy.android.commonsui.view.CommonTextView android:ellipsize="end" android:gravity="center" android:layout_gravity="top" android:id="@+id/annotation_marker_textview" android:padding="@dimen/dimen_4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/dimen_2dp" android:maxWidth="@dimen/dimen_110dp" android:maxLines="2" style="@style/TextSemiBold11spBlackGrape70caps"/>
+        </androidx.cardview.widget.CardView>
+    </FrameLayout>
+</LinearLayout>

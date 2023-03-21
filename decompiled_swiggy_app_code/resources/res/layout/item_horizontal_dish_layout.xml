@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/rig_layout" android:tag="layout/item_horizontal_dish_layout_0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/dimen_0dp" android:paddingEnd="@dimen/dimen_12dp">
+    <in.swiggy.dls.componentkit.menuitem.HorizontalMenuItem android:layout_gravity="center_horizontal" android:id="@+id/horizontal_menu_item" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</LinearLayout>

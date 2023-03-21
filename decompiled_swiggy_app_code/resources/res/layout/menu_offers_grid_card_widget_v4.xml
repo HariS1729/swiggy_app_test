@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/widget_container" android:tag="layout/menu_offers_grid_card_widget_v4_0" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:id="@+id/top_border" android:tag="binding_1" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/widget_subcontainer" android:tag="binding_2" android:paddingTop="@dimen/dimen_0dp" android:paddingBottom="@dimen/dimen_0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/dimen_0dp" android:paddingEnd="@dimen/dimen_0dp">
+        <include android:id="@+id/header" layout="@layout/card_header"/>
+        <include android:id="@+id/recycler" layout="@layout/menu_offers_grid_card_recycler_v4"/>
+    </LinearLayout>
+    <View android:id="@+id/bottom_border" android:tag="binding_3" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout>

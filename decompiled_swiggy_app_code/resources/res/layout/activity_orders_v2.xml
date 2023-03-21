@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:tag="layout/activity_orders_v2_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <in.swiggy.android.view.SwiggyToolbar android:id="@+id/tool_bar" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" android:layout_alignParentTop="true" app:showToolbarDivider="true"/>
+    <FrameLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:id="@+id/activity_orders_confirmed_item" android:tag="binding_1" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <FrameLayout android:id="@+id/activity_orders_details_container" android:tag="binding_2" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <RelativeLayout android:id="@+id/activity_orders_list" android:tag="binding_3" android:layout_width="match_parent" android:layout_height="match_parent">
+            <in.swiggy.android.view.ShimmerFrameLayout android:tag="binding_4" android:paddingBottom="36dp" android:layout_width="match_parent" android:layout_height="match_parent" app:tilt="0">
+                <in.swiggy.android.view.SwiggyRecyclerView android:id="@+id/activity_orders_recycler" android:tag="binding_5" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" app:listenContentLoadingUpdates="true" app:objectName="@string/gtm_orders_list_name"/>
+            </in.swiggy.android.view.ShimmerFrameLayout>
+        </RelativeLayout>
+        <FrameLayout android:id="@+id/activity_orders_no_orders_screen" android:tag="binding_6" android:background="@color/nav_drawer_background" android:layout_width="match_parent" android:layout_height="match_parent">
+            <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/normal_gap" app:cardBackgroundColor="@color/white" app:cardElevation="@dimen/cardview_compat_inset_shadow">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <RelativeLayout android:orientation="vertical" android:paddingTop="@dimen/extra_margin_gap" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <ImageView android:layout_width="190dp" android:layout_height="120dp" android:src="@drawable/v2_ic_no_orders_image" android:layout_centerHorizontal="true"/>
+                    </RelativeLayout>
+                    <in.swiggy.android.view.SwiggyTextView android:textSize="12sp" android:textColor="@color/seventy_percent_black" android:gravity="center_horizontal" android:id="@+id/no_orders_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/extra_margin_gap" android:layout_marginTop="24dp" android:layout_marginRight="@dimen/extra_margin_gap" android:layout_marginBottom="24dp" android:text="@string/no_orders_user_help_text" android:lines="2" app:fontName="1"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </FrameLayout>
+        <FrameLayout android:id="@+id/order_help_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </FrameLayout>
+</LinearLayout>

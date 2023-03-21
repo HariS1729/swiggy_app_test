@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/root_layout" android:tag="layout/refund_custom_dialog_layout_0" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" app:cardCornerRadius="@dimen/dimen_6dp" app:cardElevation="@dimen/dimen_0dp">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/dialog_container" android:background="@color/white100" android:paddingTop="@dimen/margin_24dp" android:paddingBottom="@dimen/margin_24dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/margin_24dp" android:paddingEnd="@dimen/margin_24dp">
+            <ImageView android:id="@+id/dialog_header_image" android:layout_width="@dimen/dimen_40dp" android:layout_height="@dimen/dimen_40dp"/>
+            <TextView android:textSize="@dimen/font_size_14sp" android:textColor="@color/blackGrape100" android:gravity="center" android:id="@+id/description" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_16dp" android:lineSpacingMultiplier="1.5" android:textIsSelectable="true" android:translationY="-1.47sp" android:fontFamily="@font/proxima_nova_medium"/>
+            <in.swiggy.android.commonsui.view.SwiggyFontTextView android:id="@+id/button_neutral" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_24dp" android:text="@string/okay_got_it_text" style="@style/TextBoldFont15spDarkPeachCaps"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/v2_item_carousel_0" android:importantForAccessibility="noHideDescendants" app:cardCornerRadius="@dimen/dimen_4dp" app:cardElevation="@dimen/dimen_0dp" style="@style/ImageViewStyleCarouselItemCard">
+    <in.swiggy.android.view.SwiggyImageView android:tag="binding_1" android:layout_width="match_parent" android:layout_height="match_parent" android:foreground="@drawable/ripple_circle" android:scaleType="fitXY" app:visibilityWhenLoading="0"/>
+</androidx.cardview.widget.CardView>

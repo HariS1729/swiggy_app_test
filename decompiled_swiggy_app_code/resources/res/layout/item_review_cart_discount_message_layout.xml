@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:tag="layout/item_review_cart_discount_message_layout_0" android:background="@color/white100" android:paddingBottom="@dimen/dimen_8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:background="@color/pastel_green_100" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <in.swiggy.android.view.SwiggyImageView android:id="@+id/image" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/repeat_triangle_down_v2" android:scaleType="fitXY"/>
+        <in.swiggy.android.view.SwiggyTextView android:layout_gravity="center" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_8dp" android:layout_marginBottom="@dimen/dimen_8dp" android:text="You saved X in this bill!" android:lineSpacingExtra="1sp" android:layout_marginStart="@dimen/dimen_16dp" android:layout_marginEnd="@dimen/dimen_16dp" style="@style/TextBold14spLaPalma100"/>
+        <in.swiggy.android.view.SwiggyImageView android:id="@+id/image1" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/repeat_triangle_up_v2" android:scaleType="fitXY"/>
+    </LinearLayout>
+</LinearLayout>

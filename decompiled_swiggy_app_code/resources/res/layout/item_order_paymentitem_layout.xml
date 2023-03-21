@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:tag="layout/item_order_paymentitem_layout_0" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_16dp" android:layout_marginTop="@dimen/dimen_4dp" android:layout_marginRight="@dimen/dimen_16dp" android:layout_marginBottom="@dimen/dimen_4dp">
+    <in.swiggy.android.view.SwiggyTextView android:gravity="left" android:id="@+id/item_name" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="@style/TextRegular12spBlackGrape90"/>
+    <in.swiggy.android.view.SwiggyTextView android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_6dp" android:layout_toLeftOf="@+id/item_price" style="@style/TextRegular12spBlackGrape90"/>
+    <in.swiggy.android.view.SwiggyTextView android:id="@+id/item_price" android:tag="binding_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" style="@style/TextRegular12spBlackGrape90"/>
+</RelativeLayout>

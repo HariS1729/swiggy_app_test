@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/lynx_fragment_nav_graph">
+    <fragment android:label="LynxFragment" android:name="in.swiggy.android.swiggylynx.ui.fragment.LynxFragment" android:id="@+id/lynxFragment">
+        <argument android:name="lynxData" app:argType="in.swiggy.android.swiggylynx.ui.LynxData" app:nullable="false"/>
+        <argument android:name="isFullScreen" android:defaultValue="false" app:argType="boolean"/>
+        <argument android:name="nextStepData" android:defaultValue="@null" app:argType="string" app:nullable="true"/>
+        <argument android:name="delivery_rating_click_event_args" android:defaultValue="@null" app:argType="in.swiggy.android.swiggylynx.model.DeliveryRatingClickEventNavArgs" app:nullable="true"/>
+    </fragment>
+    <action android:id="@+id/launchLynxFragment" app:destination="@+id/lynxFragment">
+        <argument android:name="lynxData" app:argType="in.swiggy.android.swiggylynx.ui.LynxData" app:nullable="false"/>
+    </action>
+</navigation>

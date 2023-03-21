@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option java_package = "com.swiggy.gandalf.home.protobuf";
+
+
+message RatingCardDomain {
+    string creativeId = 1;
+    string restaurantName = 2;
+    int64 orderId = 3;
+    string ratingText = 4;
+}

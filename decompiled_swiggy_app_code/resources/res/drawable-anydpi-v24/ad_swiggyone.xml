@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:height="16dp" android:width="16dp" android:viewportWidth="16" android:viewportHeight="16">
+    <group>
+        <clip-path android:pathData="M0 0h16v16H0z"/>
+        <path android:fillColor="@drawable/$ad_swiggyone__0" android:pathData="M5.528 8.684c0-1.27 0.615-2.298 1.725-2.609L5.157 4.138l1.838-2.681C2.723 1.886 0.25 5.069 0.25 8.684c0 3.234 1.975 6.147 5.447 7.036l1.431-4.435c-1.032-0.351-1.6-1.355-1.6-2.601z"/>
+        <path android:fillColor="@drawable/$ad_swiggyone__1" android:pathData="M10.461 8.687c0 1.555-0.884 2.735-2.482 2.735-0.845 0-1.484-0.351-1.899-0.914l-5.211 1.174C1.953 14.177 4.424 16 7.981 16c4.907 0 7.76-3.428 7.76-7.315 0-3.887-2.853-7.285-7.76-7.285-0.063 0-0.125 0.004-0.187 0.008-0.036 0.002-0.073 0.005-0.11 0.006L7.584 0 4.381 4.148l3.848 3.556v-1.71c0.016 0.002 0.033 0.003 0.049 0.003C8.294 5.998 8.31 5.998 8.325 6c1.379 0.158 2.136 1.274 2.136 2.687zm15.647 6.968V7.966c0-1.441-0.77-1.988-1.997-1.988-1.169 0-1.768 0.605-2.197 1.094v8.581h-5.135V1.747h5.135v1.582C22.712 2.408 24.225 1.4 26.65 1.4c3.196 0 4.593 1.957 4.593 4.378v9.877h-5.135z"/>
+        <path android:fillColor="@drawable/$ad_swiggyone__2" android:pathData="M32.25 8.687c0-4.031 3.053-7.285 7.503-7.285 4.051 0 7.162 2.937 7.162 7.832V10.3h-9.358c0.286 0.893 1.285 1.757 2.968 1.757 0.77 0 2.481-0.375 3.166-0.98l2.112 3.196C44.433 15.453 41.98 16 39.925 16c-4.309 0-7.675-2.735-7.675-7.313zm7.503-3.342c-1.568 0-2.082 1.036-2.253 1.671h4.536c-0.143-0.605-0.628-1.671-2.283-1.671z" android:fillType="1"/>
+    </group>
+</vector>

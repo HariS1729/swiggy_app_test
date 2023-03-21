@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/viewContainer" android:tag="layout/fragment_batching_callout_0" android:background="@color/white" android:padding="@dimen/dimen_16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="16sp" android:textColor="@color/charcoalGrey" android:id="@+id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_12dp" android:text="@string/batching_callout_title" android:lineSpacingExtra="4sp" android:textAllCaps="true" android:fontFamily="@font/proxima_nova_bold" app:layout_constraintTop_toTopOf="0"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/batchingCalloutsContainer" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@+id/title">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_24dp">
+            <ImageView android:layout_width="@dimen/dimen_16dp" android:layout_height="@dimen/dimen_16dp" android:src="@drawable/golden_bullet" android:layout_marginEnd="@dimen/dimen_12dp"/>
+            <TextView android:textSize="@dimen/font_size_14sp" android:textColor="@color/blackGrape100" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/batching_callout_bullet_1" android:lineSpacingExtra="2sp" android:fontFamily="@font/proxima_nova_regular"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_24dp">
+            <ImageView android:layout_width="@dimen/dimen_16dp" android:layout_height="@dimen/dimen_16dp" android:src="@drawable/golden_bullet" android:layout_marginEnd="@dimen/dimen_12dp"/>
+            <TextView android:textSize="@dimen/font_size_14sp" android:textColor="@color/blackGrape100" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/batching_callout_bullet_2" android:lineSpacingExtra="2sp" android:fontFamily="@font/proxima_nova_regular"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_24dp">
+            <ImageView android:layout_width="@dimen/dimen_16dp" android:layout_height="@dimen/dimen_16dp" android:src="@drawable/golden_bullet" android:layout_marginEnd="@dimen/dimen_12dp"/>
+            <TextView android:textSize="@dimen/font_size_14sp" android:textColor="@color/blackGrape100" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/batching_callout_bullet_3" android:lineSpacingExtra="2sp" android:fontFamily="@font/proxima_nova_regular"/>
+        </LinearLayout>
+    </LinearLayout>
+    <Button android:textSize="@dimen/font_size_14sp" android:textColor="@color/white" android:tag="binding_1" android:background="@color/pumpkin_orange" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_28dp" android:text="@string/ok_got_it" android:fontFamily="@font/proxima_nova_bold" app:layout_constraintTop_toBottomOf="@+id/batchingCalloutsContainer"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

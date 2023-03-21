@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+option java_package = "com.swiggy.gandalf.home.protobuf";
+option java_multiple_files = true;
+
+import "int32.proto";
+
+message ViewConfig {
+    Int32 auto_scroll_time_in_s = 1;
+}

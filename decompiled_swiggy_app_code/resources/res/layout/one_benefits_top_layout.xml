@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:id="@+id/root_layout" android:tag="layout/one_benefits_top_layout_0" android:background="@drawable/ic_top_benefits_bg" android:layout_width="@dimen/dimen_62dp" android:layout_height="@dimen/dimen_15dp" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0">
+    <LinearLayout android:gravity="center" android:id="@+id/sub_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.appcompat.widget.AppCompatImageView android:id="@+id/image" android:layout_width="@dimen/dimen_23dp" android:layout_height="@dimen/dimen_9dp" android:contentDescription="@string/image" app:srcCompat="@drawable/ic_swiggy_one_white"/>
+        <in.swiggy.android.view.SwiggyTextView android:textSize="@dimen/dimen_10dp" android:textColor="@color/white" android:ellipsize="end" android:id="@+id/benefits_text" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_1dp" android:layout_marginTop="@dimen/dimen_0_5dp" android:maxLines="1" android:includeFontPadding="false" android:fontFamily="@font/proxima_nova_cond_bold" android:letterSpacing="-0.03"/>
+    </LinearLayout>
+</LinearLayout>

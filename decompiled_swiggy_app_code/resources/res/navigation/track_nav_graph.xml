@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/nav_graph" app:startDestination="@+id/trackOrderFragmentV2">
+    <fragment android:label="TrackOrderFragment" android:name="in.swiggy.android.track.fragments.TrackOrderFragment" android:id="@+id/trackOrderFragment">
+        <argument android:name="trackOrderJson" android:defaultValue="@null" app:argType="string" app:nullable="true"/>
+        <argument android:name="launchedFrom" android:defaultValue="@null" app:argType="string" app:nullable="true"/>
+        <argument android:name="orderKey" android:defaultValue="@null" app:argType="string" app:nullable="true"/>
+        <argument android:name="trackLaunchedFromNotification" android:defaultValue="false" app:argType="boolean"/>
+        <argument android:name="orderId" android:defaultValue="@null" app:argType="string" app:nullable="true"/>
+    </fragment>
+    <fragment android:label="TrackOrderFragmentV3" android:name="in.swiggy.android.track.fragments.TrackOrderFragmentV3" android:id="@+id/trackOrderFragmentV3">
+        <argument android:name="launchedFrom" android:defaultValue="@null" app:argType="string" app:nullable="true"/>
+        <argument android:name="orderKey" android:defaultValue="@null" app:argType="string" app:nullable="true"/>
+        <argument android:name="trackLaunchedFromNotification" android:defaultValue="false" app:argType="boolean"/>
+        <argument android:name="orderId" android:defaultValue="@null" app:argType="string" app:nullable="true"/>
+        <argument android:name="launchScreenName" android:defaultValue="@null" app:argType="string" app:nullable="true"/>
+        <argument android:name="hideMakePaymentButton" android:defaultValue="false" app:argType="boolean"/>
+    </fragment>
+    <dialog android:label="TrackOnBoardingFragment" android:name="in.swiggy.android.track.onboarding.TrackOnBoardingFragment" android:id="@+id/trackOnBoardingFragment">
+        <argument android:name="onBoardingType" android:defaultValue="@null" app:argType="string" app:nullable="true"/>
+        <argument android:name="orderId" android:defaultValue="@null" app:argType="string" app:nullable="true"/>
+    </dialog>
+    <dialog android:label="TrackDeTipBottomFragment" android:name="in.swiggy.android.track.detipping.TrackDeTipBottomFragment" android:id="@+id/trackDeTip">
+        <argument android:name="deTippingCardData" app:argType="in.swiggy.android.tejas.oldapi.models.track.cards.carddata.TrackDeTippingCardData" app:nullable="false"/>
+        <argument android:name="trackDeTipAnalytics" app:argType="string" app:nullable="false"/>
+        <argument android:name="position" app:argType="integer" app:nullable="false"/>
+    </dialog>
+    <dialog android:label="TrackFxmDialogFragmentV3" android:name="in.swiggy.android.track.fxmoos.v3.TrackFxmDialogFragmentV3" android:id="@+id/trackFxmDialogV3">
+        <argument android:name="nextBasedAction" app:argType="com.swiggy.pos.service.grpc.v1.NextBasedAction" app:nullable="false"/>
+        <argument android:name="orderId" app:argType="string" app:nullable="false"/>
+    </dialog>
+    <dialog android:label="TrackCancelBottomDialogFragmentV3" android:name="in.swiggy.android.track.cancellation.v3.TrackCancelBottomDialogFragmentV3" android:id="@+id/trackCancelDialogV3">
+        <argument android:name="nextBasedAction" app:argType="com.swiggy.pos.service.grpc.v1.NextBasedAction" app:nullable="false"/>
+        <argument android:name="bottomCounter" app:argType="com.swiggy.pos.service.grpc.v1.Counter" app:nullable="false"/>
+        <argument android:name="itemCounterInSec" app:argType="integer" app:nullable="false"/>
+        <argument android:name="itemCounterMaxInSec" app:argType="integer" app:nullable="false"/>
+    </dialog>
+    <fragment android:label="TrackV3PostDeTipThankYouFragment" android:name="in.swiggy.android.track.fragments.TrackV3PostDeTipThankYouFragment" android:id="@+id/trackV3PostDeTipThankYou">
+        <argument android:name="headerText" app:argType="string" app:nullable="false"/>
+        <argument android:name="subHeaderText" app:argType="string" app:nullable="false"/>
+    </fragment>
+    <action android:id="@+id/launch_trackV3PostDeTipThankYou" app:destination="@+id/trackV3PostDeTipThankYou" app:popUpTo="@+id/trackV3PostDeTipThankYou" app:popUpToInclusive="true">
+        <argument android:name="headerText" app:argType="string" app:nullable="false"/>
+        <argument android:name="subHeaderText" app:argType="string" app:nullable="false"/>
+    </action>
+    <action android:id="@+id/launch_trackOrderFragment" app:destination="@+id/trackOrderFragment" app:popUpTo="@+id/trackOrderFragment" app:popUpToInclusive="true">
+        <argument android:name="trackOrderJson" android:defaultValue="@null" app:argType="string" app:nullable="true"/>
+        <argument android:name="launchedFrom" android:defaultValue="@null" app:argType="string" app:nullable="true"/>
+        <argument android:name="orderKey" android:defaultValue="@null" app:argType="string" app:nullable="true"/>
+        <argument android:name="trackLaunchedFromNotification" android:defaultValue="false" app:argType="boolean"/>
+        <argument android:name="orderId" android:defaultValue="@null" app:argType="string" app:nullable="true"/>
+    </action>
+    <action android:id="@+id/launch_trackOrderFragmentV3" app:destination="@+id/trackOrderFragmentV3" app:popUpTo="@+id/trackOrderFragmentV3" app:popUpToInclusive="true">
+        <argument android:name="launchedFrom" android:defaultValue="@null" app:argType="string" app:nullable="true"/>
+        <argument android:name="orderKey" android:defaultValue="@null" app:argType="string" app:nullable="true"/>
+        <argument android:name="trackLaunchedFromNotification" android:defaultValue="false" app:argType="boolean"/>
+        <argument android:name="orderId" android:defaultValue="@null" app:argType="string" app:nullable="true"/>
+        <argument android:name="launchScreenName" android:defaultValue="@null" app:argType="string" app:nullable="true"/>
+    </action>
+    <action android:id="@+id/launch_trackDeTipDialog" app:destination="@+id/trackDeTip">
+        <argument android:name="deTippingCardData" app:argType="in.swiggy.android.tejas.oldapi.models.track.cards.carddata.TrackDeTippingCardData" app:nullable="false"/>
+        <argument android:name="trackDeTipAnalytics" app:argType="string" app:nullable="false"/>
+        <argument android:name="position" app:argType="integer" app:nullable="false"/>
+    </action>
+    <action android:id="@+id/launch_trackFxmDialog" app:destination="@+id/trackFxmDialog">
+        <argument android:name="nextBasedAction" app:argType="in.swiggy.android.tejas.oldapi.models.tracknew.NextBasedAction" app:nullable="false"/>
+    </action>
+    <action android:id="@+id/launch_trackFxmDialogV3" app:destination="@+id/trackFxmDialogV3">
+        <argument android:name="nextBasedAction" app:argType="com.swiggy.pos.service.grpc.v1.NextBasedAction" app:nullable="false"/>
+    </action>
+    <action android:id="@+id/launch_trackCancelDialog" app:destination="@+id/trackCancelDialog">
+        <argument android:name="nextBasedAction" app:argType="in.swiggy.android.tejas.oldapi.models.tracknew.NextBasedAction" app:nullable="false"/>
+        <argument android:name="bottomCounter" app:argType="in.swiggy.android.tejas.oldapi.models.tracknew.Counters" app:nullable="false"/>
+        <argument android:name="itemCounterInSec" app:argType="integer" app:nullable="false"/>
+        <argument android:name="itemCounterMaxInSec" app:argType="integer" app:nullable="false"/>
+    </action>
+    <action android:id="@+id/launch_trackCancelDialogV3" app:destination="@+id/trackCancelDialogV3">
+        <argument android:name="nextBasedAction" app:argType="com.swiggy.pos.service.grpc.v1.NextBasedAction" app:nullable="false"/>
+        <argument android:name="bottomCounter" app:argType="com.swiggy.pos.service.grpc.v1.Counter" app:nullable="false"/>
+        <argument android:name="itemCounterInSec" app:argType="integer" app:nullable="false"/>
+        <argument android:name="itemCounterMaxInSec" app:argType="integer" app:nullable="false"/>
+    </action>
+    <action android:id="@+id/launch_trackOnBoardingFragment" app:destination="@+id/trackOnBoardingFragment">
+        <argument android:name="onBoardingType" android:defaultValue="@null" app:argType="string" app:nullable="true"/>
+    </action>
+    <include app:graph="@navigation/full_screen_nav_graph"/>
+    <action android:id="@+id/launchFullScreenGraph" app:destination="@+id/fullScreenGraph">
+        <argument android:name="exoPlayerData" app:argType="in.swiggy.android.commonsui.view.video.ExoPlayerData" app:nullable="false"/>
+        <argument android:name="exoPlayerEventData" android:defaultValue="@null" app:argType="in.swiggy.android.commonsui.view.video.ExoPlayerEventData" app:nullable="true"/>
+        <argument android:name="isHorizontal" android:defaultValue="false" app:argType="boolean" app:nullable="false"/>
+    </action>
+    <include app:graph="@navigation/lynx_nav_graph"/>
+    <action android:id="@+id/launchLynxActivityGraph" app:destination="@+id/lynxGraph">
+        <argument android:name="lynxData" app:argType="in.swiggy.android.swiggylynx.ui.LynxData" app:nullable="false"/>
+    </action>
+    <dialog android:label="DeliveryInstructionsFragment" android:name="in.swiggy.android.track.deliveryInstructions.DeliveryInstructionsFragment" android:id="@+id/deliveryInstructionsFragment">
+        <argument android:name="orderId" app:argType="string" app:nullable="false"/>
+        <argument android:name="addressId" app:argType="string" app:nullable="false"/>
+    </dialog>
+    <action android:id="@+id/launchDeliveryInstructions" app:destination="@+id/deliveryInstructionsFragment">
+        <argument android:name="orderId" app:argType="string" app:nullable="false"/>
+        <argument android:name="addressId" app:argType="string" app:nullable="false"/>
+    </action>
+    <dialog android:label="DelFeeRefundBottomSheetFragment" android:name="in.swiggy.android.track.delfeeRefund.DelFeeRefundBottomSheetFragment" android:id="@+id/delFeeRefundBottomSheetFragment">
+        <argument android:name="orderId" app:argType="string" app:nullable="false"/>
+    </dialog>
+    <action android:id="@+id/launchDelfeeRefundHalfCard" app:destination="@+id/delFeeRefundBottomSheetFragment">
+        <argument android:name="orderId" app:argType="string" app:nullable="false"/>
+    </action>
+</navigation>

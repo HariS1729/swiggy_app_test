@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/item_review_cart_coupon_layout_0" android:background="@color/white" android:layout_width="match_parent" android:layout_height="@dimen/dimen_60dp">
+    <ImageView android:id="@+id/offer_icon" android:layout_width="@dimen/dimen_28dp" android:layout_height="@dimen/dimen_28dp" android:src="@drawable/cart_coupon_icon" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dimen_16dp"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dimen_16dp" android:layout_toStartOf="@+id/close_button" android:layout_toEndOf="@+id/offer_icon">
+        <in.swiggy.android.view.SwiggyTextView android:id="@+id/cartButtonDisplayText" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="PAYTM20" android:maxLines="1" style="@style/TextSemiBold15spBlack100"/>
+        <in.swiggy.android.view.SwiggyTextView android:id="@+id/cartButtonValue" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginTop="@dimen/dimen_4dp" android:text="Offer applied on the bill" android:maxLines="1" style="@style/TextRegular13spBlackGrape70"/>
+    </LinearLayout>
+    <FrameLayout android:tag="binding_3" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerVertical="true" android:layout_alignParentEnd="true">
+        <in.swiggy.android.commonsui.view.IconTextView android:textSize="@dimen/font_size_15sp" android:textColor="@color/blackGrape40" android:layout_gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/cartExpandArrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/dimen_16dp" app:fontIcon="10"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/close_button" android:tag="binding_4" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_centerVertical="true" android:paddingStart="@dimen/dimen_16dp" android:paddingEnd="@dimen/dimen_16dp" android:layout_alignParentEnd="true">
+        <in.swiggy.android.commonsui.view.CircleView android:layout_gravity="center" android:id="@+id/yellow_circle" android:visibility="visible" android:layout_width="@dimen/dimen_28dp" android:layout_height="@dimen/dimen_28dp" app:circleFillColor="#d9dfe7" app:circleRadius="@dimen/dimen_10dp"/>
+        <in.swiggy.android.commonsui.view.IconTextView android:textSize="@dimen/font_size_9sp" android:textColor="@color/white100" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" app:fontIcon="32"/>
+    </FrameLayout>
+</RelativeLayout>

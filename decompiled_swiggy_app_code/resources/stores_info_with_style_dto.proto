@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option java_package = "com.swiggy.presentation.stores.v1";
+option java_multiple_files = true;
+option java_outer_classname = "StoresInfoWithStyleProto";
+
+import "store_dto.proto";
+
+// This represents the Stores object which can be shown in a grid, with potential item level styling.
+message StoresInfoWithStyle {
+    repeated Store stores = 1;
+}

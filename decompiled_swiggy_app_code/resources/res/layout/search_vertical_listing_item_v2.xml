@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/container" android:tag="layout/search_vertical_listing_item_v2_0" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ViewStub android:id="@+id/viewStub1" android:tag="binding_1" android:layout="@layout/search_vertical_listing_item_dls" android:inflatedId="@+id/vertical_listing_item" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <ViewStub android:id="@+id/viewStub2" android:tag="binding_2" android:layout="@layout/search_vertical_listing_item_dls_with_background" android:inflatedId="@+id/vertical_listing_item_container" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</FrameLayout>

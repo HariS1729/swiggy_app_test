@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/lynxGraph" app:startDestination="@+id/lynxActivity">
+    <activity android:label="LynxActivity" android:name="in.swiggy.android.swiggylynx.ui.LynxActivity" android:id="@+id/lynxActivity">
+        <argument android:name="lynxData" app:argType="in.swiggy.android.swiggylynx.ui.LynxData" app:nullable="false"/>
+        <argument android:name="isFullScreen" android:defaultValue="false" app:argType="boolean"/>
+        <argument android:name="delivery_rating_click_event_args" android:defaultValue="@null" app:argType="in.swiggy.android.swiggylynx.model.DeliveryRatingClickEventNavArgs" app:nullable="true"/>
+        <argument android:name="orderJson" android:defaultValue="@null" app:argType="string" app:nullable="true"/>
+        <argument android:name="launchScreen" android:defaultValue="@null" app:argType="string" app:nullable="true"/>
+        <argument android:name="source" android:defaultValue="@null" app:argType="string" app:nullable="true"/>
+        <argument android:name="title" android:defaultValue="@null" app:argType="string" app:nullable="true"/>
+    </activity>
+    <action android:id="@+id/launchLynxActivity" app:destination="@+id/lynxActivity">
+        <argument android:name="lynxData" app:argType="in.swiggy.android.swiggylynx.ui.LynxData" app:nullable="false"/>
+    </action>
+</navigation>

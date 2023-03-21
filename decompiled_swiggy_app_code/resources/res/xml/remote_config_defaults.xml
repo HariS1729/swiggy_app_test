@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<defaultsMap xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <entry>
+        <key>android_in_app_update
+        </key>
+        <value>false
+        </value>
+    </entry>
+    <entry>
+        <key>android_newrelic_enabled
+        </key>
+        <value>true
+        </value>
+    </entry>
+    <entry>
+        <key>image_disk_cache_config
+        </key>
+        <value>250
+        </value>
+    </entry>
+    <entry>
+        <key>new_relic_exception_enabled
+        </key>
+        <value>false
+        </value>
+    </entry>
+    <entry>
+        <key>new_relic_exception_trace_size
+        </key>
+        <value>256
+        </value>
+    </entry> // Also update pl-version default value(PL_VERSION_DEFAULT) in SwiggyConsumerConstants 
+    <entry>
+        <key>android_pl_version
+        </key>
+        <value>43
+        </value>
+    </entry>
+    <entry>
+        <key>launch_aggregation_enabled
+        </key>
+        <value>false
+        </value>
+    </entry>
+    <entry>
+        <key>launch_polling_enabled
+        </key>
+        <value>false
+        </value>
+    </entry>
+</defaultsMap>

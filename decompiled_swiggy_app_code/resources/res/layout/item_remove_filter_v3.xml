@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/layout_remove_filter_v2" android:tag="layout/item_remove_filter_v3_0" android:background="?attr/colorBackgroundSecondary" android:paddingTop="@dimen/spacing_x_small" android:paddingBottom="@dimen/spacing_large" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/spacing_medium" android:paddingEnd="@dimen/dimen_90dp">
+    <View android:id="@+id/line_divider" android:background="?attr/colorBorderSecondary" android:layout_width="match_parent" android:layout_height="@dimen/dimen_1dp"/>
+    <in.swiggy.android.dls.textview.DlsTextView android:id="@+id/title_text_view" android:tag="binding_1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_large" app:dlsTextColor="7" app:dlsTextStyle="8"/>
+    <in.swiggy.android.dls.textview.DlsTextView android:id="@+id/cta_text_view" android:tag="binding_2" android:paddingTop="@dimen/spacing_small" android:layout_width="match_parent" android:layout_height="wrap_content" app:dlsTextColor="0" app:dlsTextStyle="18"/>
+</LinearLayout>

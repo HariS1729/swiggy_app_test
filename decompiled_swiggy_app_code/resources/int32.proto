@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+option java_package = "com.swiggy.gandalf.home.protobuf";
+option java_multiple_files = true;
+
+message Int32 {
+    int32 value = 1;
+}

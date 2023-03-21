@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="vertical" android:tag="layout/item_track_speed_delivery_splash_screen_0" android:background="@color/white" android:paddingLeft="@dimen/dimen_32dp" android:paddingRight="@dimen/dimen_32dp" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="1">
+    <com.airbnb.lottie.LottieAnimationView android:id="@+id/speed_delivery_lotty_anim" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="@dimen/dimen_0dp" android:layout_weight="0.5" app:lottie_autoPlay="true" app:lottie_loop="false"/>
+    <in.swiggy.android.commonsui.view.CommonTextView android:id="@+id/speed_delivered_time" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/TextBlack32spDeliveredTime"/>
+    <View android:tag="binding_3" android:background="@drawable/bg_indicator_delivered" android:layout_width="@dimen/dimen_36dp" android:layout_height="@dimen/dimen_2dp" android:layout_marginTop="@dimen/dimen_4dp"/>
+</LinearLayout>

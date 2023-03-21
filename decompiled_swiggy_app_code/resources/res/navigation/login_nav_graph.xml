@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/login_nav_graph" app:startDestination="@+id/onboardingFragment">
+    <fragment android:label="OnboardingFragment" android:name="in.swiggy.android.onboarding.fragment.OnboardingFragment" android:id="@+id/onboardingFragment">
+        <action android:id="@+id/action_onboardingFragment_to_phoneNumberFragment" app:destination="@+id/phoneNumberFragment"/>
+        <action android:id="@+id/action_onboardingFragment_to_OTPFragment" app:destination="@+id/OTPFragment"/>
+    </fragment>
+    <fragment android:label="PhoneNumberFragment" android:name="in.swiggy.android.onboarding.fragment.PhoneNumberFragment" android:id="@+id/phoneNumberFragment">
+        <action android:id="@+id/action_phoneNumberFragment_to_OTPFragment" app:destination="@+id/OTPFragment"/>
+    </fragment>
+    <fragment android:label="OTPFragment" android:name="in.swiggy.android.onboarding.fragment.OTPFragment" android:id="@+id/OTPFragment">
+        <action android:id="@+id/action_OTPFragment_to_giftIntrigueFragment" app:destination="@+id/giftIntrigueFragment"/>
+        <action android:id="@+id/action_OTPFragment_to_locationPermissionFragment2" app:destination="@+id/locationPermissionFragment" app:popUpTo="@+id/onboardingFragment" app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment android:label="GiftRevealFragment" android:name="in.swiggy.android.onboarding.fragment.GiftRevealFragment" android:id="@+id/giftRevealFragment"/>
+    <fragment android:label="NameAndEmailFragment" android:name="in.swiggy.android.onboarding.fragment.NameAndEmailFragment" android:id="@+id/nameAndEmailFragment">
+        <action android:id="@+id/action_nameAndEmailFragment_to_locationPermissionFragment" app:destination="@+id/locationPermissionFragment" app:popUpTo="@+id/onboardingFragment" app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment android:label="LocationPermissionFragment" android:name="in.swiggy.android.onboarding.fragment.LocationPermissionFragment" android:id="@+id/locationPermissionFragment">
+        <action android:id="@+id/action_locationPermissionFragment_to_giftRevealFragment" app:destination="@+id/giftRevealFragment"/>
+        <action android:id="@+id/action_locationPermissionFragment_to_notificationPermission" app:destination="@+id/notificationPermissionFragment"/>
+        <action android:id="@+id/action_locationPermissionFragment_to_locationSearchV2Fragment" app:destination="@+id/locationSearchV2Fragment"/>
+    </fragment>
+    <fragment android:label="LocationSearchV2Fragment" android:name="in.swiggy.android.onboarding.fragment.LocationSearchV2Fragment" android:id="@+id/locationSearchV2Fragment">
+        <action android:id="@+id/action_locationSearchV2Fragment_to_giftRevealFragment" app:destination="@+id/giftRevealFragment"/>
+        <action android:id="@+id/action_locationSearchV2Fragment_to_notificationPermission" app:destination="@+id/notificationPermissionFragment"/>
+    </fragment>
+    <fragment android:label="NotificationPermissionFragment" android:name="in.swiggy.android.onboarding.fragment.NotificationPermissionFragment" android:id="@+id/notificationPermissionFragment">
+        <action android:id="@+id/action_notificationPermission_to_giftRevealFragment" app:destination="@+id/giftRevealFragment"/>
+    </fragment>
+    <fragment android:label="GiftIntrigueFragment" android:name="in.swiggy.android.onboarding.fragment.GiftIntrigueFragment" android:id="@+id/giftIntrigueFragment">
+        <action android:id="@+id/action_giftIntrigueFragment_to_nameAndEmailFragment" app:destination="@+id/nameAndEmailFragment"/>
+    </fragment>
+</navigation>

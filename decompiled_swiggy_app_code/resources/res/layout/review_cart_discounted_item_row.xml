@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:id="@+id/discountedItemRow" android:tag="layout/review_cart_discounted_item_row_0" android:background="@color/white" android:paddingLeft="@dimen/dimen_16dp" android:paddingTop="@dimen/dimen_14dp" android:paddingBottom="@dimen/dimen_8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:id="@+id/discountedBlueBorder" android:background="@drawable/oval_blue_background" android:layout_width="3dp" android:layout_height="match_parent" app:layout_constraintStart_toStartOf="0"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/discountedItemDetails" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <in.swiggy.android.view.SwiggyTextView android:id="@+id/discountedItemTile" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dimen_16dp" style="@style/TextSemiBold12spCharcoalGrey"/>
+        <TextView android:textSize="@dimen/font_size_12sp" android:id="@+id/discountedItemText" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_5dp" android:maxLines="2" android:fontFamily="@font/proxima_nova_medium" android:layout_marginStart="@dimen/dimen_16dp"/>
+        <in.swiggy.android.view.SwiggyRecyclerView android:id="@+id/discountedItemRecyclerView" android:tag="binding_3" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>

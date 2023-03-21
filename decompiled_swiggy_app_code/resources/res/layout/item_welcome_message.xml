@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<in.swiggy.android.view.SwiggyTextView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/item_welcome_message_0" android:layout_width="match_parent" android:layout_height="wrap_content" app:loaderHeightFraction="0.7" app:loaderWidthFraction="0.5" app:visibilityWhenLoading="0" style="@style/TextStyleRestaurantListingWelcomeMessage"/>

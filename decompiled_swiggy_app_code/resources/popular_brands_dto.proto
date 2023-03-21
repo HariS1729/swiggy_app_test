@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+option java_package = "com.swiggy.gandalf.home.protobuf";
+option java_multiple_files = true;
+
+import "title_subtitle_image.proto";
+import "cta_dto.proto";
+
+message PopularBrandsDto {
+    string sub_type = 1;
+    string title = 2;
+    string subtitle = 3;
+    repeated Card cards = 4;
+    string id = 5;
+    string widget_id = 6;
+
+    message Card {
+        string id = 1;
+        string title = 2;
+        string subtitle = 3;
+        string image_id = 4;
+        CTADto action = 5;
+        string ad_tracking_id = 6;
+        string entity_type = 7;
+        string entity_id = 8;
+    }
+}

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<in.swiggy.android.view.SwiggyRecyclerView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/order_detail_recyclerview" android:tag="layout/pager_orderdetails_0" android:paddingBottom="@dimen/dimen_62dp" android:scrollbars="vertical" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" app:objectName="@string/gtm_order_details_list"/>

@@ -1,0 +1,36 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "com.swiggy.gandalf.widgets.v2";
+option java_outer_classname = "VideoPopupProto";
+
+
+import "cta_dto.proto";
+
+// This represents a video popup widget having multiple videos that may contain cta.
+message VideoPopup{
+    string thumbnail = 1;
+    bool can_expand = 2;
+    float aspect_ratio = 3;
+    Position position = 4;
+    int32 horizontal_margin = 5;
+    int32 vertical_margin = 6;
+    bool auto_play = 7;
+    bool mute = 8;
+    repeated Videos videos = 9;
+    // This enum defines the position of the widget popup on screen when video popup is a thumbnail.
+    enum Position{
+        POSITION_INVALID = 0;
+        POSITION_TOP_LEFT = 1;
+        POSITION_TOP_RIGHT = 2;
+        POSITION_BOTTOM_LEFT = 3;
+        POSITION_BOTTOM_RIGHT = 4;
+    }
+}
+// This represents the video banners which have a cta object or may not have.
+message Videos{
+    string id = 1;
+    string url = 2;
+    int32 max_count = 3;
+    CTADto cta = 4;
+}

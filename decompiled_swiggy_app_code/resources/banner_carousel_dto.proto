@@ -1,0 +1,40 @@
+syntax = "proto3";
+
+option java_package = "com.swiggy.gandalf.home.protobuf";
+option java_multiple_files = true;
+
+import "analytics_dto.proto";
+import "cta_dto.proto";
+
+message BannerCarouselDto {
+    string sub_type = 1;
+    repeated CarouselCardItem cards = 2;
+    string id = 3;
+    bool is_scroll_enabled = 4;
+    int32 auto_scroll_duration = 5;
+    int32 auto_scroll_reset_duration = 6;
+    string widget_id = 7;
+
+    message CarouselCardItem {
+        string id = 1;
+        string image_id = 2;
+        CTADto action = 3;
+        string ad_tracking_id = 4;
+        repeated DynamicData dynamicData = 5;
+        string entity_type = 6;
+        string entity_id = 7;
+        Analytics analytics = 8;
+    }
+
+    message DynamicData {
+        string id = 1;
+        string value = 2;
+        string type = 3;
+        repeated AssociatedParams associatedParams = 4;
+    }
+
+    message AssociatedParams {
+        string id = 1;
+        string value = 2;
+    }
+}

@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option java_package = "in.swiggy.android.protobuf";
+option java_outer_classname = "ResponseProto";
+
+package in.swiggy.android.protobuf;
+
+message Response {
+    string tid = 1;
+    string sid = 2;
+}

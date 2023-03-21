@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <Transition app:autoTransition="0" app:constraintSetEnd="@+id/expanded" app:constraintSetStart="@+id/start" app:duration="1200" app:motionInterpolator="cubic(0.67,0.9,0.2,1)">
+        <KeyFrameSet>
+            <KeyAttribute android:scaleX="0.1" app:framePosition="60" app:motionTarget="@+id/ct_image"/>
+            <KeyAttribute android:alpha="1" app:framePosition="1" app:motionTarget="@+id/view"/>
+            <KeyAttribute android:alpha="0" app:framePosition="1" app:motionTarget="@+id/ct_image"/>
+            <KeyAttribute android:alpha="0" app:framePosition="60" app:motionTarget="@+id/ct_image"/>
+            <KeyAttribute android:alpha="0" app:framePosition="1" app:motionTarget="@+id/subtitle_ct"/>
+            <KeyAttribute android:alpha="0.1" app:framePosition="30" app:motionTarget="@+id/subtitle_ct"/>
+            <KeyAttribute android:alpha="0" app:framePosition="1" app:motionTarget="@+id/title_ct"/>
+            <KeyAttribute android:alpha="0.1" app:framePosition="30" app:motionTarget="@+id/title_ct"/>
+            <KeyAttribute android:scaleY="0.1" app:framePosition="60" app:motionTarget="@+id/ct_image"/>
+            <KeyAttribute android:scaleX="0.1" app:framePosition="80" app:motionTarget="@+id/ct_image"/>
+            <KeyAttribute android:scaleY="0.1" app:framePosition="80" app:motionTarget="@+id/ct_image"/>
+            <KeyAttribute android:scaleX="1.2" app:framePosition="95" app:motionTarget="@+id/ct_image"/>
+            <KeyAttribute android:scaleY="1.2" app:framePosition="95" app:motionTarget="@+id/ct_image"/>
+            <KeyAttribute android:scaleX="0.8" app:framePosition="95" app:motionTarget="@+id/ct_image"/>
+            <KeyAttribute android:scaleY="0.8" app:framePosition="95" app:motionTarget="@+id/ct_image"/>
+            <KeyAttribute android:scaleX="1.2" app:framePosition="97" app:motionTarget="@+id/ct_image"/>
+            <KeyAttribute android:scaleY="1.2" app:framePosition="97" app:motionTarget="@+id/ct_image"/>
+            <KeyAttribute android:alpha="0" app:framePosition="85" app:motionTarget="@+id/close_contextual_trigger_bt"/>
+        </KeyFrameSet>
+    </Transition>
+    <ConstraintSet android:id="@+id/start">
+        <Constraint android:id="@+id/close_contextual_trigger_bt" android:visibility="visible" android:layout_width="@dimen/margin_28dp" android:layout_height="@dimen/margin_28dp" android:alpha="0" android:layout_marginEnd="@dimen/margin_4dp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintTop_toTopOf="0"/>
+        <Constraint android:id="@+id/ct_image" android:layout_width="@dimen/ct_image_width" android:layout_height="@dimen/dimen_28dp" android:scaleX="0.1" android:layout_marginStart="@dimen/margin_20dp" app:layout_constraintBottom_toBottomOf="@+id/view" app:layout_constraintStart_toStartOf="@+id/view" app:layout_constraintTop_toTopOf="@+id/view"/>
+        <Constraint android:id="@+id/ct_image" android:layout_width="@dimen/ct_image_width" android:layout_height="@dimen/dimen_28dp" android:alpha="0" android:layout_marginStart="@dimen/margin_20dp" app:layout_constraintBottom_toBottomOf="@+id/view" app:layout_constraintStart_toStartOf="@+id/view" app:layout_constraintTop_toTopOf="@+id/view"/>
+        <Constraint android:id="@+id/ct_image" android:layout_width="@dimen/ct_image_width" android:layout_height="@dimen/dimen_28dp" android:scaleY="0.1" android:layout_marginStart="@dimen/margin_20dp" app:layout_constraintBottom_toBottomOf="@+id/view" app:layout_constraintStart_toStartOf="@+id/view" app:layout_constraintTop_toTopOf="@+id/view"/>
+        <Constraint android:id="@+id/title_ct" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_9dp" android:alpha="0" android:layout_marginStart="@dimen/margin_20dp" app:layout_constraintStart_toEndOf="@+id/ct_image" app:layout_constraintTop_toTopOf="@+id/view"/>
+        <Constraint android:id="@+id/subtitle_ct" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_12dp" android:alpha="0" android:layout_marginStart="@dimen/margin_20dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toEndOf="@+id/ct_image"/>
+    </ConstraintSet>
+    <ConstraintSet android:id="@+id/expanded">
+        <Constraint android:id="@+id/view" android:layout_width="@dimen/dimen_0dp" android:layout_height="@dimen/margin_54dp" android:layout_marginTop="@dimen/margin_14dp" android:layout_marginStart="@dimen/margin_16dp" android:layout_marginEnd="@dimen/margin_16dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+        <Constraint android:id="@+id/close_contextual_trigger_bt" android:visibility="visible" android:layout_width="@dimen/margin_28dp" android:layout_height="@dimen/margin_28dp" android:alpha="1" android:layout_marginEnd="@dimen/margin_4dp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintTop_toTopOf="0"/>
+        <Constraint android:id="@+id/ct_image" android:layout_width="@dimen/ct_image_width" android:layout_height="@dimen/dimen_0dp" android:alpha="1" android:scaleX="1" android:scaleY="1" android:layout_marginStart="@dimen/margin_20dp" app:layout_constraintBottom_toBottomOf="@+id/view" app:layout_constraintStart_toStartOf="@+id/view" app:layout_constraintTop_toTopOf="@+id/view"/>
+        <Constraint android:id="@+id/ct_image" android:layout_width="@dimen/ct_image_width" android:layout_height="@dimen/dimen_28dp" android:scaleX="1" android:layout_marginStart="@dimen/margin_20dp" app:layout_constraintBottom_toBottomOf="@+id/view" app:layout_constraintStart_toStartOf="@+id/view" app:layout_constraintTop_toTopOf="@+id/view"/>
+        <Constraint android:id="@+id/ct_image" android:layout_width="@dimen/ct_image_width" android:layout_height="@dimen/dimen_28dp" android:scaleY="1" android:layout_marginStart="@dimen/margin_20dp" app:layout_constraintBottom_toBottomOf="@+id/view" app:layout_constraintStart_toStartOf="@+id/view" app:layout_constraintTop_toTopOf="@+id/view"/>
+        <Constraint android:id="@+id/subtitle_ct" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dimen_12dp" android:alpha="1" android:layout_marginStart="@dimen/margin_14dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toEndOf="@+id/ct_image"/>
+        <Constraint android:id="@+id/title_ct" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_9dp" android:alpha="1" android:layout_marginStart="@dimen/margin_14dp" app:layout_constraintStart_toEndOf="@+id/ct_image" app:layout_constraintTop_toTopOf="@+id/view"/>
+    </ConstraintSet>
+    <ConstraintSet android:id="@+id/small" app:deriveConstraintsFrom="@+id/expanded">
+        <Constraint android:id="@+id/view" android:layout_width="@dimen/dimen_0dp" android:layout_height="@dimen/margin_54dp" android:layout_marginTop="@dimen/margin_14dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="@+id/spacer2" app:layout_constraintStart_toStartOf="@+id/spacer1" app:layout_constraintTop_toTopOf="0"/>
+        <Constraint android:id="@+id/name_ct" android:visibility="visible" android:layout_height="wrap_content" android:layout_marginStart="@dimen/margin_8dp" android:layout_marginEnd="@dimen/dimen_0dp" app:layout_constraintBottom_toBottomOf="@+id/view" app:layout_constraintEnd_toStartOf="@+id/spacer2" app:layout_constraintTop_toTopOf="@+id/view" app:layout_constraintWidth_max="60dp"/>
+        <Constraint android:id="@+id/title_ct" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_9dp" android:alpha="0" android:layout_marginStart="@dimen/margin_14dp" app:layout_constraintStart_toEndOf="@+id/ct_image" app:layout_constraintTop_toTopOf="@+id/view"/>
+        <Constraint android:id="@+id/subtitle_ct" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_12dp" android:alpha="0" android:layout_marginStart="@dimen/margin_14dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toEndOf="@+id/ct_image"/>
+        <Constraint android:id="@+id/ct_image" android:layout_width="@dimen/ct_image_width" android:layout_height="@dimen/dimen_0dp" android:layout_marginTop="@dimen/margin_12dp" android:layout_marginBottom="@dimen/margin_12dp" android:alpha="1" android:scaleX="1" android:scaleY="1" android:layout_marginEnd="@dimen/sevenpoint5dp" app:layout_constraintBottom_toBottomOf="@+id/view" app:layout_constraintEnd_toStartOf="@+id/name_ct" app:layout_constraintTop_toTopOf="@+id/view"/>
+        <Constraint android:id="@+id/spacer1" android:layout_width="@dimen/dimen_12dp" android:layout_height="@dimen/dimen_0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toStartOf="@+id/ct_image" app:layout_constraintTop_toTopOf="0"/>
+        <Constraint android:id="@+id/spacer1" android:layout_width="@dimen/dimen_12dp" android:layout_height="@dimen/dimen_0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toStartOf="@+id/ct_image" app:layout_constraintTop_toTopOf="0"/>
+    </ConstraintSet>
+    <Transition app:constraintSetEnd="@+id/small" app:constraintSetStart="@+id/expanded">
+        <KeyFrameSet>
+            <KeyAttribute android:alpha="0" app:framePosition="95" app:motionTarget="@+id/name_ct"/>
+        </KeyFrameSet>
+    </Transition>
+    <ConstraintSet android:id="@+id/hidden_from_small" app:deriveConstraintsFrom="@+id/small">
+        <Constraint android:id="@+id/view" android:layout_width="@dimen/dimen_1dp" android:layout_height="@dimen/margin_54dp" android:layout_marginTop="@dimen/margin_14dp" android:alpha="0" android:layout_marginEnd="@dimen/margin_16dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintTop_toTopOf="0"/>
+        <Constraint android:id="@+id/name_ct" android:visibility="gone" android:layout_width="@dimen/dimen_0dp" android:layout_height="wrap_content" android:scaleX="0" android:scaleY="0" android:layout_marginStart="@dimen/margin_8dp" android:layout_marginEnd="@dimen/margin_12dp" app:layout_constraintBottom_toBottomOf="@+id/view" app:layout_constraintEnd_toEndOf="@+id/view" app:layout_constraintStart_toEndOf="@+id/ct_image" app:layout_constraintTop_toTopOf="@+id/view"/>
+        <Constraint android:id="@+id/ct_image" android:visibility="gone" android:layout_width="@dimen/dimen_29dp" android:layout_height="@dimen/dimen_0dp" android:alpha="1" android:scaleX="0" android:scaleY="0" android:layout_marginStart="@dimen/margin_12dp" app:layout_constraintBottom_toBottomOf="@+id/view" app:layout_constraintStart_toStartOf="@+id/view" app:layout_constraintTop_toTopOf="@+id/view"/>
+        <Constraint android:id="@+id/close_contextual_trigger_bt" android:visibility="invisible" android:layout_width="@dimen/margin_28dp" android:layout_height="@dimen/margin_28dp" android:alpha="0" android:scaleX="0" android:scaleY="0" android:layout_marginEnd="@dimen/margin_4dp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintTop_toTopOf="0"/>
+    </ConstraintSet>
+    <Transition app:constraintSetEnd="@+id/hidden_from_small" app:constraintSetStart="@+id/small"/>
+    <ConstraintSet android:id="@+id/hidden_from_expanded" app:deriveConstraintsFrom="@+id/hidden_from_small">
+        <Constraint android:id="@+id/title_ct" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_9dp" android:alpha="0" android:scaleX="0.1" android:scaleY="0.1" android:layout_marginStart="@dimen/margin_14dp" app:layout_constraintStart_toEndOf="@+id/ct_image" app:layout_constraintTop_toTopOf="@+id/view"/>
+        <Constraint android:id="@+id/subtitle_ct" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_12dp" android:alpha="0" android:scaleX="0.1" android:scaleY="0.1" android:layout_marginStart="@dimen/margin_14dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toEndOf="@+id/ct_image"/>
+    </ConstraintSet>
+    <Transition app:constraintSetEnd="@+id/hidden_from_expanded" app:constraintSetStart="@+id/expanded" app:duration="400" app:motionInterpolator="cubic(0.61,0.61,0.8,0.8)">
+        <KeyFrameSet>
+            <KeyAttribute android:alpha="0" app:framePosition="60" app:motionTarget="@+id/title_ct"/>
+            <KeyAttribute android:alpha="1" app:framePosition="99" app:motionTarget="@+id/view"/>
+            <KeyAttribute android:alpha="0" app:framePosition="60" app:motionTarget="@+id/subtitle_ct"/>
+        </KeyFrameSet>
+    </Transition>
+</MotionScene>

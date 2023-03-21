@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+option java_package = "com.swiggy.gandalf.home.protobuf";
+option java_multiple_files = true;
+
+
+message BigFyiCard {
+    string title = 1;
+    string subtitle = 2;
+    string image_id = 3;
+    string id = 4;
+    string widget_id = 5;
+}

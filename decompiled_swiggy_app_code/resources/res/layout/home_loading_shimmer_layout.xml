@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.facebook.shimmer.ShimmerFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/shimmer_frame_root_layout" android:tag="layout/home_loading_shimmer_layout_0" android:layout_width="match_parent" android:layout_height="match_parent" android:importantForAccessibility="noHideDescendants" app:base_alpha="0.4" app:shimmer_auto_start="true" app:shimmer_dropoff="0.8" app:shimmer_duration="2000" app:tilt="15">
+    <LinearLayout android:orientation="vertical" android:id="@+id/linear_shimmer_container" android:paddingTop="@dimen/dimen_8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@+id/shimmer_card_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <View android:id="@+id/disc_shimmer_item_1" android:tag="binding_1" android:background="@color/shimmer_item_color" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/dimen_16dp" android:layout_marginRight="@dimen/dimen_16dp" android:layout_marginBottom="@dimen/dimen_16dp"/>
+            <View android:id="@+id/disc_shimmer_item_2" android:tag="binding_2" android:background="@color/shimmer_item_color" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/dimen_16dp" android:layout_marginRight="@dimen/dimen_16dp" android:layout_marginBottom="@dimen/dimen_16dp"/>
+            <View android:id="@+id/disc_shimmer_item_3" android:tag="binding_3" android:background="@color/shimmer_item_color" android:layout_width="match_parent" android:layout_height="@dimen/dimen_80dp" android:layout_marginLeft="@dimen/dimen_16dp" android:layout_marginRight="@dimen/dimen_16dp" android:layout_marginBottom="@dimen/dimen_32dp"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/disc_favourite_loader" android:tag="binding_4" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <View android:id="@+id/disc_favourite_shimmer_1" android:tag="binding_5" android:background="@color/shimmer_item_color" android:layout_width="match_parent" android:layout_height="@dimen/dimen_30dp" android:layout_marginLeft="@dimen/dimen_16dp" android:layout_marginRight="@dimen/dimen_16dp" android:layout_marginBottom="@dimen/dimen_20dp"/>
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/disc_recyclerView_restaurant_loading" android:tag="binding_6" android:layout_width="match_parent" android:layout_height="@dimen/dimen_96dp" android:layout_marginBottom="@dimen/dimen_32dp"/>
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/disc_recyclerView_banner" android:tag="binding_7" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </LinearLayout>
+</com.facebook.shimmer.ShimmerFrameLayout>

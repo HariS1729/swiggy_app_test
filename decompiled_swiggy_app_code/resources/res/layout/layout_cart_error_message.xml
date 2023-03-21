@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:theme="@style/Theme.Swiggy.Storefront.Dark" android:tag="layout/layout_cart_error_message_0" android:background="?attr/colorBackgroundAddButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/dimen_56dp" android:elevation="@dimen/dimen_18dp">
+    <in.swiggy.android.dls.textview.DlsTextView android:layout_gravity="center_vertical" android:id="@+id/text" android:tag="binding_1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_12dp" android:layout_marginBottom="@dimen/dimen_12dp" android:layout_marginStart="@dimen/dimen_18dp" android:layout_marginEnd="@dimen/dimen_18dp" app:dlsTextColor="6" app:dlsTextStyle="10"/>
+</FrameLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actions xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <action intentName="actions.intent.GET_ORDER">
+        <action-display label="Track my order"/>
+        <fulfillment fulfillmentMode="actions.fulfillment.SLICE" urlTemplate="content://in.swiggy.android.SwiggySliceProvider/track"/>
+    </action>
+    <action intentName="actions.intent.ORDER_MENU_ITEM">
+        <fulfillment fulfillmentMode="actions.fulfillment.DEEPLINK" urlTemplate="swiggy://explore{?restaurant,location,dish,cuisine}">
+            <parameter-mapping intentParameter="menuItem.inMenuSection.inMenu.forRestaurant.name" urlParameter="restaurant"/>
+            <parameter-mapping intentParameter="menuItem.inMenuSection.inMenu.forRestaurant.location.name" urlParameter="location"/>
+            <parameter-mapping intentParameter="menuItem.name" urlParameter="dish"/>
+            <parameter-mapping intentParameter="menuItem.inMenuSection.inMenu.forRestaurant.servesCuisine" urlParameter="cuisine"/>
+        </fulfillment>
+    </action>
+</actions>

@@ -1,0 +1,50 @@
+syntax = "proto3";
+
+option java_package = "com.swiggy.gandalf.home.protobuf";
+option java_multiple_files = true;
+
+import "base_card_view_config.proto";
+import "small_fyi_card.proto";
+import "big_fyi_card.proto";
+import "dash_card_group_dto.proto";
+import "favourites_dto.proto";
+import "launch_card_group_dto.proto";
+import "banner_carousel_dto.proto";
+import "all_restaurants_dto.proto";
+import "pop_card_dto.proto";
+import "brand_stories_dto.proto";
+import "popular_brands_dto.proto";
+import "restaurants_grid_dto.proto";
+import "delivering_now_dto.proto";
+import "inline_rating_card_dto.proto";
+import "grid_widget.proto";
+import "restaurant_collection_dto.proto";
+import "flip_text_communication_dto.proto";
+import "card_dto.proto";
+import "offer.proto";
+
+message BaseCardDto {
+    BaseCardViewConfigDto view_configs = 1;
+    Relevance relevance = 2;
+    reserved 3 to 10;
+
+    oneof card {
+        SmallFyiCard smallFyiCard = 11;
+        DashCardGroupDto dashcard = 12;
+        BannerCarouselDto bannerCarousel = 13;
+        FavouritesDto favourite = 14;
+        LaunchCardGroupDto launchCard = 15;
+        AllRestaurantsDto allRestaurants = 16;
+        PopCardDto pop = 17;
+        BrandStoriesDto brandStories = 18;
+        PopularBrandsDto popularBrands = 19;
+        RestaurantGridDto grid = 20;
+        BigFyiCard bigFyiCard = 21;
+        DeliveringNowDto delivering_now = 22;
+        RatingCardDomain inlineRatingCard = 23;
+        GridWidget grid_widget = 24;
+        RestaurantCollection restaurant_collection = 25;
+        FlipTextCommunication flip_text_communication = 26;
+        OfferWidgetBanner offer_widget_banner = 27;
+    }
+}

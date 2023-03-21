@@ -1,0 +1,102 @@
+{
+  "experiments": {
+    "red_banner": {
+      "active": true,
+      "params": [
+        {
+          "name": "backgroundColor",
+          "defaultValue": "#D0021B"
+        },
+        {
+          "name": "textColor",
+          "defaultValue": "#FFFFFF"
+        },
+        {
+          "name": "position",
+          "defaultValue": "top"
+        }
+      ],
+      "variants": {
+        "1": {
+          "position": "top",
+          "isDefault": true
+        },
+        "2": {
+          "position": "middle"
+        }
+      },
+      "version": 2
+    },
+    "android_area_v2": {
+      "active": true,
+      "params": [
+        {
+          "name": "enabled",
+          "defaultValue": "false"
+        }
+      ],
+      "variants": {
+        "1": {
+          "enabled": "false",
+          "isDefault": true
+        },
+        "2": {
+          "enabled": "true"
+        }
+      },
+      "version": 1
+    },
+    "address_affordance_tooltip": {
+      "active": true,
+      "params": [
+        {
+          "name": "show",
+          "defaultValue": "true"
+        }
+      ],
+      "variants": {
+        "1": {
+          "show": "false",
+          "isDefault": true
+        },
+        "2": {
+          "show": "true"
+        }
+      },
+      "version": 1
+    },
+    "pop_filters": {
+      "active": true,
+      "variants": {
+        "1": {
+          "enabled": "false"
+        },
+        "2": {
+          "enabled": "true",
+          "isDefault": true
+        }
+      },
+      "version": 1
+    },
+    "android_cutlery": {
+      "active": true,
+      "params": [
+        {
+          "name": "show",
+          "defaultValue": "true"
+        }
+      ],
+      "variants": {
+        "1": {
+          "show": "false"
+        },
+        "2": {
+          "show": "true",
+          "isDefault": true
+        }
+      },
+      "version": 1
+    }
+  },
+  "version": 5
+}

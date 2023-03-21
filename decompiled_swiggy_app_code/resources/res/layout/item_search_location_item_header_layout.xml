@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:tag="layout/item_search_location_item_header_layout_0" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="56dp">
+    <View android:layout_gravity="top" android:tag="binding_1" android:background="@color/blackGrape80" android:visibility="gone" android:layout_width="match_parent" android:layout_height="2dp"/>
+    <in.swiggy.android.view.SwiggyTextView android:ellipsize="end" android:id="@+id/item_category_name" android:tag="binding_2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_28dp" android:text="SAVED ADDRESSES" android:maxLines="1" android:letterSpacing="0.1" style="@style/TextMedium12spBlackGrape70Caps"/>
+</FrameLayout>

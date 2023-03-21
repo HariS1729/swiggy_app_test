@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:tag="layout/item_sort_option_0" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:tag="binding_1" android:background="@color/white" android:layout_width="match_parent" android:layout_height="@dimen/dimen_14dp"/>
+    <LinearLayout android:orientation="horizontal" android:background="@color/white" android:paddingLeft="@dimen/dimen_24dp" android:paddingTop="@dimen/dimen_10dp" android:paddingRight="@dimen/dimen_24dp" android:paddingBottom="@dimen/dimen_10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:foreground="@drawable/ripple_circle" android:paddingStart="@dimen/dimen_24dp" android:paddingEnd="@dimen/dimen_24dp">
+        <in.swiggy.android.view.SwiggyTextView android:layout_gravity="left|center_vertical|center_horizontal|center|start" android:tag="binding_2" android:padding="@dimen/dimen_0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_8dp" android:text="Lorem" android:includeFontPadding="false" android:layout_weight="1"/>
+        <in.swiggy.android.commonsui.view.IconTextView android:textSize="@dimen/font_size_15sp" android:textColor="@color/orange100" android:layout_gravity="right|center_vertical|center_horizontal|center|end" android:tag="binding_3" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" app:fontIcon="38"/>
+    </LinearLayout>
+    <View android:tag="binding_4" android:background="@color/white" android:layout_width="match_parent" android:layout_height="@dimen/dimen_14dp"/>
+</LinearLayout>

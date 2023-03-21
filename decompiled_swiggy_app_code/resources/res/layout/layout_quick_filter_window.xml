@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:paddingTop="@dimen/spacing_x_small" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:id="@+id/action_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_12dp" android:layout_marginStart="@dimen/dimen_16dp" android:layout_marginEnd="@dimen/dimen_16dp">
+        <in.swiggy.android.dls.textview.DlsTextView android:id="@+id/action_button_text" android:layout_width="wrap_content" android:layout_height="wrap_content" app:dlsTextColor="0" app:dlsTextStyle="15"/>
+        <View android:layout_width="@dimen/dimen_0dp" android:layout_height="@dimen/dimen_1dp" android:layout_weight="1"/>
+        <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/dls_ic_cancel_12dp"/>
+    </LinearLayout>
+    <View android:id="@+id/quick_filter_action_button_divider" android:background="?attr/dividerColor" android:layout_width="match_parent" android:layout_height="@dimen/dimen_1dp" android:layout_marginTop="@dimen/spacing_x_small" android:layout_marginStart="@dimen/spacing_medium" android:layout_marginEnd="@dimen/spacing_medium"/>
+    <RadioGroup android:id="@+id/dropdown_window_radio_group" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/spacing_medium" android:layout_marginStart="@dimen/spacing_medium" android:layout_marginEnd="@dimen/spacing_medium"/>
+    <View android:id="@+id/dropdown_window_checkbox_divider" android:background="?attr/dividerColor" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="@dimen/spacing_medium" android:layout_marginStart="@dimen/spacing_medium" android:layout_marginEnd="@dimen/spacing_medium"/>
+    <androidx.recyclerview.widget.RecyclerView android:orientation="vertical" android:id="@+id/dropdown_window_checkbox_list" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/spacing_medium" android:layout_marginEnd="@dimen/spacing_medium" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+</LinearLayout>

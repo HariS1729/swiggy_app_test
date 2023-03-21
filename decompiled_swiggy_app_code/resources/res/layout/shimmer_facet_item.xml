@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<View xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/shimmer_facets_item" android:background="@drawable/shimmer_facet_bg" android:layout_width="@dimen/dimen_100dp" android:layout_height="@dimen/dimen_27dp" android:layout_marginTop="@dimen/dimen_5dp" android:layout_marginBottom="@dimen/dimen_5dp" android:layout_marginEnd="@dimen/dimen_10dp"/>

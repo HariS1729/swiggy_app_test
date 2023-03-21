@@ -1,0 +1,183 @@
+{
+    "godel": {
+        "v1-config.zip": {
+            "hash": "1177f94ccb828a682cff067aa0395874"
+        }
+    },
+    "hyper": {
+        "bundles": {
+            "android": {
+                "release": {
+                    "in.juspay.vies": {
+                        "2.0.0": {
+                            "common": {
+                                "1.0.121": {
+                                    "v1-config.zip": {
+                                        "hash": "c539e58c063bb2ca389f3019bcf1dafd"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "app": {
+                "in.juspay.godel": {
+                    "1.1.1": {
+                        "android": {
+                            "v1-index_bundle.zip": {
+                                "hash": "2ca7a415a33ec26826dacf7d6e55b0a5"
+                            }
+                        }
+                    }
+                },
+                "in.juspay.hyperpay": {
+                    "2.0.0-release-20220805-28.0": {
+                        "android": {
+                            "v1-index_bundle.zip": {
+                                "hash": "4a69cdc218879351edf9028ecf23473a"
+                            }
+                        }
+                    }
+                },
+                "in.juspay.hyperupi": {
+                    "2.0.189": {
+                        "android": {
+                            "v1-index_bundle.zip": {
+                                "hash": "af1747eeadce8fc1ddfef832208a4bca"
+                            }
+                        }
+                    }
+                },
+                "in.juspay.inappupi": {
+                    "2.0.68": {
+                        "android": {
+                            "v1-index_bundle.zip": {
+                                "hash": "ce6cdc9c218596f5e8c0c66219dde8a9"
+                            }
+                        }
+                    }
+                },
+                "tracker": {
+                    "2.0.34": {
+                        "v1-tracker.zip": {
+                            "hash": "bb2edb3fd114ae97b65461ed0bacecd7"
+                        }
+                    }
+                }
+            },
+            "release": {
+                "in.juspay.godel": {
+                    "android": {
+                        "1.0rc2": {
+                            "common": {
+                                "stable": {
+                                    "v1-boot_loader.zip": {
+                                        "hash": "1a675fbf2067227d1857566bc3b4ebf6"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "juspay": {
+        "in.juspay.arya": {
+            "release": {
+                "1.0rc1": {
+                    "1.0rc1_42": {
+                        "v1-index_bundle.zip": {
+                            "hash": "410c2fe22bb65f28d7f31cb0a428064d"
+                        }
+                    }
+                }
+            }
+        },
+        "payments": {
+            "in.juspay.dotp": {
+                "release": {
+                    "2.0rc1": {
+                        "2.0rc1_65": {
+                            "v1-index_bundle.zip": {
+                                "hash": "5a60c66c4e0003fa9fa44ecb53d15387"
+                            }
+                        }
+                    },
+                    "v1-config.zip": {
+                        "hash": "d1be46cb32c6ae215f492b0b963486b7"
+                    }
+                }
+            },
+            "in.juspay.ec": {
+                "release": {
+                    "2.0rc1": {
+                        "2.0rc1_247": {
+                            "v1-index_bundle.zip": {
+                                "hash": "fe23aa9344905413576207f4c46b0d1d"
+                            }
+                        }
+                    },
+                    "v1-config.zip": {
+                        "hash": "01ec08875f5d676ef172339e7d3f9b8f"
+                    }
+                }
+            },
+            "in.juspay.escrow": {
+                "release": {
+                    "2.0rc1": {
+                        "2.0rc1_31": {
+                            "v1-index_bundle.zip": {
+                                "hash": "9d2e99cea1ba2a5fbdd7b83e22c0e785"
+                            }
+                        }
+                    }
+                }
+            },
+            "in.juspay.flyer": {
+                "release": {
+                    "2.0rc1": {
+                        "2.0rc1_83": {
+                            "v1-index_bundle.zip": {
+                                "hash": "9792afe832863b6c306d5ec099aa32b2"
+                            }
+                        }
+                    }
+                }
+            },
+            "in.juspay.godel": {
+                "release": {
+                    "1.0rc2": {
+                        "v1-acs.zip": {
+                            "hash": "3256e54a6afd02f40353d2b0efadc120"
+                        }
+                    }
+                }
+            },
+            "in.juspay.upiintent": {
+                "release": {
+                    "2.0rc1": {
+                        "v1-index_bundle.zip": {
+                            "hash": "ca2ff27e9057609ceeebccb4df97179e"
+                        }
+                    },
+                    "v1-config.zip": {
+                        "hash": "f67f6696dc05617814c509afb42a4a43"
+                    }
+                }
+            },
+            "in.juspay.vies": {
+                "release": {
+                    "2.0rc1": {
+                        "2.0rc1_79": {
+                            "v1-index_bundle.zip": {
+                                "hash": "73c0c7441b78649ad8b771354a51448e"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

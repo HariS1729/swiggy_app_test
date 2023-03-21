@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:tag="layout/add_new_address_button_layout_0" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:background="@color/blackGrape10" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <LinearLayout android:gravity="center" android:tag="binding_1" android:paddingTop="@dimen/dimen_12dp" android:paddingBottom="@dimen/dimen_12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dimen_16dp" android:foreground="@drawable/ripple_rectangle" app:objectName="@string/gtm_add_new_address" style="@style/ButtonBold15spGuavaGreen100White100">
+        <in.swiggy.android.view.SwiggyTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/v2_address__add_new_address_lable" style="@style/TextBold15spGuavaGreen100Caps"/>
+    </LinearLayout>
+</LinearLayout>

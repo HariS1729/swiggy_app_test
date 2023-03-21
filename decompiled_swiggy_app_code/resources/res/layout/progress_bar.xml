@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="horizontal" android:id="@+id/loading_animation" android:layout_width="match_parent" android:layout_height="146dp">
+    <ImageView android:id="@+id/circle_one" android:padding="2dp" android:layout_width="12dp" android:layout_height="12dp" android:src="@drawable/solid_circle"/>
+    <ImageView android:id="@+id/circle_two" android:padding="2dp" android:layout_width="12dp" android:layout_height="12dp" android:src="@drawable/solid_circle"/>
+    <ImageView android:id="@+id/circle_three" android:padding="2dp" android:layout_width="12dp" android:layout_height="12dp" android:src="@drawable/solid_circle"/>
+    <ImageView android:id="@+id/circle_four" android:padding="2dp" android:layout_width="12dp" android:layout_height="12dp" android:src="@drawable/solid_circle"/>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@+id/text_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="160dp" android:alpha="0">
+        <in.swiggy.android.view.SwiggyTextView android:gravity="center" android:id="@+id/line1" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/order_placed_animation_text_line1" style="@style/TextBold20spGuavaGreen100"/>
+        <in.swiggy.android.view.SwiggyTextView android:gravity="center_horizontal" android:id="@+id/line2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_8dp" android:text="@string/order_placed_animation_text_line2" style="@style/TextRegular12spGuavaGreen100"/>
+    </LinearLayout>
+</FrameLayout>

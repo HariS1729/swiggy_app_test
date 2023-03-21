@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <bool name="ga_autoActivityTracking">false
+    </bool>
+    <screenName name="in.swiggy.android.activities.AddressesActivity"> Address Selection Screen 
+    </screenName>
+    <screenName name="in.swiggy.android.activities.OrdersActivity"> Order Screen 
+    </screenName>
+    <screenName name="in.swiggy.android.activities.PaymentActivity2"> Payment Screen New 
+    </screenName>
+    <screenName name="in.swiggy.android.activities.OffersActivityV2"> Offers Screen 
+    </screenName>
+    <screenName name="in.swiggy.android.activities.ReferralSwiggyActivity"> Share Swiggy Screen 
+    </screenName>
+    <screenName name="in.swiggy.android.activities.SearchableActivity"> Search Screen 
+    </screenName>
+    <string name="ga_trackingId">UA-61003684-1
+    </string>
+</resources>

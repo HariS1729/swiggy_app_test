@@ -1,0 +1,249 @@
+syntax = "proto3";
+
+option java_package = "com.swiggy.gandalf.home.protobuf";
+option java_multiple_files = true;
+
+import "cta.proto";
+import "google/protobuf/any.proto";
+import "analytics_dto.proto";
+
+//MetaInfo about dimension.
+message Dimension {
+
+    Type type = 1;
+    float value = 2;
+    RelativeDimensionReference reference = 3;
+
+    //This enum defines type of positioning absolute or relative i.e. depends on device or not.
+    enum Type {
+        TYPE_INVALID = 0;
+        TYPE_RELATIVE = 1;
+        TYPE_ABSOLUTE = 2;
+    }
+    //This enum defines if  dimension is relative then what property for relativity is used.
+    enum RelativeDimensionReference {
+        RELATIVE_DIMENSION_REFERENCE_INVALID = 0;
+        RELATIVE_DIMENSION_REFERENCE_DEVICE_WIDTH = 1;
+        RELATIVE_DIMENSION_REFERENCE_DEVICE_HEIGHT = 2;
+        RELATIVE_DIMENSION_REFERENCE_WIDTH = 3;
+        RELATIVE_DIMENSION_REFERENCE_HEIGHT = 4;
+        RELATIVE_DIMENSION_REFERENCE_CONTAINER_WIDTH = 5;
+    }
+}
+
+
+// This will contain the m*n cards.
+message GridWidget {
+    Header header = 1;
+    Layout layout = 2;
+    oneof grid_cards {
+        ImageInfoLayoutCard image_grid_cards = 3;
+    }
+    string id = 4;
+    GridElements grid_elements = 5;
+    Footer footer = 6;
+}
+
+// This represents the elements in a grid.
+message GridElements {
+    google.protobuf.Any info_with_style = 1;
+}
+
+// Info about title of the card, subtitle, on click action.
+message Header {
+    string title = 1;
+    string subtitle = 2;
+    Cta action = 3;
+    string image_id = 4;
+    HeaderStyle header_styling = 5;
+    string leading_text = 6;
+
+    // Contains styling info for header component
+    message HeaderStyle {
+        Padding padding = 1;
+        int32 title_size = 2;
+        int32 subtitle_size = 3;
+        string title_color = 4;
+        string subtitle_color = 5;
+        FontName title_font_name = 6;
+        int32 subtitle_top_padding = 7;
+    }
+}
+
+// This represents info about Footer. Any in footer is currently designed to hold label object.
+message Footer {
+    google.protobuf.Any label_wrapper = 1;
+}
+
+//This contains info about Ticker Grid card and its layout and data
+message TickerLayoutCard {
+    repeated TickerCardInfo info = 1;
+    ItemStyle style = 2;
+    //This provides info about data of the card
+    message TickerCardInfo {
+        string id =1;
+        string image_id=2;
+        string text = 3;
+        Cta action = 4;
+    }
+    message ItemStyle {
+        int32 num_of_lines = 1;
+        Dimension width = 2;
+    }
+}
+
+//This contains info about the image grid card it's layout and data.
+message ImageInfoLayoutCard {
+    repeated ImageCardInfo info = 1;
+    ItemStyle style = 3;
+
+    // This provides info about the data part of the card. If something needs to be supported it can be added here and it will be backward compatible. The reason for making this inbuilt is it will not be re-used as per the discussion with app team.
+    message ImageCardInfo {
+        string id = 1;
+        string image_id = 2;
+        Cta action = 3;
+        string entity_type = 4;
+        bool is_frequency_capping_enabled = 5;
+        Analytics analytics = 6;
+        string alt_text = 7;
+        Accessibility accessibility = 8;
+        SlaDetails sla_details = 9;
+    }
+
+    // Info about item style and like dimension , dimension type relative or absolute . This will be specifc to every card. From this layout has been segregated
+    message ItemStyle {
+        Dimension width = 1;
+        Dimension height = 2;
+    }
+
+    // Info about accessibility for the image card.
+    message Accessibility {
+        string alt_text = 1;
+        string alt_text_cta = 2;
+    }
+
+    // Info for presentation of sla details over nav banner.
+    message SlaDetails {
+        BlockPosition block_position = 1;
+        string background_colour = 2;
+        string text_colour = 3;
+        string text_string = 4;
+
+        // SLA display position on the nav image card.
+        enum BlockPosition {
+            BLOCK_POSITION_INVALID = 0;
+            BLOCK_POSITION_BOTTOM_CENTRE = 1;
+            BLOCK_POSITION_TOP_RIGHT = 2;
+        }
+    }
+}
+
+// Contains info about how m*n grid should be rendered on app.
+message Layout {
+    int32 rows = 1;
+    int32 columns = 2;
+    bool horizontal_scroll_enabled = 3;
+    bool should_snap = 4;
+    float item_spacing = 5;
+    float line_spacing = 6;
+    Padding widget_padding = 7;
+    ContainerStyle container_style = 8;
+    float view_port = 9;
+    ScrollBar scroll_bar = 10;
+    AutoScrollConfig auto_scroll_config = 11;
+    SeparatorConfig separator_config = 12;
+    string background_color = 13;
+    WidgetBorderStyle widget_border_style = 14;
+    Theme widget_theme = 15;
+    Ordering ordering = 16;
+
+    // Contains info about root level padding of the whole card i.e. parent holder card.
+    message ContainerStyle {
+        Padding container_padding = 1;
+    }
+    //contains auto scroll related configuration.
+    message AutoScrollConfig {
+        bool is_scroll_enabled = 1;
+        int32 auto_scroll_duration = 2;
+        int32 auto_scroll_reset_duration = 3;
+    }
+    //contains separator related configuration like visibility and height.
+    message SeparatorConfig {
+        bool is_separator_visible = 1;
+    }
+
+    // Contains info about widget border style like top border style and bottom border style.
+    message WidgetBorderStyle {
+        BorderStyle top = 1;
+        BorderStyle bottom = 2;
+    }
+
+    // Contains theme information for different client modes.
+    message Theme {
+        ThemeInfo default_mode = 1;
+        ThemeInfo dark_mode = 2;
+
+        // Denotes the theme info for grid widget.
+        message ThemeInfo {
+
+            string background_colour = 1;
+            ThemeType theme = 2;
+
+            // Denotes the type of theme of widget.
+            enum ThemeType {
+                THEME_TYPE_INVALID = 0;
+                THEME_TYPE_LIGHT = 1;
+                THEME_TYPE_DARK = 2;
+            }
+        }
+    }
+
+    // Denotes the type of ordering of items in the widget.
+    enum Ordering {
+        ORDERING_INVALID = 0;
+        ORDERING_ROW_WISE = 1;
+    }
+}
+
+// Contains info about border style like color and height.
+message BorderStyle {
+    string color = 1;
+    float height = 2;
+}
+
+// Contains info about padding in ux.
+message Padding {
+    float left = 1;
+    float top = 2;
+    float right = 3;
+    float bottom = 4;
+}
+
+// This represents the attributes of a Scroll bar widget.
+message ScrollBar {
+    string scroll_thumb_color = 1;
+    string scroll_track_color = 2;
+    int32 width = 3;
+    int32 height = 4;
+    bool indicator_animation = 5;
+    ScrollStyling scroll_styling = 6;
+}
+
+// This represents the attributes of a ScrollStyle.
+message ScrollStyling {
+    Padding padding = 1;
+}
+
+// This represents the set of possible Font Names.
+enum FontName {
+    FONT_NAME_INVALID = 0;
+    FONT_NAME_BLACK = 1;
+    FONT_NAME_BOLD = 2;
+    FONT_NAME_CONDENSED_BOLD = 3;
+    FONT_NAME_CONDENSED_REGULAR = 4;
+    FONT_NAME_EXTRA_BOLD = 5;
+    FONT_NAME_LIGHT = 6;
+    FONT_NAME_MEDIUM = 7;
+    FONT_NAME_REGULAR = 8;
+    FONT_NAME_SEMI_BOLD = 9;
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:tag="layout/refund_status_error_card_0" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:orientation="vertical" android:background="@color/blackGrape0" android:layout_width="match_parent" android:layout_height="@dimen/dimen_16dp"/>
+    <RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="@dimen/dimen_64dp">
+        <LinearLayout android:orientation="vertical" android:tag="binding_1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <TextView android:textSize="@dimen/font_size_14sp" android:textColor="@color/blackGrape100" android:ellipsize="end" android:layout_gravity="center_horizontal" android:id="@+id/refund_status_error_text" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:lineSpacingExtra="@dimen/dimen_1dp" android:fontFamily="@font/proxima_nova_medium"/>
+            <TextView android:textSize="@dimen/font_size_13sp" android:textColor="@color/dark_peach" android:layout_gravity="center_horizontal" android:id="@+id/try_again_text" android:tag="binding_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_6dp" android:text="@string/try_again" android:includeFontPadding="false" android:layout_centerHorizontal="true" android:textAllCaps="true" android:fontFamily="@font/proxima_nova_bold"/>
+        </LinearLayout>
+        <com.pnikosis.materialishprogress.ProgressWheel android:tag="binding_4" android:layout_width="@dimen/dimen_20dp" android:layout_height="@dimen/dimen_20dp" android:layout_centerInParent="true" app:matProg_barColor="@color/orange100" app:matProg_barWidth="2dp" app:matProg_progressIndeterminate="true"/>
+    </RelativeLayout>
+</LinearLayout>

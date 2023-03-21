@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<transitionSet xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:transitionOrdering="together">
+    <slide android:interpolator="@android:interpolator/linear" android:slideEdge="top">
+        <targets>
+            <target android:targetId="@+id/sharing_location_crouton_title"/>
+        </targets>
+    </slide>
+    <slide android:interpolator="@android:interpolator/linear" android:slideEdge="top">
+        <targets>
+            <target android:targetId="@+id/small_timer_progress"/>
+        </targets>
+    </slide>
+    <slide android:interpolator="@android:interpolator/linear" android:slideEdge="bottom">
+        <targets>
+            <target android:targetId="@+id/snackbar_image"/>
+        </targets>
+    </slide>
+    <slide android:interpolator="@android:interpolator/linear" android:slideEdge="bottom">
+        <targets>
+            <target android:targetId="@+id/snackbar_text"/>
+        </targets>
+    </slide>
+</transitionSet>

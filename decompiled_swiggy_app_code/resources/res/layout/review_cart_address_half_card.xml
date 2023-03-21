@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:tag="layout/review_cart_address_half_card_0" android:background="@color/white100" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:orientation="vertical" android:id="@+id/cartAddressContainerHeader" android:background="@color/candy_blue08" android:layout_width="match_parent" android:layout_height="@dimen/dimen_68dp">
+        <in.swiggy.android.view.SwiggyTextView android:id="@+id/cartChooseDeliveryAddress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="@string/choose_a_delivery_address" android:layout_centerVertical="true" android:layout_marginStart="20dp" style="@style/TextSemiBold15spBlack100"/>
+        <View android:id="@+id/cartHorizontalView" android:layout_width="match_parent" android:layout_alignParentBottom="true" style="@style/DividerViewStyle"/>
+    </RelativeLayout>
+    <in.swiggy.android.view.SwiggyRecyclerView android:id="@+id/cartAddressRecyclerView" android:tag="binding_1" android:layout_width="match_parent" android:layout_height="wrap_content" app:objectName="cart_address_list"/>
+</LinearLayout>

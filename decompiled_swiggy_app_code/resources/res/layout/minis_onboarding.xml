@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:theme="@style/Theme.Swiggy.Storefront.Dark" android:id="@+id/constraint_layout_tooltip" android:tag="layout/minis_onboarding_0" android:paddingTop="@dimen/dimen_18dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/minis_onboard" android:layout_width="@dimen/dimen_176dp" android:layout_height="@dimen/dimen_232dp" android:src="@drawable/minis_tooltip_purple_optimized" android:scaleType="fitXY" android:contentDescription="@string/account_tooltip_button" app:layout_constraintEnd_toEndOf="0" app:layout_constraintTop_toTopOf="0"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<View xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/item_divider_desired_top_bottom_margin_layout_0" android:background="@color/light_grey_half_card" android:layout_width="match_parent" android:layout_height="@dimen/dimen_1dp" android:importantForAccessibility="no" android:layout_marginStart="@dimen/dimen_16dp" android:layout_marginEnd="@dimen/dimen_16dp"/>

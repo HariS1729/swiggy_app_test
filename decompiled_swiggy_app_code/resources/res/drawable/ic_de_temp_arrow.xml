@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:height="6dp" android:width="6dp" android:autoMirrored="true" android:viewportWidth="6" android:viewportHeight="6">
+    <group>
+        <clip-path android:pathData="M0 0h6v6H0z"/>
+        <path android:fillColor="#282c3f" android:pathData="M3 5.415l-2.598-4.5h5.196L3 5.415z" android:fillAlpha="0.7"/>
+    </group>
+</vector>

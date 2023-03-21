@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<in.swiggy.android.feature.dbbpopup.view.BottomBarPopup xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/bottom_bar_popup" android:tag="layout/bottom_bar_popup_0" android:layout_width="match_parent" android:layout_height="@dimen/dimen_450dp" android:elevation="@dimen/dimen_400dp"/>

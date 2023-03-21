@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/normal_margin_gap" android:layout_centerInParent="true">
+        <ImageView android:layout_width="200dp" android:layout_height="200dp" android:src="@drawable/v2_force_update" android:contentDescription="@string/app_name"/>
+        <androidx.percentlayout.widget.PercentFrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_48dp" android:layout_marginBottom="@dimen/dimen_16dp">
+            <in.swiggy.android.view.SwiggyTextView android:ellipsize="end" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/updateHeader" android:layout_height="wrap_content" android:text="@string/updateHeader" android:maxLines="2" android:textAllCaps="true" app:layout_widthPercent="80%" style="@style/TextBold14spBlackGrape80"/>
+        </androidx.percentlayout.widget.PercentFrameLayout>
+        <androidx.percentlayout.widget.PercentFrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dimen_16dp">
+            <in.swiggy.android.view.SwiggyTextView android:ellipsize="end" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/updateHeaderText" android:layout_height="wrap_content" android:text="@string/updatedBodyText" android:maxLines="4" android:lineSpacingExtra="@dimen/dimen_2dp" app:layout_widthPercent="75%" style="@style/TextRegular12spBlackGrape40"/>
+        </androidx.percentlayout.widget.PercentFrameLayout>
+    </LinearLayout>
+    <View android:id="@+id/divider1" android:background="@color/divider_color" android:layout_width="match_parent" android:layout_height="@dimen/divider_height" android:layout_above="@+id/bottomButtonLayout"/>
+    <LinearLayout android:id="@+id/bottomButtonLayout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <RelativeLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="0.5">
+            <in.swiggy.android.view.SwiggyTextView android:textSize="16sp" android:textColor="@color/orange100" android:gravity="center_horizontal" android:id="@+id/activity_force_update_now_button" android:background="@color/white" android:paddingLeft="@dimen/extra_margin_gap" android:paddingTop="@dimen/normal_margin_gap" android:paddingRight="@dimen/extra_margin_gap" android:paddingBottom="@dimen/normal_margin_gap" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:foreground="@drawable/ripple_rectangle" android:text="@string/updateButton" android:textAllCaps="true" app:fontName="1"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/dialog_positive_layout" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="0.5">
+            <in.swiggy.android.view.SwiggyTextView android:textSize="16sp" android:textColor="@color/blackGrape40" android:gravity="center_horizontal" android:id="@+id/activity_force_update_not_today_button" android:background="@color/white" android:paddingLeft="@dimen/extra_margin_gap" android:paddingTop="@dimen/normal_margin_gap" android:paddingRight="@dimen/extra_margin_gap" android:paddingBottom="@dimen/normal_margin_gap" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:foreground="@drawable/ripple_rectangle" android:text="@string/updatedNoToday" android:textAllCaps="true" app:fontName="1"/>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

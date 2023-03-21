@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.exoplayer2.ui.StyledPlayerView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/exo_player_view" android:tag="layout/player_view_0" android:layout_width="match_parent" android:layout_height="match_parent" app:keep_content_on_player_reset="true" app:resize_mode="4" app:shutter_background_color="@color/transparent" app:surface_type="2" app:use_controller="false"/>

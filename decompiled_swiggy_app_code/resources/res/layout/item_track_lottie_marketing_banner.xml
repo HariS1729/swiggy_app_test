@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/item_track_lottie_marketing_banner_0" android:padding="@dimen/dimen_16dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.cardview.widget.CardView android:tag="binding_1" android:layout_width="match_parent" android:layout_height="wrap_content" app:cardBackgroundColor="?attr/colorBackgroundPrimary" app:cardCornerRadius="@dimen/dimen_16dp" app:cardElevation="0dp">
+        <in.swiggy.android.commonsui.view.CustomLottieView android:id="@+id/del_instruction_lottie" android:tag="binding_2" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop"/>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

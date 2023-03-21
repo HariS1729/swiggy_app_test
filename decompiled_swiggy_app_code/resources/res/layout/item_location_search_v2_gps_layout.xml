@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/gps_layout" android:tag="layout/item_location_search_v2_gps_layout_0" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="left|center_vertical|center_horizontal|center|start" android:orientation="horizontal" android:tag="binding_1" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatImageView android:id="@+id/gps_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_current_location"/>
+        <in.swiggy.android.dls.textview.DlsTextView android:ellipsize="end" android:id="@+id/tv_description" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_marginStart="@dimen/dimen_15dp" app:dlsTextColor="0" app:dlsTextStyle="4"/>
+    </LinearLayout>
+    <View android:id="@+id/divider" android:tag="binding_3" android:background="?attr/dividerColor" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="@dimen/dimen_18dp"/>
+</LinearLayout>

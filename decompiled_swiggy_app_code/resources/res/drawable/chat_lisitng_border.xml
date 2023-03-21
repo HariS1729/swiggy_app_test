@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item>
+        <shape>
+            <padding android:left="@dimen/dimen_1dp" android:top="@dimen/dimen_1dp" android:right="@dimen/dimen_1dp" android:bottom="@dimen/dimen_1dp"/>
+            <stroke android:width="@dimen/dimen_1dp" android:color="@color/layer_1"/>
+            <corners android:radius="@dimen/dimen_24dp"/>
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <padding android:left="@dimen/dimen_1dp" android:top="@dimen/dimen_1dp" android:right="@dimen/dimen_1dp" android:bottom="@dimen/dimen_1dp"/>
+            <stroke android:width="@dimen/dimen_1dp" android:color="@color/layer_2"/>
+            <corners android:radius="@dimen/dimen_23dp"/>
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <padding android:left="@dimen/dimen_1dp" android:top="@dimen/dimen_1dp" android:right="@dimen/dimen_1dp" android:bottom="@dimen/dimen_1dp"/>
+            <stroke android:width="@dimen/dimen_1dp" android:color="@color/layer_3"/>
+            <corners android:radius="@dimen/dimen_22dp"/>
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <padding android:left="@dimen/dimen_1dp" android:top="@dimen/dimen_1dp" android:right="@dimen/dimen_1dp" android:bottom="@dimen/dimen_1dp"/>
+            <stroke android:width="@dimen/dimen_1dp" android:color="@color/layer_4"/>
+            <corners android:radius="@dimen/dimen_21dp"/>
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <padding android:left="@dimen/dimen_1dp" android:top="@dimen/dimen_1dp" android:right="@dimen/dimen_1dp" android:bottom="@dimen/dimen_1dp"/>
+            <stroke android:width="@dimen/dimen_1dp" android:color="@color/layer_5"/>
+            <corners android:radius="@dimen/dimen_20dp"/>
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <padding android:left="@dimen/dimen_1dp" android:top="@dimen/dimen_1dp" android:right="@dimen/dimen_1dp" android:bottom="@dimen/dimen_1dp"/>
+            <stroke android:width="@dimen/dimen_1dp" android:color="@color/layer_6"/>
+            <corners android:radius="@dimen/dimen_19dp"/>
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <padding android:left="@dimen/dimen_1dp" android:top="@dimen/dimen_1dp" android:right="@dimen/dimen_1dp" android:bottom="@dimen/dimen_1dp"/>
+            <stroke android:width="@dimen/dimen_1dp" android:color="@color/layer_7"/>
+            <corners android:radius="@dimen/dimen_18dp"/>
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <padding android:left="@dimen/dimen_1dp" android:top="@dimen/dimen_1dp" android:right="@dimen/dimen_1dp" android:bottom="@dimen/dimen_1dp"/>
+            <stroke android:width="@dimen/dimen_1dp" android:color="@color/layer_8"/>
+            <corners android:radius="@dimen/dimen_17dp"/>
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <padding android:left="@dimen/dimen_1dp" android:top="@dimen/dimen_1dp" android:right="@dimen/dimen_1dp" android:bottom="@dimen/dimen_1dp"/>
+            <stroke android:width="@dimen/dimen_1dp" android:color="@color/layer_9"/>
+            <corners android:radius="@dimen/dimen_16dp"/>
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <solid android:color="@color/white100"/>
+            <corners android:radius="@dimen/dimen_16dp"/>
+        </shape>
+    </item>
+</layer-list>

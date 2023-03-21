@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/activity_referral_swiggy_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <in.swiggy.android.view.SwiggyImageView android:tag="binding_1" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitCenter"/>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/referral_layout" android:background="@color/white" android:layout_width="match_parent" android:layout_height="@dimen/referral_card_height" android:layout_alignParentBottom="true">
+        <in.swiggy.android.view.SwiggyTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/double_extra_large_margin_gap" android:text="@string/referral_screen_title" style="@style/TextBold18spBlackGrape100Caps"/>
+        <in.swiggy.android.view.ShimmerFrameLayout android:tag="binding_2" android:layout_width="match_parent" android:layout_height="wrap_content" app:tilt="0" app:traverseOnContentNotLoading="true">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/dimen_80dp">
+                <in.swiggy.android.view.SwiggyTextView android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:tag="binding_3" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_66dp" android:layout_marginTop="@dimen/normal_margin_gap" android:layout_marginRight="@dimen/margin_66dp" android:lineSpacingExtra="2dp" app:loaderHeightFraction="0.8" app:loaderWidthFraction="1" app:visibilityWhenLoading="0" style="@style/TextRegular13spBlackGrape70"/>
+                <in.swiggy.android.view.SwiggyTextView android:gravity="center_horizontal" android:tag="binding_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/medium_gap" app:loaderHeightFraction="0.8" app:minWidthWhenLoading="@dimen/dimen_128dp" app:visibilityWhenLoading="0" style="@style/TextRegular10spBlackGrape60"/>
+            </LinearLayout>
+        </in.swiggy.android.view.ShimmerFrameLayout>
+        <FrameLayout android:tag="binding_5" android:background="@color/orange100" android:layout_width="@dimen/button_invite_width" android:layout_height="@dimen/button_invite_height" android:layout_marginTop="@dimen/twentytwo_gap" android:foreground="@drawable/ripple_rectangle">
+            <in.swiggy.android.view.SwiggyTextView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/share_swiggy_friends" style="@style/TextBold15spWhite100Caps"/>
+        </FrameLayout>
+    </LinearLayout>
+    <in.swiggy.android.view.SwiggyToolbar android:id="@+id/tool_bar" android:tag="binding_6" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" android:layout_marginTop="@dimen/default_status_bar_height" android:layout_alignParentTop="true" app:showToolbarDivider="false"/>
+</RelativeLayout>

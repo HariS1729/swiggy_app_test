@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:state_enabled="false">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/orange30"/>
+            <stroke android:width="@dimen/button_border" android:color="@color/orange30"/>
+        </shape>
+    </item>
+    <item android:state_enabled="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/super_orange100"/>
+            <stroke android:width="@dimen/button_border" android:color="@color/orange100"/>
+        </shape>
+    </item>
+</selector>

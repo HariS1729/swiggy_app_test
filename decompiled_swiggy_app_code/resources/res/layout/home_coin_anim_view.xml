@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.airbnb.lottie.LottieAnimationView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_gravity="right" android:tag="layout/home_coin_anim_view_0" android:layout_width="@dimen/dimen_360dp" android:layout_height="@dimen/dimen_166dp" android:layout_marginTop="@dimen/dimen_neg_25dp" android:layout_marginRight="@dimen/dimen_neg_12dp" app:lottie_fileName="3d_coin.json"/>

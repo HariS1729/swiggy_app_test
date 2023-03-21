@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+option java_package = "com.swiggy.gandalf.home.protobuf";
+option java_multiple_files = true;
+
+import "cta_dto.proto";
+import "view_config.proto";
+import "restaurant_home_dto.proto";
+
+message DeliveringNowDto {
+    string title = 1;
+    string sub_title = 2;
+    repeated DataCards cards = 3;
+    string id = 4;
+    CTADto cta = 5;
+    string theme = 6;
+    string widget_id = 7;
+
+
+    message DataCards {
+        RestaurantHomeDto data = 3;
+    }
+}

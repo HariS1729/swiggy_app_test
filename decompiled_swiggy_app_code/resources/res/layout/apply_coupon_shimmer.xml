@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/coupon_code_v2_layout" android:tag="layout/apply_coupon_shimmer_0" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_12dp">
+    <in.swiggy.android.commonsui.view.CommonTextView android:ellipsize="end" android:id="@+id/coupon_type_shimmer" android:layout_width="@dimen/dimen_200dp" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_32dp" android:maxLines="1" android:layout_marginStart="@dimen/dimen_8dp" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toTopOf="0" app:visibilityWhenLoading="0"/>
+    <include layout="@layout/coupon_code_card_shimmer"/>
+    <include layout="@layout/coupon_code_card_shimmer"/>
+    <include layout="@layout/coupon_code_card_shimmer"/>
+    <include layout="@layout/coupon_code_card_shimmer"/>
+</LinearLayout>

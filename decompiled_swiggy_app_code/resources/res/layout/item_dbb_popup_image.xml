@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:theme="@style/Theme.Swiggy.Storefront.Light" android:orientation="vertical" android:id="@+id/main_layout" android:tag="layout/item_dbb_popup_image_0" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:importantForAccessibility="no">
+    <in.swiggy.android.dls.imagecard.ImageCard android:id="@+id/image" android:tag="binding_1" android:layout_width="@dimen/dbb_main_image_width" android:layout_height="@dimen/dbb_main_image_height" android:layout_marginTop="@dimen/dimen_32dp" android:scaleType="centerCrop" app:imageCardCornerRadius="@dimen/dimen_0dp" app:imageCardElevation="@dimen/dimen_0dp" app:imageCardPlaceholder="@color/transparent"/>
+    <include android:id="@+id/dbb_popup_text_layout" layout="@layout/dbb_popup_text"/>
+</androidx.appcompat.widget.LinearLayoutCompat>

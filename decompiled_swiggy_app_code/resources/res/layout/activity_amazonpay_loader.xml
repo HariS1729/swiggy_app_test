@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/activity_amazonpay_loader_0" android:background="@color/transparent_view_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true">
+    <ImageView android:layout_gravity="center" android:id="@+id/description_image" android:background="@drawable/progress_indicator_center_drawable" android:padding="8dp" android:layout_width="36dp" android:layout_height="36dp" android:src="@drawable/v2_ic_card" android:adjustViewBounds="true" android:layout_centerInParent="true" android:contentDescription="@string/progress_dialog_image_content_description"/>
+    <com.pnikosis.materialishprogress.ProgressWheel android:id="@+id/progress_wheel" android:padding="0dp" android:layout_width="64dp" android:layout_height="64dp" android:layout_centerInParent="true" app:matProg_barColor="@color/nasty_orange" app:matProg_progressIndeterminate="true"/>
+</RelativeLayout>

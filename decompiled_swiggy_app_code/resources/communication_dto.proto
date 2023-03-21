@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+option java_package = "com.swiggy.gandalf.home.protobuf";
+option java_multiple_files = true;
+
+message BaseResponseCommunicationDto {
+    oneof communication {
+        BlackZoneDto black_zone = 1;
+        SwiggyNotPresentDto swiggy_not_present = 2;
+    }
+}
+
+message BlackZoneDto {
+    string title = 1;
+    string message = 2;
+}
+
+message SwiggyNotPresentDto {
+    bool swiggy_not_present = 1;
+}

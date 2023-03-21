@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ButtonRoundedRectangle">
+        <item name="android:textSize">@dimen/font_error_content_size</item>
+        <item name="android:textColor">@color/hv_white</item>
+        <item name="android:background">@drawable/drawable_rounded_button_solid</item>
+        <item name="android:fontFamily">@font/hv_muli</item>
+    </style>
+    <style name="TextViewContent">
+        <item name="android:textSize">@dimen/font_content_size</item>
+        <item name="android:textColor">@color/content_text_color</item>
+        <item name="android:fontFamily">@font/hv_muli</item>
+    </style>
+    <style name="TextViewContentMedium">
+        <item name="android:textSize">@dimen/font_content_size</item>
+        <item name="android:textColor">@color/content_text_color</item>
+        <item name="android:fontFamily">@font/hv_muli</item>
+    </style>
+    <style name="TextViewHeader">
+        <item name="android:textSize">@dimen/font_header_size</item>
+        <item name="android:textColor">@color/title_text_color</item>
+        <item name="android:fontFamily">@font/hv_muli</item>
+    </style>
+</resources>

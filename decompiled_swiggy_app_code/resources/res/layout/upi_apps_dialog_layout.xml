@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="16dp" android:layout_marginRight="16dp" android:layout_marginBottom="24dp">
+            <TextView android:textSize="12sp" android:textStyle="normal" android:textColor="#757575" android:id="@+id/pay_via_text_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="24dp" android:text="@string/pay_via" android:fontFamily="sans-serif"/>
+            <GridView android:gravity="center" android:id="@+id/gridview" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:horizontalSpacing="24dp" android:verticalSpacing="24dp" android:stretchMode="columnWidth" android:numColumns="4"/>
+        </LinearLayout>
+    </LinearLayout>
+    <include layout="@layout/v3_debit_response_error"/>
+    <include layout="@layout/progress_bar"/>
+</FrameLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:theme="@style/Theme.Swiggy.Storefront.Light" android:tag="layout/fragment_dynamic_widget_0" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/container" android:background="@color/white" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ViewStub android:id="@+id/image_view" android:tag="binding_1" android:layout="@layout/layout_dynamic_widget_image" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <ViewStub android:id="@+id/video_view" android:tag="binding_2" android:layout="@layout/layout_dynamic_widget_video" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <ViewStub android:id="@+id/lottie_view" android:tag="binding_3" android:layout="@layout/layout_dynamic_widget_lottie" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </FrameLayout>
+</FrameLayout>

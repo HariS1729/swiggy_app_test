@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<in.swiggy.android.feature.homevideopopup.ui.RoundCornerProgressBarView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/progress_bar" android:layout_width="0dp" android:layout_height="@dimen/dimen_3dp" android:layout_marginRight="@dimen/dimen_6dp" android:layout_weight="1" app:rcBackgroundColor="@color/white50" app:rcProgressColor="@color/video_popup_progress" app:rcRadius="@dimen/dimen_25dp"/>

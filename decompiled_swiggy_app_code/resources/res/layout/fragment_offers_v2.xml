@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:theme="@style/Theme.Swiggy.Storefront.Light" android:orientation="vertical" android:id="@+id/fragment_offers_layout" android:tag="layout/fragment_offers_v2_0" android:background="?attr/colorBackgroundSecondary" android:layout_width="match_parent" android:layout_height="match_parent">
+    <in.swiggy.android.view.SwiggyToolbar android:id="@+id/toolbar" android:tag="binding_1" android:background="@color/white100" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" app:titleTextAppearance="?attr/textAppearanceBody1Bold" app:titleTextColor="@color/slateAlpha92"/>
+    <include android:id="@+id/coupon_apply_card_layout" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/coupon_apply_card"/>
+    <include android:id="@+id/apply_coupon_error_layout" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/apply_coupon_error_v2"/>
+    <in.swiggy.android.view.ShimmerFrameLayout android:id="@+id/fragment_offers_shimmer" android:tag="binding_2" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include android:id="@+id/apply_coupon_shimmer" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/apply_coupon_shimmer"/>
+        <androidx.compose.ui.platform.ComposeView android:id="@+id/compose_view" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </in.swiggy.android.view.ShimmerFrameLayout>
+</LinearLayout>

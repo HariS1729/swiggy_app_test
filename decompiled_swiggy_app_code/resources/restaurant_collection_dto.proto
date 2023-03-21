@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+option java_package = "com.swiggy.presentation.food.v2";
+option java_multiple_files = true;
+option java_outer_classname = "RestaurantCollectionProto";
+
+import "restaurant_dto.proto";
+import "analytics_dto.proto";
+import "cta_dto.proto";
+
+// This contains attributes of a restaurant collection.
+message RestaurantCollection {
+    string title = 1;
+    string sub_title = 2;
+    repeated Restaurant restaurants = 3;
+    CTADto cta = 4;
+    string header_image_id = 6;
+    string id = 7;
+    Analytics analytics = 8;
+    string theme = 9;
+    string widget_id = 10;
+}

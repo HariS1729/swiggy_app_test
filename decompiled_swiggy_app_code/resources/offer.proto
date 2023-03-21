@@ -1,0 +1,68 @@
+syntax = "proto3";
+
+
+option go_package = "foodv2";
+option java_package = "com.swiggy.presentation.food.v2";
+option java_multiple_files = true;
+option java_outer_classname = "OfferProto";
+
+
+
+import "google/protobuf/timestamp.proto";
+import "cta.proto";
+
+
+message OfferInfoWithStyle {
+    repeated Offer offers = 1;
+    Cta cta = 2;
+}
+
+
+// This represents attributes of Offer widget.
+message Offer {
+    OfferInfoProto info = 1;
+    Cta cta = 2;
+}
+
+
+// This represents attributes of Offer data.
+
+message OfferInfoProto {
+    string header = 1;
+    string offer_tag = 2;
+    string offer_tag_color = 3;
+    string logo_top = 4;
+    string logo_bottom = 5;
+    repeated string offer_ids = 6;
+    google.protobuf.Timestamp expiry_time = 7;
+    string coupon_code = 8;
+    string description = 9;
+    string offer_type = 10;
+    string rest_id = 11;
+    string image_id = 12;
+    string expiry_text = 13;
+    string expiry_color = 14;
+
+}
+
+
+
+// This represents a offer widget banner which can be rendered in multiple ways having same base construct for offer info.
+
+message OfferWidgetBanner {
+    OfferInfoProto offer_info = 1;
+    OfferBannerType widget_type = 2;
+
+}
+
+
+
+// This provides a value to how to render the banner .
+
+enum OfferBannerType {
+
+    OFFER_BANNER_TYPE_INVALID = 0;
+    OFFER_BANNER_TYPE_SMALL = 1;
+    OFFER_BANNER_TYPE_BIG = 2;
+}
+

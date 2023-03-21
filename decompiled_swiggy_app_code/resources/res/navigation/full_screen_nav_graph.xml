@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/fullScreenGraph" app:startDestination="@+id/fullScreenVideo">
+    <activity android:label="FullScreenVideoActivity" android:name="in.swiggy.android.commonsui.ui.view.fullscreenvideo.FullScreenVideoActivityV2" android:id="@+id/fullScreenVideo">
+        <argument android:name="exoPlayerData" app:argType="in.swiggy.android.commonsui.view.video.ExoPlayerData" app:nullable="false"/>
+        <argument android:name="exoPlayerEventData" android:defaultValue="@null" app:argType="in.swiggy.android.commonsui.view.video.ExoPlayerEventData" app:nullable="true"/>
+        <argument android:name="isHorizontal" android:defaultValue="false" app:argType="boolean" app:nullable="false"/>
+    </activity>
+    <action android:id="@+id/launchFullScreenVideoActivity" app:destination="@+id/fullScreenVideo">
+        <argument android:name="exoPlayerData" app:argType="in.swiggy.android.commonsui.view.video.ExoPlayerData" app:nullable="false"/>
+        <argument android:name="exoPlayerEventData" android:defaultValue="@null" app:argType="in.swiggy.android.commonsui.view.video.ExoPlayerEventData" app:nullable="true"/>
+        <argument android:name="isHorizontal" android:defaultValue="false" app:argType="boolean" app:nullable="false"/>
+    </action>
+</navigation>
